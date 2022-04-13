@@ -82,12 +82,12 @@
       "readable": "Revelation 1:3"
     }
   },
-  { "type": "_text", "content": "Blessed" },
-  { "type": "_text", "content": "is" },
-  { "type": "_text", "content": "the" },
-  { "type": "_text", "content": "one" },
-  { "type": "_text", "content": "who" },
-  { "type": "_text", "content": "reads," },
+  {
+    "type": "hyperlink",
+    "link": "Blessed is the one who reads",
+    "content": "Blessed is the one who reads"
+  },
+  { "type": "_text", "content": "," },
   { "type": "_text", "content": "and" },
   { "type": "_text", "content": "those" },
   { "type": "_text", "content": "who" },

@@ -9,6 +9,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build:md": "node tools/parseMarkdown.js",
+    "build:json": "node tools/parseJSON.js",
     "lint-staged": "lint-staged"
   },
   "type": "module",
