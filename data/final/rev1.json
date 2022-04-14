@@ -47,7 +47,7 @@
   },
   {
     "type": "char",
-    "content": ", and those who hear the words of the prophecy and keep the things which are written in it; for the time is near. "
+    "content": ", and those who hear the words of the prophecy and keep the things which are written in it; for the time is near."
   },
   { "type": "paragraph_end" },
   { "type": "paragraph_start" },
@@ -111,7 +111,7 @@
   },
   {
     "type": "char",
-    "content": ", and every eye will see Him, even those who pierced Him; and all the tribes of the earth will mourn over Him. So it is to be. Amen. "
+    "content": ", and every eye will see Him, even those who pierced Him; and all the tribes of the earth will mourn over Him. So it is to be. Amen."
   },
   { "type": "paragraph_end" },
   { "type": "paragraph_start" },
@@ -127,7 +127,7 @@
   },
   {
     "type": "char",
-    "content": "“I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.” "
+    "content": "“I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.”"
   },
   { "type": "paragraph_end" },
   { "type": "paragraph_start" },
@@ -174,7 +174,7 @@
   { "type": "char", "style": "italic", "content": "it" },
   {
     "type": "char",
-    "content": "to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.” "
+    "content": "to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”"
   },
   { "type": "paragraph_end" },
   { "type": "paragraph_start" },
@@ -254,7 +254,7 @@
   },
   {
     "type": "char",
-    "content": "In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength. "
+    "content": "In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength."
   },
   { "type": "paragraph_end" },
   { "type": "paragraph_start" },
@@ -313,13 +313,7 @@
   { "type": "char", "style": "italic", "content": "As for" },
   {
     "type": "char",
-    "content": "the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches. "
+    "content": "the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven"
   },
-  { "type": "paragraph_end" },
-  { "type": "poetic_line_start", "indent": 1 },
-  { "type": "char", "content": "Holy, Holy, Holy " },
-  { "type": "poetic_line_end" },
-  { "type": "poetic_line_start", "indent": 2 },
-  { "type": "char", "content": "Lord God of power and" },
-  { "type": "poetic_line_end" }
+  { "type": "paragraph_end" }
 ]

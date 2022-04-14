@@ -771,20 +771,5 @@
   { "type": "_text", "content": "are" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "seven" },
-  { "type": "_text", "content": "churches." },
-  { "type": "_text", "content": "" },
-  { "type": "paragraph_end" },
-  { "type": "poetic_line_start", "indent": 1 },
-  { "type": "_text", "content": "Holy," },
-  { "type": "_text", "content": "Holy," },
-  { "type": "_text", "content": "Holy" },
-  { "type": "_text", "content": "" },
-  { "type": "poetic_line_end" },
-  { "type": "poetic_line_start", "indent": 2 },
-  { "type": "_text", "content": "Lord" },
-  { "type": "_text", "content": "God" },
-  { "type": "_text", "content": "of" },
-  { "type": "_text", "content": "power" },
-  { "type": "_text", "content": "and" },
-  { "type": "poetic_line_end" }
+  { "type": "paragraph_end" }
 ]

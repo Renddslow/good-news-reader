@@ -15,9 +15,3 @@
 
 ---!p
 {17} When I saw Him, I fell at His feet like a dead man. And He placed His right hand on me, saying, “Do not be afraid; I am the first and the last, {18} and the living One; and I was dead, and behold, I am alive forevermore, and I have the keys of death and of Hades. {19} Therefore write the things which you have seen, and the things which are, and the things which will take place after these things. {20} _As for_ the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches.
-
----!q
-Holy, Holy, Holy
-
----!q2
-Lord God of power and might
