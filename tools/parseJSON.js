@@ -25,7 +25,7 @@ const parseJSON = (input) => {
     cleanedBlocks.push(item);
   }
 
-  return JSON.stringify(cleanedBlocks);
+  return JSON.stringify(cleanedBlocks, null, 2);
 };
 
 (async () => {
