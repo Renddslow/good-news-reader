@@ -1,5 +1,7 @@
 [
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -12,10 +14,8 @@
   },
   {
     "type": "char",
-    "content": "The Revelation of Jesus Christ, which God gave Him to show to His bond-servants, the things which must soon take place; and He sent and communicated"
+    "content": "The Revelation of Jesus Christ, which God gave Him to show to His bond-servants, the things which must soon take place; and He sent and communicated it by His angel to His bond-servant John,"
   },
-  { "type": "char", "style": "italic", "content": "it" },
-  { "type": "char", "content": "by His angel to His bond-servant John," },
   {
     "type": "verse",
     "reference": {
@@ -49,8 +49,9 @@
     "type": "char",
     "content": ", and those who hear the words of the prophecy and keep the things which are written in it; for the time is near."
   },
-  { "type": "paragraph_end" },
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -89,11 +90,10 @@
       "readable": "Revelation 1:6"
     }
   },
-  { "type": "char", "content": "and He made us" },
-  { "type": "char", "style": "italic", "content": "into" },
-  { "type": "char", "content": "a kingdom, priests to His God and Father—to Him" },
-  { "type": "char", "style": "italic", "content": "be" },
-  { "type": "char", "content": "the glory and the dominion forever and ever. Amen." },
+  {
+    "type": "char",
+    "content": "and He made us into a kingdom, priests to His God and Father—to Him be the glory and the dominion forever and ever. Amen."
+  },
   {
     "type": "verse",
     "reference": {
@@ -113,8 +113,9 @@
     "type": "char",
     "content": ", and every eye will see Him, even those who pierced Him; and all the tribes of the earth will mourn over Him. So it is to be. Amen."
   },
-  { "type": "paragraph_end" },
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -129,8 +130,9 @@
     "type": "char",
     "content": "“I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.”"
   },
-  { "type": "paragraph_end" },
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -155,11 +157,10 @@
       "readable": "Revelation 1:10"
     }
   },
-  { "type": "char", "content": "I was in" },
-  { "type": "char", "style": "italic", "content": "the" },
-  { "type": "char", "content": "Spirit on the Lord’s day, and I heard behind me a loud voice" },
-  { "type": "char", "style": "italic", "content": "like the sound" },
-  { "type": "char", "content": "of a trumpet," },
+  {
+    "type": "char",
+    "content": "I was in the Spirit on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
+  },
   {
     "type": "verse",
     "reference": {
@@ -170,14 +171,13 @@
       "readable": "Revelation 1:11"
     }
   },
-  { "type": "char", "content": "saying, “Write on a scroll what you see, and send" },
-  { "type": "char", "style": "italic", "content": "it" },
   {
     "type": "char",
-    "content": "to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”"
+    "content": "saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”"
   },
-  { "type": "paragraph_end" },
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -197,7 +197,10 @@
     "link": "I saw seven golden lampstands",
     "content": "I saw seven golden lampstands"
   },
-  { "type": "char", "content": ";" },
+  {
+    "type": "char",
+    "content": ";"
+  },
   {
     "type": "verse",
     "reference": {
@@ -208,11 +211,9 @@
       "readable": "Revelation 1:13"
     }
   },
-  { "type": "char", "content": "and in the middle of the lampstands" },
-  { "type": "char", "style": "italic", "content": "I saw" },
   {
     "type": "char",
-    "content": "one like a son of man, clothed in a robe reaching to the feet, and wrapped around the chest with a golden sash."
+    "content": "and in the middle of the lampstands I saw one like a son of man, clothed in a robe reaching to the feet, and wrapped around the chest with a golden sash."
   },
   {
     "type": "verse",
@@ -256,8 +257,9 @@
     "type": "char",
     "content": "In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength."
   },
-  { "type": "paragraph_end" },
-  { "type": "paragraph_start" },
+  {
+    "type": "paragraph_start"
+  },
   {
     "type": "verse",
     "reference": {
@@ -310,10 +312,11 @@
       "readable": "Revelation 1:20"
     }
   },
-  { "type": "char", "style": "italic", "content": "As for" },
   {
     "type": "char",
-    "content": "the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven"
+    "content": "As for the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches."
   },
-  { "type": "paragraph_end" }
+  {
+    "type": "paragraph_end"
+  }
 ]

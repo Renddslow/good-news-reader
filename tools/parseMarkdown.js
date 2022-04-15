@@ -68,6 +68,18 @@ const convertTokenToItem = (token, chapterVerse) => {
     };
   }
 
+  if (token === '<poem>') {
+    return {
+      type: 'poetry_start',
+    };
+  }
+
+  if (token === '</poem>') {
+    return {
+      type: 'poetry_end',
+    };
+  }
+
   return {
     type: '_text', // will be cleaned up after intermediate
     content: token,
@@ -82,10 +94,21 @@ const parseMarkdown = async (content, pathname) => {
 
   const items = tokens.reduce((acc, token, idx) => {
     const item = convertTokenToItem(token, chapterVerse);
+    // Token relates to an item type, otherwise ignore
     if (item) {
+      // If this isn't the first element and we've encountered
+      // a *_start token, close out the previous block
       if (idx > 0 && item.type.endsWith('_start')) {
         const lastBlockStart = [...acc].reverse().find(({ type }) => type.endsWith('_start'));
-        acc.push({ type: lastBlockStart.type.replace('_start', '_end') });
+        const lastBlockEnd = [...acc].reverse().find(({ type }) => type.endsWith('_end'));
+
+        if (
+          lastBlockStart.type !== 'poetry_start' &&
+          lastBlockEnd &&
+          lastBlockEnd.type !== 'poetry_end'
+        ) {
+          acc.push({ type: lastBlockStart.type.replace('_start', '_end') });
+        }
       }
       acc.push(item);
     }

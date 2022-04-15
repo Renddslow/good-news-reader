@@ -41,6 +41,11 @@ const tokenize = (value) => {
 
     string += char;
   }
+
+  if (string && tokens.slice(-1)[0] !== string) {
+    tokens.push(string);
+  }
+
   return tokens;
 };
 

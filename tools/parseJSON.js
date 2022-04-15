@@ -25,7 +25,11 @@ const parseJSON = (input) => {
     cleanedBlocks.push(item);
   }
 
-  return JSON.stringify(cleanedBlocks, null, 2);
+  return JSON.stringify(
+    cleanedBlocks.filter((block) => block.type !== 'char' || block.content),
+    null,
+    2,
+  );
 };
 
 (async () => {
