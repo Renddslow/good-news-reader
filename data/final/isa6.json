@@ -1,0 +1,414 @@
+[
+  {
+    "type": "paragraph_start"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:1",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 1,
+      "readable": "Isaiah 6:1"
+    }
+  },
+  {
+    "type": "char",
+    "content": "In the year of King Uzziah’s death I saw the Lord sitting on a  throne, lofty and exalted, with the train of His robe filling the temple."
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:2",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 2,
+      "readable": "Isaiah 6:2"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Seraphim were standing above Him, each having six wings: with two each covered his face, and with two each covered his feet, and with two each flew."
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:3",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 3,
+      "readable": "Isaiah 6:3"
+    }
+  },
+  {
+    "type": "char",
+    "content": "And one called out to another and said,"
+  },
+  {
+    "type": "poetry_start"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "“Holy, Holy, Holy, is the Lord of armies."
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "The whole earth is full of His glory.”"
+  },
+  {
+    "type": "poetry_end"
+  },
+  {
+    "type": "paragraph_start"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:4",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 4,
+      "readable": "Isaiah 6:4"
+    }
+  },
+  {
+    "type": "char",
+    "content": "And the foundations of the thresholds trembled at the voice of him who called out, while the temple was filling with smoke."
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:5",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 5,
+      "readable": "Isaiah 6:5"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Then I said,"
+  },
+  {
+    "type": "poetry_start"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "“Woe to me, for I am ruined!"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Because I am a man of unclean lips,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And I live among a people of unclean lips;"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "For my eyes have seen the King, the Lord of armies.”"
+  },
+  {
+    "type": "poetry_end"
+  },
+  {
+    "type": "paragraph_start"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:6",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 6,
+      "readable": "Isaiah 6:6"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Then one of the seraphim flew to me with a burning coal in his hand, which he had taken from the altar with tongs."
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:7",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 7,
+      "readable": "Isaiah 6:7"
+    }
+  },
+  {
+    "type": "char",
+    "content": "He touched my mouth with it and said, “Behold, this has touched your lips; and your guilt is taken away and atonement is made for your sin.”"
+  },
+  {
+    "type": "paragraph_start"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:8",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 8,
+      "readable": "Isaiah 6:8"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Then I heard the voice of the Lord, saying, “Whom shall I send, and who will go for Us?” Then I said, “Here am I. Send me!”"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:9",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 9,
+      "readable": "Isaiah 6:9"
+    }
+  },
+  {
+    "type": "char",
+    "content": "And He said, “Go, and tell this people:"
+  },
+  {
+    "type": "poetry_start"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "‘Keep on listening, but do not understand;"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And keep on looking, but do not gain knowledge.’"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:10",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 10,
+      "readable": "Isaiah 6:10"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Make the hearts of this people insensitive,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Their ears dull,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And their eyes blind,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "So that they will not see with their eyes,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Hear with their ears,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Understand with their hearts,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And return and be healed.”"
+  },
+  {
+    "type": "poetry_end"
+  },
+  {
+    "type": "paragraph_start"
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:11",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 11,
+      "readable": "Isaiah 6:11"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Then I said, “Lord, how long?” And He answered,"
+  },
+  {
+    "type": "poetry_start"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "“Until cities are devastated and without inhabitant,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Houses are without people"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And the land is utterly desolate,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:12",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 12,
+      "readable": "Isaiah 6:12"
+    }
+  },
+  {
+    "type": "char",
+    "content": "The Lord has completely removed people,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And there are many forsaken places in the midst of the land."
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "verse",
+    "reference": {
+      "id": "ISA6:13",
+      "chapter": 6,
+      "book": "Isa",
+      "verse": 13,
+      "readable": "Isaiah 6:13"
+    }
+  },
+  {
+    "type": "char",
+    "content": "Yet there will still be a tenth portion in it,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "And it will again be subject to burning,"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Like a terebinth or an oak"
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "Whose stump remains when it is cut down."
+  },
+  {
+    "type": "poetic_line_start",
+    "indent": 1
+  },
+  {
+    "type": "char",
+    "content": "The holy seed is its stump.”"
+  },
+  {
+    "type": "poetry_end"
+  },
+  {
+    "type": "poetic_line_end"
+  }
+]

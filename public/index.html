@@ -1,19 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Revelation Reader • Flatland Church</title>
-        <style>
-            * {
-                padding: 0;
-                margin: 0;
-            }
+  <head>
+    <title>Revelation Reader • Flatland Church</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      :root {
+        /* Colors */
+        --light-purple: #ede3fe;
+        --purple: #7c39ec;
 
-            body {
-                font-family: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
-            }
-        </style>
-    </head>
-    <body>
+        /* Font Sizes */
+        --fz-body: 18px;
 
-    </body>
+        --lh-body: 1.6;
+
+        /* Font Families */
+        --serif: -apple-system-ui-serif, ui-serif, 'Georgia', serif;
+        --sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html, body, #root {
+        height: 100%;
+      }
+
+      body {
+        font-family: var(--serif);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/main.js"></script>
+  </body>
 </html>
