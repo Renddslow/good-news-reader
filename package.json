@@ -8,6 +8,7 @@
   "author": "Matt McElwee <mubatt@wyopub.com>",
   "main": "dist/index.js",
   "scripts": {
+    "start": "netlify dev",
     "build:js": "node build.js",
     "build:md": "node tools/parseMarkdown.js",
     "build:json": "node tools/parseJSON.js",
@@ -56,6 +57,7 @@
     "lint-staged": "^12.3.7",
     "make-dir": "^3.1.0",
     "mri": "^1.2.0",
+    "netlify-cli": "^10.3.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",

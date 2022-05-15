@@ -1,10 +1,11 @@
 import React from 'react';
 import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
-import { useAuth0 } from '@auth0/auth0-react';
+
 import Login from './pages/Login';
+import { useAuthenticatedUser } from './providers/Authentication';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
-  const { isAuthenticated } = useAuth0();
+  const { isAuthenticated } = useAuthenticatedUser();
   const location = useLocation();
 
   if (!isAuthenticated) {
@@ -34,7 +35,6 @@ const App = () => {
             </RequireAuth>
           }
         />
-        {/* Login with Flatland Auth */}
         <Route
           path="/read"
           element={
