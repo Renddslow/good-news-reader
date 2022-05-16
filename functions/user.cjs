@@ -10,8 +10,6 @@ const client = new fauna.Client({
   scheme: 'https',
 });
 
-console.log(process.env.FAUNA_KEY);
-
 const EMAIL_TOKEN = process.env.EMAIL_TOKEN;
 sgMail.setApiKey(process.env.SENDGRID_KEY);
 

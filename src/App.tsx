@@ -3,12 +3,17 @@ import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 
 import Login from './pages/Login';
 import { useAuthenticatedUser } from './providers/Authentication';
+import Read from './pages/Read';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
-  const { isAuthenticated } = useAuthenticatedUser();
+  const { isAuthenticated, isLoading } = useAuthenticatedUser();
   const location = useLocation();
 
-  if (!isAuthenticated) {
+  if (isLoading) {
+    return <div />;
+  }
+
+  if (!isAuthenticated && !isLoading) {
     return <Navigate to="/login" state={{ next: location }} replace />;
   }
 
@@ -39,7 +44,7 @@ const App = () => {
           path="/read"
           element={
             <RequireAuth>
-              <div style={{ fontSize: `var(--fz-body)` }}>Hello</div>
+              <Read />
             </RequireAuth>
           }
         >

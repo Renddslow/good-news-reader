@@ -21,7 +21,7 @@ const AuthenticationContext = createContext<AuthenticationContextType>({
 
 const AuthenticationProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const getProfile = async () => {
@@ -60,6 +60,6 @@ const AuthenticationProvider = ({ children }) => {
 export default AuthenticationProvider;
 
 export const useAuthenticatedUser = () => {
-  const { user, isAuthenticated } = useContext(AuthenticationContext);
-  return { user, isAuthenticated };
+  const { user, isAuthenticated, isLoading } = useContext(AuthenticationContext);
+  return { user, isAuthenticated, isLoading };
 };

@@ -1,5 +1,6 @@
 const fauna = require('faunadb');
 const cookie = require('cookie');
+const { to } = require('await-to-js');
 const jwt = require('jsonwebtoken');
 
 const CLIENT_SECRET = process.env.COOKIE_TOKEN || '';
@@ -10,8 +11,6 @@ const client = new fauna.Client({
   domain: 'db.fauna.com',
   scheme: 'https',
 });
-
-console.log(process.env.FAUNA_KEY);
 
 const safelyVerify = (token) => {
   try {
@@ -46,8 +45,8 @@ const handler = async (event) => {
   }
 
   const { id } = tokenPayload;
-  const user = await client.query(q.Get(q.Ref(id)));
-  const userRef = match.ref.toJSON()['@ref'].id;
+  const [, user] = await to(client.query(q.Get(q.Ref(q.Collection('users'), id))));
+  const userRef = user.ref.toJSON()['@ref'].id;
 
   const completions = await client.query(
     q.Map(
@@ -60,11 +59,11 @@ const handler = async (event) => {
     q.Map(q.Paginate(q.Match(q.Index('link-user'), userRef)), q.Lambda('x', q.Get(q.Var('x')))),
   );
 
-  response.body = {
+  response.body = JSON.stringify({
     ...user.data,
     links: links.data.map(({ data }) => data),
     completions: completions.data.map(({ data }) => data),
-  };
+  });
 
   return response;
 };
