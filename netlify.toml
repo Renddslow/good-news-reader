@@ -16,6 +16,11 @@ to="/.netlify/functions/profile"
 status=200
 
 [[redirects]]
+from="/api/user"
+to="/.netlify/functions/user"
+status=200
+
+[[redirects]]
 from="/*"
 to="/index.html"
 status=200

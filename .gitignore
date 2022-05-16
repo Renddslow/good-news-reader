@@ -6,3 +6,4 @@ dist/
 public/main.js
 
 .netlify
+.env

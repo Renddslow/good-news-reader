@@ -9,6 +9,10 @@ const Label = styled.label`
   top: calc(2px + 12px);
   left: calc(2px + 12px);
   transition: 0.1s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 const InputStyled = styled.input`

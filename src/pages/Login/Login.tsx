@@ -51,7 +51,13 @@ const Login = () => {
 
   const handleCreate = async (payload: SignUpPayload) => {
     setSubmitting(true);
-    await sleep();
+
+    await fetch('/api/user', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      headers: { 'Content-Type': 'application/json' },
+    });
+
     setSubmitted(true);
     setSubmitting(false);
   };

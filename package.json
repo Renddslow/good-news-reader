@@ -65,6 +65,11 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
+    "@sendgrid/mail": "^7.6.2",
+    "await-to-js": "^3.0.0",
+    "cookie": "^0.5.0",
+    "faunadb": "^4.5.4",
+    "jsonwebtoken": "^8.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
