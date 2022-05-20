@@ -136,15 +136,15 @@
     "type": "markdown"
   },
   {
-    "movement": 4,
+    "movement": 3,
     "item": 1,
-    "src": "https://www.youtube.com/watch?v=QpnIrbq2bKo",
+    "src": "https://www.youtube.com/watch?v=tEBc2gSSW04",
     "type": "video",
     "title": "Day of the Lord",
     "descriptionSrc": "content/bp-day-of-the-lord.md"
   },
   {
-    "movement": 4,
+    "movement": 3,
     "item": 2,
     "type": "scripture",
     "start": {
@@ -157,7 +157,7 @@
     }
   },
   {
-    "movement": 4,
+    "movement": 3,
     "item": 3,
     "type": "scripture",
     "start": {
@@ -168,5 +168,54 @@
       "chapter": "rev21",
       "verse": 8
     }
+  },
+  {
+    "movement": 4,
+    "item": 0,
+    "src": "content/resurrection.md",
+    "title": "The Resurrection",
+    "type": "markdown"
+  },
+  {
+    "movement": 4,
+    "item": 1,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev21",
+      "verse": 9
+    },
+    "end": {
+      "chapter": "rev22",
+      "verse": 9
+    }
+  },
+  {
+    "movement": 4,
+    "item": 2,
+    "src": "https://www.youtube.com/watch?v=Zy2AQlK6C5k",
+    "type": "video",
+    "title": "Heaven & Earth",
+    "descriptionSrc": "content/heaven-earth.md"
+  },
+  {
+    "movement": 4,
+    "item": 3,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev22",
+      "verse": 10
+    },
+    "end": {
+      "chapter": "rev22",
+      "verse": 21
+    }
+  },
+  {
+    "movement": 4,
+    "item": 4,
+    "src": "https://www.youtube.com/watch?v=uCOycIMyJZM",
+    "type": "video",
+    "title": "Eternal Life",
+    "descriptionSrc": "content/eternal-life.md"
   }
 ]
