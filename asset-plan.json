@@ -17,7 +17,7 @@
   {
     "movement": 1,
     "item": 2,
-    "src": "https://www.youtube.com/watch?v=UNDX4tUdj1Y",
+    "src": "https://www.youtube.com/watch?v=5nvVVcYD-0w",
     "type": "video",
     "title": "Revelation Overview, pt 1",
     "descriptionSrc": "content/revelation-overview-1.md"
@@ -46,6 +46,86 @@
     "end": {
       "chapter": "rev3",
       "verse": 22
+    }
+  },
+  {
+    "movement": 2,
+    "item": 0,
+    "src": "content/judgement.md",
+    "title": "The Judgement of Evil",
+    "type": "markdown"
+  },
+  {
+    "movement": 2,
+    "item": 1,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev4",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev5",
+      "verse": 14
+    }
+  },
+  {
+    "movement": 2,
+    "item": 2,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev6",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev8",
+      "verse": 13
+    }
+  },
+  {
+    "movement": 2,
+    "item": 3,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev9",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev11",
+      "verse": 19
+    }
+  },
+  {
+    "movement": 2,
+    "item": 4,
+    "src": "https://www.youtube.com/watch?v=QpnIrbq2bKo",
+    "type": "video",
+    "title": "Revelation Overview, pt 2",
+    "descriptionSrc": "content/revelation-overview-2.md"
+  },
+  {
+    "movement": 2,
+    "item": 5,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev12",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev14",
+      "verse": 20
+    }
+  },
+  {
+    "movement": 2,
+    "item": 6,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev15",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev16",
+      "verse": 21
     }
   }
 ]
