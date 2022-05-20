@@ -1,0 +1,51 @@
+[
+  {
+    "movement": 1,
+    "item": 0,
+    "src": "content/throne-room.md",
+    "title": "The Throne Room of Heaven",
+    "type": "markdown"
+  },
+  {
+    "movement": 1,
+    "item": 1,
+    "src": "https://www.youtube.com/watch?v=UNDX4tUdj1Y",
+    "type": "video",
+    "title": "How to Read Apocalyptic Literature",
+    "descriptionSrc": "content/apocalyptic-literature.md"
+  },
+  {
+    "movement": 1,
+    "item": 2,
+    "src": "https://www.youtube.com/watch?v=UNDX4tUdj1Y",
+    "type": "video",
+    "title": "Revelation Overview, pt 1",
+    "descriptionSrc": "content/revelation-overview-1.md"
+  },
+  {
+    "movement": 1,
+    "item": 3,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev1",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev1",
+      "verse": 8
+    }
+  },
+  {
+    "movement": 1,
+    "item": 4,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev1",
+      "verse": 9
+    },
+    "end": {
+      "chapter": "rev3",
+      "verse": 22
+    }
+  }
+]

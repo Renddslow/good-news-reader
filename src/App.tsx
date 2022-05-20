@@ -48,7 +48,7 @@ const App = () => {
             </RequireAuth>
           }
         >
-          <Route path=":ref">
+          <Route path="movement/:movement/:item">
             <Route path="hyperlinks/:hyperlink" />
           </Route>
         </Route>

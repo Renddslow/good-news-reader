@@ -115,31 +115,22 @@ const Movement = ({ illustration, reference, title, children, first = false }: P
 
   return (
     <MovementContainer open={open}>
-      <Wrapper first={first}>
+      <Wrapper
+        first={first}
+        role="button"
+        aria-label="Click/tap to expand the movement to see activities and readings associated with this movement"
+        tabIndex={0}
+        onClick={() => setOpen((s) => !s)}
+      >
         <Illustration
-          role="button"
-          aria-label="Click/tap to expand the movement to see activities and readings associated with this movement"
-          tabIndex={-1}
-          onClick={() => setOpen((s) => !s)}
           src={illustration || '/dragon.png'}
           alt={`Movement illustration of ${title}`}
         />
-        <div
-          role="button"
-          aria-label="Click/tap to expand the movement to see activities and readings associated with this movement"
-          tabIndex={0}
-          onClick={() => setOpen((s) => !s)}
-        >
+        <div>
           <Title>{title}</Title>
           <Reference>Revelation {reference}</Reference>
         </div>
-        <Rotator
-          up={open}
-          role="button"
-          aria-label="Click/tap to expand the movement to see activities and readings associated with this movement"
-          tabIndex={-1}
-          onClick={() => setOpen((s) => !s)}
-        >
+        <Rotator up={open}>
           <CaretDown size={24} />
         </Rotator>
       </Wrapper>
