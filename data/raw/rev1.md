@@ -8,7 +8,7 @@
 {8} “I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.”
 
 ---!p
-{9} I, John, your brother and fellow participant in the tribulation and kingdom and perseverance in Jesus, was on the island called Patmos because of the word of God and the testimony of Jesus. {10} I was in the Spirit on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet, {11} saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”
+{9} I, John, your brother and fellow participant in the tribulation and kingdom and perseverance in Jesus, was on the island called Patmos because of the word of God and the testimony of Jesus. {10} I was [[in the Spirit]] on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet, {11} saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”
 
 ---!p
 {12} Then I turned to see the voice that was speaking with me. And after turning [[I saw seven golden lampstands]]; {13} and in the middle of the lampstands I saw one like a son of man, clothed in a robe reaching to the feet, and wrapped around the chest with a golden sash. {14} His head and His hair were white like white wool, like snow; and His eyes were like a flame of fire. {15} His feet were like burnished bronze when it has been heated to a glow in a furnace, and His voice was like the sound of many waters. {16} In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength.
