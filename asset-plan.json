@@ -127,5 +127,46 @@
       "chapter": "rev16",
       "verse": 21
     }
+  },
+  {
+    "movement": 3,
+    "item": 0,
+    "src": "content/day-of-the-lord.md",
+    "title": "The Day of the Lord",
+    "type": "markdown"
+  },
+  {
+    "movement": 4,
+    "item": 1,
+    "src": "https://www.youtube.com/watch?v=QpnIrbq2bKo",
+    "type": "video",
+    "title": "Day of the Lord",
+    "descriptionSrc": "content/bp-day-of-the-lord.md"
+  },
+  {
+    "movement": 4,
+    "item": 2,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev17",
+      "verse": 1
+    },
+    "end": {
+      "chapter": "rev19",
+      "verse": 10
+    }
+  },
+  {
+    "movement": 4,
+    "item": 3,
+    "type": "scripture",
+    "start": {
+      "chapter": "rev19",
+      "verse": 11
+    },
+    "end": {
+      "chapter": "rev21",
+      "verse": 8
+    }
   }
 ]
