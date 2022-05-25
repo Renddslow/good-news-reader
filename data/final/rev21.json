@@ -149,7 +149,16 @@
   },
   {
     "type": "char",
-    "content": "And he carried me away in the Spirit to a great and high mountain, and showed me the holy city, Jerusalem, coming down out of heaven from God,"
+    "content": "And he carried me away"
+  },
+  {
+    "type": "hyperlink",
+    "link": "in the Spirit",
+    "content": "in the Spirit"
+  },
+  {
+    "type": "char",
+    "content": "to a great and high mountain, and showed me the holy city, Jerusalem, coming down out of heaven from God,"
   },
   {
     "type": "verse",

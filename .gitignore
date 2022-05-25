@@ -7,3 +7,5 @@ public/main.js
 
 .netlify
 .env
+
+public/assets/*

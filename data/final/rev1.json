@@ -159,7 +159,16 @@
   },
   {
     "type": "char",
-    "content": "I was in the Spirit on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
+    "content": "I was"
+  },
+  {
+    "type": "hyperlink",
+    "link": "in the Spirit",
+    "content": "in the Spirit"
+  },
+  {
+    "type": "char",
+    "content": "on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
   },
   {
     "type": "verse",

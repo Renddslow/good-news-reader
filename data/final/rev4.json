@@ -28,7 +28,16 @@
   },
   {
     "type": "char",
-    "content": "Immediately I was in the Spirit; and behold, a throne was standing in heaven, and someone was sitting on the throne."
+    "content": "Immediately I was"
+  },
+  {
+    "type": "hyperlink",
+    "link": "in the Spirit",
+    "content": "in the Spirit"
+  },
+  {
+    "type": "char",
+    "content": "; and behold, a throne was standing in heaven, and someone was sitting on the throne."
   },
   {
     "type": "verse",

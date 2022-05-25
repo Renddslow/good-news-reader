@@ -11,7 +11,7 @@ build({
   platform: 'browser',
   outfile: 'public/main.js',
   minify: prog.minify,
-  jsxFactory: 'h',
+  jsxFactory: 'React',
   jsxFragment: 'Fragment',
   watch: prog.watch,
 });
