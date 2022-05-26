@@ -5,7 +5,7 @@ import Scripture from './Scripture';
 import Markdown from './Markdown';
 import withData from './withData';
 import AppFooter from '../Footer';
-import Video from './Video/Video';
+import Video from './Video';
 
 const Wrapper = styled.div`
   max-width: 480px;

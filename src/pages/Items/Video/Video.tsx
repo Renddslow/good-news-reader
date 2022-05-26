@@ -4,10 +4,11 @@ import styled from 'styled-components';
 import Markdown from '../Markdown';
 
 const VideoWrapper = styled.div`
-  width: 100%;
-  padding-bottom: 56%;
-  height: 0;
+  width: calc(100% + 48px);
+  aspect-ratio: 16/9;
   position: relative;
+  margin: 24px -24px;
+  display: block;
   
   iframe {
     position: absolute;

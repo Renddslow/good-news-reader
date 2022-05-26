@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
+import { CaretLeft } from 'phosphor-react';
 
 const Footer = styled.footer`
   padding: 24px 0;
@@ -10,6 +11,35 @@ const Copyright = styled.p`
   font-size: 14px;
   font-family: var(--sans-serif);
   margin-top: 16px;
+`;
+
+const LinkButton = styled(Link)`
+  font-size: 14px;
+  padding: 12px 16px;
+  font-weight: 600;
+  font-family: var(--sans-serif);
+  text-decoration: none;
+  background: var(--purple);
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &:first-child {
+    opacity: 0.8;
+    background: var(--light-purple);
+    padding: 12px 12px;
+    color: #111;
+  }
+`;
+
+const Row = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  grid-gap: 4px;
 `;
 
 const MOVEMENT_MAX = {
@@ -25,21 +55,21 @@ const AppFooter = () => {
   return (
     <Footer>
       {!window.location.pathname.includes('intro') && (
-        <div>
+        <Row>
           {parseInt(params.item) !== 0 ? (
-            <Link to={`/read/movement/${params.movement}/${parseInt(params.item) - 1}`}>
-              Previous Page
-            </Link>
+            <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) - 1}`}>
+              <CaretLeft weight="bold" size={18} />
+            </LinkButton>
           ) : (
             <div />
           )}
           {/* TODO: Mark complete if not already completed otherwise, next page */}
           {MOVEMENT_MAX[parseInt(params.movement)] !== parseInt(params.item) && (
-            <Link to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}>
+            <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}>
               Next Page
-            </Link>
+            </LinkButton>
           )}
-        </div>
+        </Row>
       )}
       <Copyright>
         Scripture quotations taken from the (NASB®) New American Standard Bible®, Copyright © 1960,

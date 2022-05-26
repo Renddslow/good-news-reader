@@ -82,7 +82,9 @@ const compileAssets = async () => {
           )
         ).reduce((acc, ch) => [...acc, ...ch], []);
 
-        await outputJson(trim(jsonChapters, asset.start, asset.end), asset.movement, asset.item);
+        asset.content = trim(jsonChapters, asset.start, asset.end);
+
+        await outputJson(asset, asset.movement, asset.item);
       }
     }),
   );
