@@ -8,6 +8,7 @@ import {
   CheckCircle,
   Gift,
 } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 
 const icons = {
   read: BookOpen,
@@ -33,6 +34,7 @@ const ItemStyled = styled.div<{ complete: boolean; isNext: boolean }>`
 
   p {
     color: ${(props) => (props.complete ? '#dfdfef' : '#fff')};
+    text-decoration: none !important;
   }
 
   svg {
@@ -45,17 +47,21 @@ type Props = {
   type: 'read' | 'video' | 'essay' | 'bonus';
   complete?: boolean;
   isNext?: boolean;
+  idx: number;
+  movement: number;
 };
 
-const Item = ({ title, type, complete = false, isNext = false }: Props) => {
+const Item = ({ title, type, complete = false, isNext = false, idx, movement }: Props) => {
   const Icon = icons[type];
 
   return (
-    <ItemStyled complete={complete} isNext={isNext}>
-      {complete ? <CheckCircle size={24} color="#47FFE7" /> : <Icon size={24} />}
-      <p>{title}</p>
-      <CaretRight size={24} weight={isNext ? 'bold' : 'regular'} />
-    </ItemStyled>
+    <Link to={`/read/movement/${movement}/${idx}`} style={{ textDecoration: 'none' }}>
+      <ItemStyled complete={complete} isNext={isNext}>
+        {complete ? <CheckCircle size={24} color="#47FFE7" /> : <Icon size={24} />}
+        <p>{title}</p>
+        <CaretRight size={24} weight={isNext ? 'bold' : 'regular'} />
+      </ItemStyled>
+    </Link>
   );
 };
 

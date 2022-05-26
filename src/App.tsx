@@ -4,6 +4,8 @@ import { Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Login from './pages/Login';
 import { useAuthenticatedUser } from './providers/Authentication';
 import Read from './pages/Read';
+import Item from './pages/Items';
+import ReadHeader from './pages/ReadHeader';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -47,8 +49,23 @@ const App = () => {
               <Read />
             </RequireAuth>
           }
+        />
+        <Route
+          path="/read/movement"
+          element={
+            <RequireAuth>
+              <ReadHeader />
+            </RequireAuth>
+          }
         >
-          <Route path="movement/:movement/:item">
+          <Route
+            path=":movement/:item"
+            element={
+              <RequireAuth>
+                <Item />
+              </RequireAuth>
+            }
+          >
             <Route path="hyperlinks/:hyperlink" />
           </Route>
         </Route>

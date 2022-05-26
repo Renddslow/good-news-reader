@@ -80,37 +80,37 @@ const Read = () => {
         </IntroCard>
         <div className="movements">
           <Movement title="Prologue + Movement 1" reference="1:1-3:22" first>
-            <Item title="The Throne Room of Heaven" type="essay" />
-            <Item title="Apocalyptic Literature" type="video" />
-            <Item title="Revelation Overview, pt 1" type="video" />
-            <Item title="1:1-1:8" type="read" />
-            <Item title="1:9-3:22" type="read" />
-            <Item title="Bonus Resources" type="bonus" />
+            <Item title="The Throne Room of Heaven" type="essay" idx={0} movement={1} />
+            <Item title="Apocalyptic Literature" type="video" idx={1} movement={1} />
+            <Item title="Revelation Overview, pt 1" type="video" idx={2} movement={1} />
+            <Item title="1:1-1:8" type="read" idx={3} movement={1} />
+            <Item title="1:9-3:22" type="read" idx={4} movement={1} />
+            <Item title="Bonus Resources" type="bonus" idx={5} movement={1} />
           </Movement>
           <Movement title="Movement 2" reference="4:1-16:21">
-            <Item title="The Judgement of Evil" type="essay" />
-            <Item title="4:1-5:14" type="read" />
-            <Item title="6:1-8:13" type="read" />
-            <Item title="9:1-11:19" type="read" />
-            <Item title="Revelation Overview, pt 2" type="video" />
-            <Item title="12:1-14:20" type="read" />
-            <Item title="15:1-16:21" type="read" />
-            <Item title="Bonus Resources" type="bonus" />
+            <Item title="The Judgement of Evil" type="essay" movement={2} idx={0} />
+            <Item title="4:1-5:14" type="read" movement={2} idx={1} />
+            <Item title="6:1-8:13" type="read" movement={2} idx={2} />
+            <Item title="9:1-11:19" type="read" movement={2} idx={3} />
+            <Item title="Revelation Overview, pt 2" type="video" movement={2} idx={4} />
+            <Item title="12:1-14:20" type="read" movement={2} idx={5} />
+            <Item title="15:1-16:21" type="read" movement={2} idx={6} />
+            <Item title="Bonus Resources" type="bonus" movement={2} idx={7} />
           </Movement>
           <Movement title="Movement 3" reference="17:1-21:8">
-            <Item title="The Day of the Lord" type="essay" />
-            <Item title="Day of the Lord" type="video" />
-            <Item title="17:1-19:10" type="read" />
-            <Item title="19:11-21:8" type="read" />
-            <Item title="Bonus Resources" type="bonus" />
+            <Item title="The Day of the Lord" type="essay" movement={3} idx={0} />
+            <Item title="Day of the Lord" type="video" movement={3} idx={1} />
+            <Item title="17:1-19:10" type="read" movement={3} idx={2} />
+            <Item title="19:11-21:8" type="read" movement={3} idx={3} />
+            <Item title="Bonus Resources" type="bonus" movement={3} idx={4} />
           </Movement>
           <Movement title="Movement 4 + Epilogue" reference="21:9-22:21">
-            <Item title="The Resurrection" type="essay" />
-            <Item title="21:9-22:9" type="read" />
-            <Item title="Heaven and Earth" type="video" />
-            <Item title="22:10-22:21" type="read" />
-            <Item title="Eternal Life" type="video" />
-            <Item title="Bonus Resources" type="bonus" />
+            <Item title="The Resurrection" type="essay" movement={4} idx={0} />
+            <Item title="21:9-22:9" type="read" movement={4} idx={1} />
+            <Item title="Heaven and Earth" type="video" movement={4} idx={2} />
+            <Item title="22:10-22:21" type="read" movement={4} idx={3} />
+            <Item title="Eternal Life" type="video" movement={4} idx={4} />
+            <Item title="Bonus Resources" type="bonus" movement={4} idx={5} />
           </Movement>
         </div>
       </div>
