@@ -4,6 +4,8 @@ import styled, { keyframes } from 'styled-components';
 import Scripture from './Scripture';
 import Markdown from './Markdown';
 import withData from './withData';
+import AppFooter from '../Footer';
+import Video from './Video/Video';
 
 const Wrapper = styled.div`
   max-width: 480px;
@@ -39,6 +41,8 @@ const Item = ({ loading, data }) => {
         <FadeInWrapper>
           {data.type === 'markdown' && <Markdown data={data} />}
           {data.type === 'scripture' && <Scripture data={data} />}
+          {data.type === 'video' && <Video data={data} />}
+          <AppFooter />
         </FadeInWrapper>
       )}
     </Wrapper>

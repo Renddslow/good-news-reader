@@ -68,15 +68,15 @@ const App = () => {
           >
             <Route path="hyperlinks/:hyperlink" />
           </Route>
+          <Route
+            path="intro"
+            element={
+              <RequireAuth>
+                <div>Intro!</div>
+              </RequireAuth>
+            }
+          />
         </Route>
-        <Route
-          path="/intro"
-          element={
-            <RequireAuth>
-              <div>Intro!</div>
-            </RequireAuth>
-          }
-        />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/read" />} />
       </Routes>

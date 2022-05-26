@@ -73,7 +73,7 @@ const Read = () => {
         <IntroCard>
           <div>
             <Text>A new way of reading John's apocalypse</Text>
-            <Link to="/intro">See How it Works</Link>
+            <Link to="/read/movement/intro">See How it Works</Link>
           </div>
           {/* PLACEHOLDER - DO NOT SHIP */}
           <img src="https://dma9sdczpu5q0.cloudfront.net/media/explore-v2/How%20to%20Read%20the%20Bible/Poetry/Apocalyptic%20Literature/poetry-apocolyptic_standard.png?q=65&fit=max&w=600" />

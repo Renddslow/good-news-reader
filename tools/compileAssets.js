@@ -4,6 +4,16 @@ import makeDir from 'make-dir';
 import snarkdown from 'snarkdown';
 import kleur from 'kleur';
 
+const enhancedSnarkdown = (markdown) =>
+  markdown
+    .split(/(?:\r?\n){2,}/)
+    .map((l) =>
+      [' ', '\t', '#', '-', '*', '>'].some((char) => l.startsWith(char))
+        ? snarkdown(l)
+        : `<p>${snarkdown(l)}</p>`,
+    )
+    .join('\n');
+
 const outputJson = (o, movement, item) => {
   const filepath = path.join(process.cwd(), 'public/assets', `movement.${movement}.${item}.json`);
   return fs
@@ -44,15 +54,16 @@ const compileAssets = async () => {
   await Promise.all(
     assets.map(async (asset) => {
       if (asset.type === 'video') {
+        asset.src = asset.src.replace('watch?v=', 'embed/');
         if (asset.descriptionSrc) {
-          asset.description = snarkdown(await getStringFromFile(asset.descriptionSrc));
+          asset.description = enhancedSnarkdown(await getStringFromFile(asset.descriptionSrc));
         }
 
         return outputJson(asset, asset.movement, asset.item);
       }
 
       if (asset.type === 'markdown') {
-        asset.content = snarkdown(await getStringFromFile(asset.src));
+        asset.content = enhancedSnarkdown(await getStringFromFile(asset.src));
         return outputJson(asset, asset.movement, asset.item);
       }
 
