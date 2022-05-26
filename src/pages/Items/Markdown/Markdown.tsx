@@ -17,11 +17,32 @@ export const ContentWrapper = styled.div`
     aspect-ratio: 16 / 9;
     object-fit: cover;
   }
+
+  a.has-sup {
+    text-decoration: none;
+  }
+
+  sup {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    background: #ccc;
+    border-radius: 4px;
+    padding: 2px 6px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
 `;
 
-const Markdown = ({ data }) => (
+const Title = styled.h1`
+  margin-top: 32px;
+`;
+
+const Markdown = ({ data, titleSize = 'h1' }) => (
   <>
-    <h1>{data.title}</h1>
+    {/* @ts-ignore */}
+    {data.title && <Title as={titleSize}>{data.title}</Title>}
     <ContentWrapper dangerouslySetInnerHTML={{ __html: data.content }} />
   </>
 );

@@ -24,7 +24,7 @@ const fadeIn = keyframes`
   }
 `;
 
-const FadeInWrapper = styled.div`
+export const FadeInWrapper = styled.div`
   width: 100%;
   display: block;
   opacity: 0;

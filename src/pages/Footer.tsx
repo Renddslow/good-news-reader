@@ -26,6 +26,8 @@ const LinkButton = styled(Link)`
   align-items: center;
   justify-content: center;
   text-align: center;
+  border: 0;
+  appearance: none;
 
   &:first-child {
     opacity: 0.8;
@@ -54,7 +56,7 @@ const AppFooter = () => {
 
   return (
     <Footer>
-      {!window.location.pathname.includes('intro') && (
+      {!window.location.pathname.includes('intro') ? (
         <Row>
           {parseInt(params.item) !== 0 ? (
             <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) - 1}`}>
@@ -64,11 +66,25 @@ const AppFooter = () => {
             <div />
           )}
           {/* TODO: Mark complete if not already completed otherwise, next page */}
-          {MOVEMENT_MAX[parseInt(params.movement)] !== parseInt(params.item) && (
+          {MOVEMENT_MAX[parseInt(params.movement)] !== parseInt(params.item) ? (
             <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}>
               Next Page
             </LinkButton>
+          ) : (
+            <LinkButton as="button">
+              Complete{' '}
+              <>
+                {parseInt(params.movement) < 4
+                  ? `Movement ${params.movement}`
+                  : `the Last Movement`}
+              </>
+            </LinkButton>
           )}
+        </Row>
+      ) : (
+        <Row>
+          <div />
+          <LinkButton as="button">Mark as Read</LinkButton>{' '}
         </Row>
       )}
       <Copyright>

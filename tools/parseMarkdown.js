@@ -86,6 +86,7 @@ const convertTokenToItem = (token, chapterVerse) => {
   };
 };
 
+// TODO: clean up the parser
 const parseMarkdown = async (content, pathname) => {
   const ref = path.basename(pathname, '.md').replace(/(\d*)$/, ' $1');
   const chapterVerse = cv(ref);

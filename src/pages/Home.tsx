@@ -10,6 +10,7 @@ const StyledLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   margin-right: auto;
+  margin-left: 16px;
 
   span {
     text-decoration: none;

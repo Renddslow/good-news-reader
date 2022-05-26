@@ -22,9 +22,9 @@ const VideoWrapper = styled.div`
   }
 `;
 
-const Video = ({ data }) => (
+const Video = ({ data, titleSize = 'h1' }) => (
   <>
-    <Markdown data={{ title: data.title, content: data.description }} />
+    <Markdown data={{ title: data.title, content: data.description }} titleSize={titleSize} />
     <VideoWrapper>
       <iframe
         src={data.src}

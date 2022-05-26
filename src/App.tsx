@@ -6,6 +6,7 @@ import { useAuthenticatedUser } from './providers/Authentication';
 import Read from './pages/Read';
 import Item from './pages/Items';
 import ReadHeader from './pages/ReadHeader';
+import Intro from './pages/Intro';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -72,7 +73,7 @@ const App = () => {
             path="intro"
             element={
               <RequireAuth>
-                <div>Intro!</div>
+                <Intro />
               </RequireAuth>
             }
           />

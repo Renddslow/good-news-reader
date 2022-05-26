@@ -17,12 +17,14 @@ const getReference = (ref: Ref) => {
   return `${getChapter(ref.chapter)}:${ref.verse}`;
 };
 
-const Scripture = ({ data }) => {
-  const title = `Revelation ${getReference(data.start)}-${getReference(data.end)}`;
+const Scripture = ({ data, includeTitle = true }) => {
+  const title = includeTitle
+    ? `Revelation ${getReference(data.start)}-${getReference(data.end)}`
+    : '';
 
   return (
     <>
-      <h1>{title}</h1>
+      {title && <h1>{title}</h1>}
       <ContentWrapper>Hello</ContentWrapper>
     </>
   );

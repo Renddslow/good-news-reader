@@ -15,7 +15,8 @@
     "build:data": "run-s build:md build:json build:compile",
     "build:compile": "node tools/compileAssets.js",
     "build": "run-p build:data build:js",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "postbuild": "cp data/final/psa1.json public/assets/psa1.json"
   },
   "type": "module",
   "husky": {
