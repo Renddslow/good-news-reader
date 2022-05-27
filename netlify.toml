@@ -21,6 +21,16 @@ to="/.netlify/functions/user"
 status=200
 
 [[redirects]]
+from="/api/links"
+to="/.netlify/functions/link"
+status=200
+
+[[redirects]]
+from="/api/completions"
+to="/.netlify/functions/completion"
+status=200
+
+[[redirects]]
 from="/*"
 to="/index.html"
 status=200
