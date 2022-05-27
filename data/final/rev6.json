@@ -17,6 +17,16 @@
         "content": "Then I saw when the Lamb broke one of the seven seals, and I heard one of the four living creatures saying as with a voice of thunder, “Come!”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:1",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 6:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:2",
@@ -36,6 +46,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:2",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 6:2"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:3",
@@ -48,6 +68,16 @@
       {
         "type": "char",
         "content": "When He broke the second seal, I heard the second living creature saying, “Come!”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:3",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 6:3"
+        }
       },
       {
         "type": "verse",
@@ -69,6 +99,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:4",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 6:4"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:5",
@@ -81,6 +121,16 @@
       {
         "type": "char",
         "content": "When He broke the third seal, I heard the third living creature saying, “Come!” I looked, and behold, a black horse, and the one who sat on it had a pair of scales in his hand."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:5",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 6:5"
+        }
       },
       {
         "type": "verse",
@@ -102,6 +152,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:6",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 6:6"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:7",
@@ -114,6 +174,16 @@
       {
         "type": "char",
         "content": "When the Lamb broke the fourth seal, I heard the voice of the fourth living creature saying, “Come!”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:7",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 6:7"
+        }
       },
       {
         "type": "verse",
@@ -135,6 +205,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:8",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 6:8"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:9",
@@ -149,6 +229,16 @@
         "content": "When the Lamb broke the fifth seal, I saw underneath the altar the souls of those who had been killed because of the word of God, and because of the testimony which they had maintained;"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:9",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 6:9"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:10",
@@ -161,6 +251,16 @@
       {
         "type": "char",
         "content": "and they cried out with a loud voice, saying, “How long, O Lord, holy and true, will You refrain from judging and avenging our blood on those who live on the earth?”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:10",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 6:10"
+        }
       },
       {
         "type": "verse",
@@ -182,6 +282,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:11",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 6:11"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:12",
@@ -194,6 +304,16 @@
       {
         "type": "char",
         "content": "And I looked when He broke the sixth seal, and there was a great earthquake; and the sun became as black as sackcloth made of hair, and the whole moon became like blood;"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:12",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 6:12"
+        }
       },
       {
         "type": "verse",
@@ -210,6 +330,16 @@
         "content": "and the stars of the sky fell to the earth, as a fig tree drops its unripe figs when shaken by a great wind."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:13",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 6:13"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:14",
@@ -222,6 +352,16 @@
       {
         "type": "char",
         "content": "The sky was split apart like a scroll when it is rolled up, and every mountain and island was removed from its place."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:14",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 6:14"
+        }
       },
       {
         "type": "verse",
@@ -238,6 +378,16 @@
         "content": "Then the kings of the earth and the eminent people, and the commanders and the wealthy and the strong, and every slave and free person hid themselves in the caves and among the rocks of the mountains;"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:15",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 6:15"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:16",
@@ -252,6 +402,16 @@
         "content": "and they said to the mountains and the rocks, “Fall on us and hide us from the sight of Him who sits on the throne, and from the wrath of the Lamb;"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:16",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 6:16"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV6:17",
@@ -264,6 +424,16 @@
       {
         "type": "char",
         "content": "for the great day of Their wrath has come, and who is able to stand?”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV6:17",
+          "chapter": 6,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 6:17"
+        }
       }
     ]
   }

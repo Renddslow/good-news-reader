@@ -17,6 +17,16 @@
         "content": "Then I looked, and behold, the Lamb was standing on Mount Zion, and with Him 144,000 who had His name and the name of His Father written on their foreheads."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:1",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 14:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:2",
@@ -29,6 +39,16 @@
       {
         "type": "char",
         "content": "And I heard a voice from heaven, like the sound of many waters and like the sound of loud thunder, and the voice which I heard was like the sound of harpists playing on their harps."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:2",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 14:2"
+        }
       },
       {
         "type": "verse",
@@ -45,6 +65,16 @@
         "content": "And they sang a new song before the throne and before the four living creatures and the elders; and no one was able to learn the song except the 144,000 who had been purchased from the earth."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:3",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 14:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:4",
@@ -57,6 +87,16 @@
       {
         "type": "char",
         "content": "These are the ones who have not defiled themselves with women, for they are celibate. These are the ones who follow the Lamb wherever He goes. These have been purchased from mankind as first fruits to God and to the Lamb."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:4",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 14:4"
+        }
       },
       {
         "type": "verse",
@@ -75,6 +115,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:5",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 14:5"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:6",
@@ -87,6 +137,16 @@
       {
         "type": "char",
         "content": "And I saw another angel flying in midheaven with an eternal gospel to preach to those who live on the earth, and to every nation, tribe, language, and people;"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:6",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 14:6"
+        }
       },
       {
         "type": "verse",
@@ -108,6 +168,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:7",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 14:7"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:8",
@@ -127,6 +197,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:8",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 14:8"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:9",
@@ -139,6 +219,16 @@
       {
         "type": "char",
         "content": "Then another angel, a third one, followed them, saying with a loud voice, “If anyone worships the beast and his image, and receives a mark on his forehead or on his hand,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:9",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 14:9"
+        }
       },
       {
         "type": "verse",
@@ -155,6 +245,16 @@
         "content": "he also will drink of the wine of the wrath of God, which is mixed in full strength in the cup of His anger; and he will be tormented with fire and brimstone in the presence of the holy angels and in the presence of the Lamb."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:10",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 14:10"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:11",
@@ -167,6 +267,16 @@
       {
         "type": "char",
         "content": "And the smoke of their torment ascends forever and ever; they have no rest day and night, those who worship the beast and his image, and whoever receives the mark of his name.”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:11",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 14:11"
+        }
       },
       {
         "type": "verse",
@@ -188,6 +298,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:12",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 14:12"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:13",
@@ -207,6 +327,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:13",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 14:13"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:14",
@@ -221,6 +351,16 @@
         "content": "Then I looked, and behold, a white cloud, and sitting on the cloud was one like a son of man, with a golden crown on His head and a sharp sickle in His hand."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:14",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 14:14"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:15",
@@ -233,6 +373,16 @@
       {
         "type": "char",
         "content": "And another angel came out of the temple, calling out with a loud voice to Him who sat on the cloud, “Put in your sickle and reap, for the hour to reap has come, because the harvest of the earth is ripe.”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:15",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 14:15"
+        }
       },
       {
         "type": "verse",
@@ -254,6 +404,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:16",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 14:16"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:17",
@@ -266,6 +426,16 @@
       {
         "type": "char",
         "content": "And another angel came out of the temple which is in heaven, and he also had a sharp sickle."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:17",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 14:17"
+        }
       },
       {
         "type": "verse",
@@ -282,6 +452,16 @@
         "content": "Then another angel, the one who has power over fire, came out from the altar; and he called with a loud voice to him who had the sharp sickle, saying, “Put in your sharp sickle and gather the clusters from the vine of the earth, because her grapes are ripe.”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:18",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 14:18"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:19",
@@ -296,6 +476,16 @@
         "content": "So the angel swung his sickle to the earth and gathered the clusters from the vine of the earth, and threw them into the great wine press of the wrath of God."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:19",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 19,
+          "readable": "Revelation 14:19"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV14:20",
@@ -308,6 +498,16 @@
       {
         "type": "char",
         "content": "And the wine press was trampled outside the city, and blood came out from the wine press, up to the horses’ bridles, for a distance of 1,600 stadia."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV14:20",
+          "chapter": 14,
+          "book": "Rev",
+          "verse": 20,
+          "readable": "Revelation 14:20"
+        }
       }
     ]
   }

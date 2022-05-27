@@ -17,6 +17,16 @@
         "content": "Then the fifth angel sounded, and I saw a star from heaven which had fallen to the earth; and the key to the shaft of the abyss was given to him."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:1",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 9:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:2",
@@ -29,6 +39,16 @@
       {
         "type": "char",
         "content": "He opened the shaft of the abyss, and smoke ascended out of the shaft like the smoke of a great furnace; and the sun and the air were darkened from the smoke of the shaft."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:2",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 9:2"
+        }
       },
       {
         "type": "verse",
@@ -45,6 +65,16 @@
         "content": "Then out of the smoke came locusts upon the earth, and power was given them, as the scorpions of the earth have power."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:3",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 9:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:4",
@@ -59,6 +89,16 @@
         "content": "They were told not to hurt the grass of the earth, nor any green thing, nor any tree, but only the people who do not have the seal of God on their foreheads."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:4",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 9:4"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:5",
@@ -71,6 +111,16 @@
       {
         "type": "char",
         "content": "And they were not permitted to kill anyone, but to torment for five months; and their torment was like the torment of a scorpion when it stings a person."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:5",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 9:5"
+        }
       },
       {
         "type": "verse",
@@ -92,6 +142,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:6",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 9:6"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:7",
@@ -104,6 +164,16 @@
       {
         "type": "char",
         "content": "The appearance of the locusts was like horses prepared for battle; and on their heads appeared to be crowns like gold, and their faces were like human faces."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:7",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 9:7"
+        }
       },
       {
         "type": "verse",
@@ -120,6 +190,16 @@
         "content": "They had hair like the hair of women, and their teeth were like the teeth of lions."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:8",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 9:8"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:9",
@@ -134,6 +214,16 @@
         "content": "They had breastplates like breastplates of iron; and the sound of their wings was like the sound of chariots, of many horses rushing to battle."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:9",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 9:9"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:10",
@@ -146,6 +236,16 @@
       {
         "type": "char",
         "content": "They have tails like scorpions, and stings; and in their tails is their power to hurt people for five months."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:10",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 9:10"
+        }
       },
       {
         "type": "verse",
@@ -167,6 +267,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:11",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 9:11"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:12",
@@ -186,6 +296,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:12",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 9:12"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:13",
@@ -198,6 +318,16 @@
       {
         "type": "char",
         "content": "Then the sixth angel sounded, and I heard a voice from the four horns of the golden altar which is before God,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:13",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 9:13"
+        }
       },
       {
         "type": "verse",
@@ -214,6 +344,16 @@
         "content": "saying to the sixth angel who had the trumpet, “Release the four angels who are bound at the great river Euphrates.”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:14",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 9:14"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:15",
@@ -226,6 +366,16 @@
       {
         "type": "char",
         "content": "And the four angels, who had been prepared for the hour and day and month and year, were released, so that they would kill a third of mankind."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:15",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 9:15"
+        }
       },
       {
         "type": "verse",
@@ -242,6 +392,16 @@
         "content": "The number of the armies of the horsemen was two hundred million; I heard the number of them."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:16",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 9:16"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:17",
@@ -256,6 +416,16 @@
         "content": "And this is how I saw in my vision the horses and those who sat on them: the riders had breastplates the color of fire, of hyacinth, and of brimstone; and the heads of the horses are like the heads of lions; and out of their mouths came fire and smoke and brimstone."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:17",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 9:17"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:18",
@@ -268,6 +438,16 @@
       {
         "type": "char",
         "content": "A third of mankind was killed by these three plagues, by the fire, the smoke, and the brimstone which came out of their mouths."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:18",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 9:18"
+        }
       },
       {
         "type": "verse",
@@ -289,6 +469,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:19",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 19,
+          "readable": "Revelation 9:19"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:20",
@@ -303,6 +493,16 @@
         "content": "The rest of mankind, who were not killed by these plagues, did not repent of the works of their hands so as not to worship demons and the idols of gold, silver, brass, stone, and wood, which can neither see nor hear nor walk;"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:20",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 20,
+          "readable": "Revelation 9:20"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV9:21",
@@ -315,6 +515,16 @@
       {
         "type": "char",
         "content": "and they did not repent of their murders, nor of their witchcraft, nor of their sexual immorality, nor of their thefts."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV9:21",
+          "chapter": 9,
+          "book": "Rev",
+          "verse": 21,
+          "readable": "Revelation 9:21"
+        }
       }
     ]
   }

@@ -22,6 +22,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:1",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 15:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV15:2",
@@ -34,6 +44,16 @@
       {
         "type": "char",
         "content": "And I saw something like a sea of glass mixed with fire, and those who were victorious over the beast and his image and the number of his name, standing on the sea of glass, holding harps of God."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:2",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 15:2"
+        }
       },
       {
         "type": "verse",
@@ -58,6 +78,16 @@
         "type": "poetry_line",
         "indent": 1,
         "children": [
+          {
+            "type": "verse_end",
+            "reference": {
+              "id": "REV15:3",
+              "chapter": 15,
+              "book": "Rev",
+              "verse": 3,
+              "readable": "Revelation 15:3"
+            }
+          },
           {
             "type": "verse",
             "reference": {
@@ -116,6 +146,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:4",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 15:4"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV15:5",
@@ -128,6 +168,16 @@
       {
         "type": "char",
         "content": "After these things I looked, and the temple of the tabernacle of testimony in heaven was opened,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:5",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 15:5"
+        }
       },
       {
         "type": "verse",
@@ -144,6 +194,16 @@
         "content": "and the seven angels who had the seven plagues came out of the temple, clothed in linen, clean and bright, and their chests wrapped with golden sashes."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:6",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 15:6"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV15:7",
@@ -158,6 +218,16 @@
         "content": "And one of the four living creatures gave the seven angels seven golden bowls full of the wrath of God, who lives forever and ever."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:7",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 15:7"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV15:8",
@@ -170,6 +240,16 @@
       {
         "type": "char",
         "content": "And the temple was filled with smoke from the glory of God and from His power; and no one was able to enter the temple until the seven plagues of the seven angels were finished."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV15:8",
+          "chapter": 15,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 15:8"
+        }
       }
     ]
   }

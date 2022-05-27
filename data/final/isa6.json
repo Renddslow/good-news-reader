@@ -17,6 +17,16 @@
         "content": "In the year of King Uzziah’s death I saw the Lord sitting on a throne, lofty and exalted, with the train of His robe filling the temple."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:1",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 1,
+          "readable": "Isaiah 6:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "ISA6:2",
@@ -29,6 +39,16 @@
       {
         "type": "char",
         "content": "Seraphim were standing above Him, each having six wings: with two each covered his face, and with two each covered his feet, and with two each flew."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:2",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 2,
+          "readable": "Isaiah 6:2"
+        }
       },
       {
         "type": "verse",
@@ -62,6 +82,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:3",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 3,
+          "readable": "Isaiah 6:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "ISA6:4",
@@ -74,6 +104,16 @@
       {
         "type": "char",
         "content": "And the foundations of the thresholds trembled at the voice of him who called out, while the temple was filling with smoke."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:4",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 4,
+          "readable": "Isaiah 6:4"
+        }
       },
       {
         "type": "verse",
@@ -119,6 +159,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:5",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 5,
+          "readable": "Isaiah 6:5"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "ISA6:6",
@@ -131,6 +181,16 @@
       {
         "type": "char",
         "content": "Then one of the seraphim flew to me with a burning coal in his hand, which he had taken from the altar with tongs."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:6",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 6,
+          "readable": "Isaiah 6:6"
+        }
       },
       {
         "type": "verse",
@@ -152,6 +212,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:7",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 7,
+          "readable": "Isaiah 6:7"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "ISA6:8",
@@ -164,6 +234,16 @@
       {
         "type": "char",
         "content": "Then I heard the voice of the Lord, saying, “Whom shall I send, and who will go for Us?” Then I said, “Here am I. Send me!”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:8",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 8,
+          "readable": "Isaiah 6:8"
+        }
       },
       {
         "type": "verse",
@@ -197,6 +277,16 @@
         "type": "poetry_line",
         "indent": 1,
         "children": [
+          {
+            "type": "verse_end",
+            "reference": {
+              "id": "ISA6:9",
+              "chapter": 6,
+              "book": "Isa",
+              "verse": 9,
+              "readable": "Isaiah 6:9"
+            }
+          },
           {
             "type": "verse",
             "reference": {
@@ -246,6 +336,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:10",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 10,
+          "readable": "Isaiah 6:10"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "ISA6:11",
@@ -283,6 +383,16 @@
         "indent": 2,
         "children": [
           {
+            "type": "verse_end",
+            "reference": {
+              "id": "ISA6:11",
+              "chapter": 6,
+              "book": "Isa",
+              "verse": 11,
+              "readable": "Isaiah 6:11"
+            }
+          },
+          {
             "type": "verse",
             "reference": {
               "id": "ISA6:12",
@@ -307,6 +417,16 @@
         "type": "poetry_line",
         "indent": 1,
         "children": [
+          {
+            "type": "verse_end",
+            "reference": {
+              "id": "ISA6:12",
+              "chapter": 6,
+              "book": "Isa",
+              "verse": 12,
+              "readable": "Isaiah 6:12"
+            }
+          },
           {
             "type": "verse",
             "reference": {
@@ -339,6 +459,16 @@
         "type": "poetry_line",
         "indent": 2,
         "children": [{ "type": "char", "content": "The holy seed is its stump.”" }]
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "ISA6:13",
+          "chapter": 6,
+          "book": "Isa",
+          "verse": 13,
+          "readable": "Isaiah 6:13"
+        }
       }
     ]
   }

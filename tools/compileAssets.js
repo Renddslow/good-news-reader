@@ -51,15 +51,13 @@ const compileAssets = async () => {
           .fill()
           .map((_, i) => parseInt(startCh) + i);
 
-        const jsonChapters = (
+        asset.content = (
           await Promise.all(
             chapters.map(async (ch) =>
               JSON.parse(await getStringFromFile(`data/final/rev${ch}.json`)),
             ),
           )
         ).reduce((acc, ch) => [...acc, ...ch], []);
-
-        asset.content = jsonChapters;
 
         await outputJson(asset, asset.movement, asset.item);
       }

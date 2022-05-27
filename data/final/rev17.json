@@ -17,6 +17,16 @@
         "content": "Then one of the seven angels who had the seven bowls came and spoke with me, saying, “Come here, I will show you the judgment of the great prostitute who sits on many waters,"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:1",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 17:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:2",
@@ -29,6 +39,16 @@
       {
         "type": "char",
         "content": "with whom the kings of the earth committed acts of sexual immorality, and those who live on the earth became drunk with the wine of her sexual immorality.”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:2",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 17:2"
+        }
       },
       {
         "type": "verse",
@@ -52,6 +72,16 @@
         "content": " into a wilderness; and I saw a woman sitting on a scarlet beast, full of blasphemous names, having seven heads and ten horns."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:3",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 17:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:4",
@@ -64,6 +94,16 @@
       {
         "type": "char",
         "content": "The woman was clothed in purple and scarlet, and adorned with gold, precious stones, and pearls, holding in her hand a gold cup full of abominations and of the unclean things of her sexual immorality,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:4",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 17:4"
+        }
       },
       {
         "type": "verse",
@@ -80,6 +120,16 @@
         "content": "and on her forehead a name was written, a mystery: “BABYLON THE GREAT, THE MOTHER OF PROSTITUTES AND OF THE ABOMINATIONS OF THE EARTH.”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:5",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 17:5"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:6",
@@ -92,6 +142,16 @@
       {
         "type": "char",
         "content": "And I saw the woman drunk with the blood of the saints, and with the blood of the witnesses of Jesus. When I saw her, I wondered greatly."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:6",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 17:6"
+        }
       },
       {
         "type": "verse",
@@ -113,6 +173,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:7",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 17:7"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:8",
@@ -125,6 +195,16 @@
       {
         "type": "char",
         "content": "“The beast that you saw was, and is not, and is about to come up out of the abyss and go to destruction. And those who live on the earth, whose names have not been written in the book of life from the foundation of the world, will wonder when they see the beast, that he was, and is not, and will come."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:8",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 17:8"
+        }
       },
       {
         "type": "verse",
@@ -141,6 +221,16 @@
         "content": "Here is the mind which has wisdom. The seven heads are seven mountains upon which the woman sits,"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:9",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 17:9"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:10",
@@ -153,6 +243,16 @@
       {
         "type": "char",
         "content": "and they are seven kings; five have fallen, one is, the other has not yet come; and when he comes, he must remain a little while."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:10",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 17:10"
+        }
       },
       {
         "type": "verse",
@@ -169,6 +269,16 @@
         "content": "The beast which was, and is not, is himself also an eighth and is one of the seven, and he goes to destruction."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:11",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 17:11"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:12",
@@ -181,6 +291,16 @@
       {
         "type": "char",
         "content": "The ten horns which you saw are ten kings who have not yet received a kingdom, but they receive authority as kings with the beast for one hour."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:12",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 17:12"
+        }
       },
       {
         "type": "verse",
@@ -202,6 +322,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:13",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 17:13"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:14",
@@ -221,6 +351,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:14",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 17:14"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:15",
@@ -233,6 +373,16 @@
       {
         "type": "char",
         "content": "And he said to me, “The waters which you saw where the prostitute sits are peoples and multitudes, and nations and languages."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:15",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 17:15"
+        }
       },
       {
         "type": "verse",
@@ -249,6 +399,16 @@
         "content": "And the ten horns which you saw, and the beast, these will hate the prostitute and will make her desolate and naked, and will eat her flesh and will burn her up with fire."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:16",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 17:16"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:17",
@@ -263,6 +423,16 @@
         "content": "For God has put it in their hearts to execute His purpose by having a common purpose, and by giving their kingdom to the beast, until the words of God will be fulfilled."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:17",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 17:17"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV17:18",
@@ -275,6 +445,16 @@
       {
         "type": "char",
         "content": "The woman whom you saw is the great city, which reigns over the kings of the earth.”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV17:18",
+          "chapter": 17,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 17:18"
+        }
       }
     ]
   }

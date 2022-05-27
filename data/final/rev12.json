@@ -17,6 +17,16 @@
         "content": "A great sign appeared in heaven: a woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars;"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:1",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 12:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:2",
@@ -36,6 +46,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:2",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 12:2"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:3",
@@ -48,6 +68,16 @@
       {
         "type": "char",
         "content": "Then another sign appeared in heaven: and behold, a great red dragon having seven heads and ten horns, and on his heads were seven crowns."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:3",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 12:3"
+        }
       },
       {
         "type": "verse",
@@ -69,6 +99,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:4",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 12:4"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:5",
@@ -81,6 +121,16 @@
       {
         "type": "char",
         "content": "And she gave birth to a Son, a male, who is going to rule all the nations with a rod of iron; and her Child was caught up to God and to His throne."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:5",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 12:5"
+        }
       },
       {
         "type": "verse",
@@ -102,6 +152,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:6",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 12:6"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:7",
@@ -114,6 +174,16 @@
       {
         "type": "char",
         "content": "And there was war in heaven, Michael and his angels waging war with the dragon. The dragon and his angels waged war,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:7",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 12:7"
+        }
       },
       {
         "type": "verse",
@@ -130,6 +200,16 @@
         "content": "and they did not prevail, and there was no longer a place found for them in heaven."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:8",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 12:8"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:9",
@@ -142,6 +222,16 @@
       {
         "type": "char",
         "content": "And the great dragon was thrown down, the serpent of old who is called the devil and Satan, who deceives the whole world; he was thrown down to the earth, and his angels were thrown down with him."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:9",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 12:9"
+        }
       },
       {
         "type": "verse",
@@ -164,6 +254,16 @@
         "content": "“Now the salvation, and the power, and the kingdom of our God and the authority of His Christ have come, for the accuser of our brothers and sisters has been thrown down, the one who accuses them before our God day and night."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:10",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 12:10"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:11",
@@ -176,6 +276,16 @@
       {
         "type": "char",
         "content": "And they overcame him because of the blood of the Lamb and because of the word of their testimony, and they did not love their life even when faced with death."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:11",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 12:11"
+        }
       },
       {
         "type": "verse",
@@ -197,6 +307,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:12",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 12:12"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:13",
@@ -209,6 +329,16 @@
       {
         "type": "char",
         "content": "And when the dragon saw that he was thrown down to the earth, he persecuted the woman who gave birth to the male Child."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:13",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 12:13"
+        }
       },
       {
         "type": "verse",
@@ -225,6 +355,16 @@
         "content": "But the two wings of the great eagle were given to the woman, so that she could fly into the wilderness to her place, where she was nourished for a time, times, and half a time, away from the presence of the serpent."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:14",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 12:14"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:15",
@@ -237,6 +377,16 @@
       {
         "type": "char",
         "content": "And the serpent hurled water like a river out of his mouth after the woman, so that he might cause her to be swept away with the flood."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:15",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 12:15"
+        }
       },
       {
         "type": "verse",
@@ -253,6 +403,16 @@
         "content": "But the earth helped the woman, and the earth opened its mouth and drank up the river which the dragon had hurled out of his mouth."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:16",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 12:16"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV12:17",
@@ -265,6 +425,16 @@
       {
         "type": "char",
         "content": "So the dragon was enraged with the woman, and went off to make war with the rest of her children, who keep the commandments of God and hold to the testimony of Jesus."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV12:17",
+          "chapter": 12,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 12:17"
+        }
       }
     ]
   }

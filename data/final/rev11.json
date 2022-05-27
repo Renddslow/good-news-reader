@@ -17,6 +17,16 @@
         "content": "Then there was given to me a measuring rod like a staff; and someone said, “Get up and measure the temple of God and the altar, and those who worship in it."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:1",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 11:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:2",
@@ -29,6 +39,16 @@
       {
         "type": "char",
         "content": "Leave out the courtyard which is outside the temple and do not measure it, because it has been given to the nations; and they will trample the holy city for forty-two months."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:2",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 11:2"
+        }
       },
       {
         "type": "verse",
@@ -45,6 +65,16 @@
         "content": "And I will grant authority to my two witnesses, and they will prophesy for 1,260 days, clothed in sackcloth.”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:3",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 11:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:4",
@@ -59,6 +89,16 @@
         "content": "These are the two olive trees and the two lampstands that stand before the Lord of the earth."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:4",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 11:4"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:5",
@@ -71,6 +111,16 @@
       {
         "type": "char",
         "content": "And if anyone wants to harm them, fire flows out of their mouth and devours their enemies; and so if anyone wants to harm them, he must be killed in this way."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:5",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 11:5"
+        }
       },
       {
         "type": "verse",
@@ -92,6 +142,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:6",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 11:6"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:7",
@@ -104,6 +164,16 @@
       {
         "type": "char",
         "content": "When they have finished their testimony, the beast that comes up out of the abyss will make war with them, and overcome them and kill them."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:7",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 11:7"
+        }
       },
       {
         "type": "verse",
@@ -120,6 +190,16 @@
         "content": "And their dead bodies will lie on the street of the great city which spiritually is called Sodom and Egypt, where also their Lord was crucified."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:8",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 11:8"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:9",
@@ -132,6 +212,16 @@
       {
         "type": "char",
         "content": "Those from the peoples, tribes, languages, and nations will look at their dead bodies for three and a half days, and will not allow their dead bodies to be laid in a tomb."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:9",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 11:9"
+        }
       },
       {
         "type": "verse",
@@ -153,6 +243,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:10",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 11:10"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:11",
@@ -167,6 +267,16 @@
         "content": "And after the three and a half days, the breath of life from God came into them, and they stood on their feet; and great fear fell upon those who were watching them."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:11",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 11:11"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:12",
@@ -179,6 +289,16 @@
       {
         "type": "char",
         "content": "And they heard a loud voice from heaven saying to them, “Come up here.” And they went up into heaven in the cloud, and their enemies watched them."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:12",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 11:12"
+        }
       },
       {
         "type": "verse",
@@ -200,6 +320,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:13",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 11:13"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:14",
@@ -218,6 +348,16 @@
   {
     "type": "paragraph",
     "children": [
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:14",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 11:14"
+        }
+      },
       {
         "type": "verse",
         "reference": {
@@ -242,6 +382,16 @@
         "content": "“The kingdom of the world has become the kingdom of our Lord and of His Christ; and He will reign forever and ever.”"
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:15",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 11:15"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:16",
@@ -254,6 +404,16 @@
       {
         "type": "char",
         "content": "And the twenty-four elders, who sit on their thrones before God, fell on their faces and worshiped God,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:16",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 11:16"
+        }
       },
       {
         "type": "verse",
@@ -276,6 +436,16 @@
         "content": "“We give You thanks, Lord God, the Almighty, the One who is and who was, because You have taken Your great power and have begun to reign."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:17",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 11:17"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:18",
@@ -295,6 +465,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:18",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 11:18"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV11:19",
@@ -307,6 +487,16 @@
       {
         "type": "char",
         "content": "And the temple of God which is in heaven was opened; and the ark of His covenant appeared in His temple, and there were flashes of lightning and sounds and peals of thunder, and an earthquake, and a great hailstorm."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV11:19",
+          "chapter": 11,
+          "book": "Rev",
+          "verse": 19,
+          "readable": "Revelation 11:19"
+        }
       }
     ]
   }

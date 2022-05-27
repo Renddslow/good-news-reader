@@ -17,6 +17,16 @@
         "content": "When the Lamb broke the seventh seal, there was silence in heaven for about half an hour."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:1",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 8:1"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:2",
@@ -36,6 +46,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:2",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 8:2"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:3",
@@ -50,6 +70,16 @@
         "content": "Another angel came and stood at the altar, holding a golden censer; and much incense was given to him, so that he might add it to the prayers of all the saints on the golden altar which was before the throne."
       },
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:3",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 8:3"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:4",
@@ -62,6 +92,16 @@
       {
         "type": "char",
         "content": "And the smoke of the incense ascended from the angel’s hand with the prayers of the saints before God."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:4",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 8:4"
+        }
       },
       {
         "type": "verse",
@@ -83,6 +123,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:5",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 8:5"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:6",
@@ -101,6 +151,16 @@
   {
     "type": "paragraph",
     "children": [
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:6",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 8:6"
+        }
+      },
       {
         "type": "verse",
         "reference": {
@@ -121,6 +181,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:7",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 8:7"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:8",
@@ -133,6 +203,16 @@
       {
         "type": "char",
         "content": "The second angel sounded, and something like a great mountain burning with fire was hurled into the sea; and a third of the sea became blood,"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:8",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 8:8"
+        }
       },
       {
         "type": "verse",
@@ -154,6 +234,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:9",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 8:9"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:10",
@@ -166,6 +256,16 @@
       {
         "type": "char",
         "content": "The third angel sounded, and a great star fell from heaven, burning like a torch, and it fell on a third of the rivers and on the springs of waters."
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:10",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 8:10"
+        }
       },
       {
         "type": "verse",
@@ -187,6 +287,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:11",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 8:11"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:12",
@@ -206,6 +316,16 @@
     "type": "paragraph",
     "children": [
       {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:12",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 8:12"
+        }
+      },
+      {
         "type": "verse",
         "reference": {
           "id": "REV8:13",
@@ -218,6 +338,16 @@
       {
         "type": "char",
         "content": "Then I looked, and I heard an eagle flying in midheaven, saying with a loud voice, “Woe, woe, woe to those who live on the earth, because of the remaining blasts of the trumpet of the three angels who are about to sound!”"
+      },
+      {
+        "type": "verse_end",
+        "reference": {
+          "id": "REV8:13",
+          "chapter": 8,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 8:13"
+        }
       }
     ]
   }

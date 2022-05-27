@@ -83,40 +83,79 @@ const getIndent = (line) => {
   return parseInt(indent, 10);
 };
 
+const convertVerseToEndVerse = (verse) => {
+  return { ...verse, type: 'verse_end' };
+};
+
 const parseMarkdown = async (content, pathname) => {
   const ref = path.basename(pathname, '.md').replace(/(\d*)$/, ' $1');
   const chapterVerse = cv(ref);
   const value = content.trim();
 
+  let lastVerse;
+
   const items = parse(value).blocks.reduce((acc, block) => {
+    if (block.name === 'p') {
+      const tokens = tokenize(block.content.trim());
+      const items = tokens.reduce((acc, token) => {
+        const item = convertTokenToItem(token, chapterVerse);
+
+        if (item.type === 'verse') {
+          if (lastVerse) {
+            acc.push(convertVerseToEndVerse(lastVerse));
+          }
+          lastVerse = item;
+        }
+
+        return [...acc, item];
+      }, []);
+      const children = mergeText(items);
+
+      return [
+        ...acc,
+        {
+          type: 'paragraph',
+          children,
+        },
+      ];
+    }
+
     const node = {
-      type: block.name === 'p' ? 'paragraph' : 'poetry',
-      children:
-        block.name === 'q'
-          ? block.content
+      type: 'poetry',
+      children: block.content
+        .trim()
+        .split('\n')
+        .map((line) => ({
+          type: 'poetry_line',
+          indent: getIndent(line),
+          children: (() => {
+            const cleanedLine = line
               .trim()
-              .split('\n')
-              .map((line) => ({
-                type: 'poetry_line',
-                indent: getIndent(line),
-                children: (() => {
-                  const cleanedLine = line
-                    .trim()
-                    .replace(/^\\indent\((\d)\)/, '')
-                    .trim();
-                  const tokens = tokenize(cleanedLine);
-                  return mergeText(tokens.map((token) => convertTokenToItem(token, chapterVerse)));
-                })(),
-              }))
-          : mergeText(
-              tokenize(block.content.trim()).map((token) =>
-                convertTokenToItem(token, chapterVerse),
-              ),
-            ),
+              .replace(/^\\indent\((\d)\)/, '')
+              .trim();
+            const tokens = tokenize(cleanedLine);
+            const items = tokens.reduce((acc, token) => {
+              const item = convertTokenToItem(token, chapterVerse);
+
+              if (item.type === 'verse') {
+                if (lastVerse) {
+                  acc.push(convertVerseToEndVerse(lastVerse));
+                }
+                lastVerse = item;
+              }
+
+              return [...acc, item];
+            }, []);
+
+            return mergeText(items);
+          })(),
+        })),
     };
 
     return [...acc, node];
   }, []);
+
+  items[items.length - 1].children.push(convertVerseToEndVerse(lastVerse));
 
   return JSON.stringify(items);
 };
