@@ -21,29 +21,6 @@ const outputJson = (o, movement, item) => {
     .then(() => console.log(`${kleur.gray('Created JSON asset at')} ${filepath}`));
 };
 
-const trimStartVerse = (ch, info) => {
-  if (info.verse === 1) return ch;
-  const startIdx = ch.findIndex((c) => c.type === 'verse' && c.reference.verse === info.verse);
-  const trimmed = ch.slice(startIdx);
-  const lastStyleType = ch
-    .slice(0, startIdx)
-    .reverse()
-    .find((ch) => ch.type.endsWith('_start'));
-  return [lastStyleType, ...trimmed];
-};
-const trimEndVerse = (ch, info) => {
-  const verseIdx = ch.findIndex((c) => c.type === 'verse' && c.reference.verse === info.verse);
-  const nextVerseIdx = ch.slice(verseIdx + 1).findIndex((c) => c.type === 'verse');
-
-  // There is no next verse so the verse must be the last verse available
-  if (!nextVerseIdx) return ch;
-
-  const nextStyleType = ch.slice(verseIdx).find((c) => c.type.endsWith('_end'));
-
-  return [...ch.slice(0, verseIdx + nextVerseIdx), nextStyleType];
-};
-const trim = (ch, start, end) => trimEndVerse(trimStartVerse(ch, start), end);
-
 const getStringFromFile = async (p) => (await fs.readFile(path.join(process.cwd(), p))).toString();
 
 const compileAssets = async () => {
@@ -82,7 +59,7 @@ const compileAssets = async () => {
           )
         ).reduce((acc, ch) => [...acc, ...ch], []);
 
-        asset.content = trim(jsonChapters, asset.start, asset.end);
+        asset.content = jsonChapters;
 
         await outputJson(asset, asset.movement, asset.item);
       }

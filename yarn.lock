@@ -1075,6 +1075,11 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
+"@saibotsivad/blockdown@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@saibotsivad/blockdown/-/blockdown-3.0.0.tgz#87d4e3def9688ab1f388731bb3978b06ac52dbbf"
+  integrity sha512-RAX4kW1G2Bia85vtF8iTK5zIXcX5XZnm8lJpoOQQCJ/PexipMuzDCiAOXPQAgmCCNRFknQ4nX3gwn1tuX0MTNA==
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.1.tgz#a21117b19ee9be70c379ec1877537ef2e1c63301"

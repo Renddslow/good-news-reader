@@ -1,335 +1,353 @@
 [
   {
-    "type": "paragraph_start"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:1",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 22:1"
+        }
+      },
+      {
+        "type": "char",
+        "content": "And he showed me a river of the water of life, clear as crystal, coming from the throne of God and of the Lamb,"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:2",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 22:2"
+        }
+      },
+      {
+        "type": "char",
+        "content": "in the middle of its street. On either side of the river was the tree of life, bearing twelve kinds of fruit, yielding its fruit every month; and the leaves of the tree were for the healing of the nations."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:3",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 22:3"
+        }
+      },
+      {
+        "type": "char",
+        "content": "There will no longer be any curse; and the throne of God and of the Lamb will be in it, and His bond-servants will serve Him;"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:4",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 22:4"
+        }
+      },
+      {
+        "type": "char",
+        "content": "they will see His face, and His name will be on their foreheads."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:5",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 22:5"
+        }
+      },
+      {
+        "type": "char",
+        "content": "And there will no longer be any night; and they will not have need of the light of a lamp nor the light of the sun, because the Lord God will illuminate them; and they will reign forever and ever."
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:1",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 1,
-      "readable": "Revelation 22:1"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:6",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 22:6"
+        }
+      },
+      {
+        "type": "char",
+        "content": "And he said to me, “These words are faithful and true”; and the Lord, the God of the spirits of the prophets, sent His angel to show His bond-servants the things which must soon take place."
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "And he showed me a river of the water of life, clear as crystal, coming from the throne of God and of the Lamb,"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:7",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 22:7"
+        }
+      },
+      {
+        "type": "char",
+        "content": "“And behold, I am coming quickly. Blessed is the one who keeps the words of the prophecy of this book.”"
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:2",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 2,
-      "readable": "Revelation 22:2"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:8",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 22:8"
+        }
+      },
+      {
+        "type": "char",
+        "content": "I, John, am the one who heard and saw these things. And when I heard and saw them, I fell down to worship at the feet of the angel who showed me these things."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:9",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 22:9"
+        }
+      },
+      {
+        "type": "char",
+        "content": "And he said to me, “Do not do that; I am a fellow servant of yours and of your brothers the prophets, and of those who keep the words of this book. Worship God!”"
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "in the middle of its street. On either side of the river was the tree of life, bearing twelve kinds of fruit, yielding its fruit every month; and the leaves of the tree were for the healing of the nations."
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:10",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 22:10"
+        }
+      },
+      {
+        "type": "char",
+        "content": "And he said to me, “Do not seal up the words of the prophecy of this book, for the time is near."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:11",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 22:11"
+        }
+      },
+      {
+        "type": "char",
+        "content": "Let the one who does wrong still do wrong, and the one who is filthy still be filthy; and let the one who is righteous still practice righteousness, and the one who is holy still keep himself holy.”"
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:3",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 3,
-      "readable": "Revelation 22:3"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:12",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 22:12"
+        }
+      },
+      {
+        "type": "char",
+        "content": "“Behold, I am coming quickly, and My reward is with Me, to reward each one as his work deserves."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:13",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 22:13"
+        }
+      },
+      {
+        "type": "char",
+        "content": "I am the Alpha and the Omega, the first and the last, the beginning and the end.”"
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "There will no longer be any curse; and the throne of God and of the Lamb will be in it, and His bond-servants will serve Him;"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:14",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 22:14"
+        }
+      },
+      {
+        "type": "char",
+        "content": "Blessed are those who wash their robes, so that they will have the right to the tree of life, and may enter the city by the gates."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:15",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 22:15"
+        }
+      },
+      {
+        "type": "char",
+        "content": "Outside are the dogs, the sorcerers, the sexually immoral persons, the murderers, the idolaters, and everyone who loves and practices lying."
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:4",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 4,
-      "readable": "Revelation 22:4"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:16",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 22:16"
+        }
+      },
+      {
+        "type": "char",
+        "content": "“I, Jesus, have sent My angel to testify to you of these things for the churches. I am the root and the descendant of David, the bright morning star.”"
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "they will see His face, and His name will be on their foreheads."
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:17",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 22:17"
+        }
+      },
+      {
+        "type": "char",
+        "content": "The Spirit and the bride say, “Come.” And let the one who hears say, “Come.” And let the one who is thirsty come; let the one who desires, take the water of life without cost."
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:5",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 5,
-      "readable": "Revelation 22:5"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:18",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 22:18"
+        }
+      },
+      {
+        "type": "char",
+        "content": "I testify to everyone who hears the words of the prophecy of this book: if anyone adds to them, God will add to him the plagues that are written in this book;"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:19",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 19,
+          "readable": "Revelation 22:19"
+        }
+      },
+      {
+        "type": "char",
+        "content": "and if anyone takes away from the words of the book of this prophecy, God will take away his part from the tree of life and from the holy city, which are written in this book."
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "And there will no longer be any night; and they will not have need of the light of a lamp nor the light of the sun, because the Lord God will illuminate them; and they will reign forever and ever."
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:20",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 20,
+          "readable": "Revelation 22:20"
+        }
+      },
+      {
+        "type": "char",
+        "content": "He who testifies to these things says, “Yes, I am coming quickly.” Amen. Come, Lord Jesus."
+      }
+    ]
   },
   {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:6",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 6,
-      "readable": "Revelation 22:6"
-    }
-  },
-  {
-    "type": "char",
-    "content": "And he said to me, “These words are faithful and true”; and the Lord, the God of the spirits of the prophets, sent His angel to show His bond-servants the things which must soon take place."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:7",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 7,
-      "readable": "Revelation 22:7"
-    }
-  },
-  {
-    "type": "char",
-    "content": "“And behold, I am coming quickly. Blessed is the one who keeps the words of the prophecy of this book.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:8",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 8,
-      "readable": "Revelation 22:8"
-    }
-  },
-  {
-    "type": "char",
-    "content": "I, John, am the one who heard and saw these things. And when I heard and saw them, I fell down to worship at the feet of the angel who showed me these things."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:9",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 9,
-      "readable": "Revelation 22:9"
-    }
-  },
-  {
-    "type": "char",
-    "content": "And he said to me, “Do not do that; I am a fellow servant of yours and of your brothers the prophets, and of those who keep the words of this book. Worship God!”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:10",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 10,
-      "readable": "Revelation 22:10"
-    }
-  },
-  {
-    "type": "char",
-    "content": "And he said to me, “Do not seal up the words of the prophecy of this book, for the time is near."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:11",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 11,
-      "readable": "Revelation 22:11"
-    }
-  },
-  {
-    "type": "char",
-    "content": "Let the one who does wrong still do wrong, and the one who is filthy still be filthy; and let the one who is righteous still practice righteousness, and the one who is holy still keep himself holy.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:12",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 12,
-      "readable": "Revelation 22:12"
-    }
-  },
-  {
-    "type": "char",
-    "content": "“Behold, I am coming quickly, and My reward is with Me, to reward each one as his work deserves."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:13",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 13,
-      "readable": "Revelation 22:13"
-    }
-  },
-  {
-    "type": "char",
-    "content": "I am the Alpha and the Omega, the first and the last, the beginning and the end.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:14",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 14,
-      "readable": "Revelation 22:14"
-    }
-  },
-  {
-    "type": "char",
-    "content": "Blessed are those who wash their robes, so that they will have the right to the tree of life, and may enter the city by the gates."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:15",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 15,
-      "readable": "Revelation 22:15"
-    }
-  },
-  {
-    "type": "char",
-    "content": "Outside are the dogs, the sorcerers, the sexually immoral persons, the murderers, the idolaters, and everyone who loves and practices lying."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:16",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 16,
-      "readable": "Revelation 22:16"
-    }
-  },
-  {
-    "type": "char",
-    "content": "“I, Jesus, have sent My angel to testify to you of these things for the churches. I am the root and the descendant of David, the bright morning star.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:17",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 17,
-      "readable": "Revelation 22:17"
-    }
-  },
-  {
-    "type": "char",
-    "content": "The Spirit and the bride say, “Come.” And let the one who hears say, “Come.” And let the one who is thirsty come; let the one who desires, take the water of life without cost."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:18",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 18,
-      "readable": "Revelation 22:18"
-    }
-  },
-  {
-    "type": "char",
-    "content": "I testify to everyone who hears the words of the prophecy of this book: if anyone adds to them, God will add to him the plagues that are written in this book;"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:19",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 19,
-      "readable": "Revelation 22:19"
-    }
-  },
-  {
-    "type": "char",
-    "content": "and if anyone takes away from the words of the book of this prophecy, God will take away his part from the tree of life and from the holy city, which are written in this book."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:20",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 20,
-      "readable": "Revelation 22:20"
-    }
-  },
-  {
-    "type": "char",
-    "content": "He who testifies to these things says, “Yes, I am coming quickly.” Amen. Come, Lord Jesus."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV22:21",
-      "chapter": 22,
-      "book": "Rev",
-      "verse": 21,
-      "readable": "Revelation 22:21"
-    }
-  },
-  {
-    "type": "char",
-    "content": "The grace of the Lord Jesus be with all. Amen."
-  },
-  {
-    "type": "paragraph_end"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV22:21",
+          "chapter": 22,
+          "book": "Rev",
+          "verse": 21,
+          "readable": "Revelation 22:21"
+        }
+      },
+      { "type": "char", "content": "The grace of the Lord Jesus be with all. Amen." }
+    ]
   }
 ]

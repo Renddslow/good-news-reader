@@ -1,5 +1,6 @@
 import path from 'path';
 import cv from 'chapter-and-verse';
+import { parse } from '@saibotsivad/blockdown';
 
 import mapFiles from './mapFiles.js';
 import tokenize from './tokenize.js';
@@ -86,43 +87,69 @@ const convertTokenToItem = (token, chapterVerse) => {
   };
 };
 
+const mergeText = (content) => {
+  return content.reduce((acc, node, idx) => {
+    if (node.type === '_text') {
+      if (idx !== 0 && acc[acc.length - 1].type === 'char' && !acc[acc.length - 1].style) {
+        acc[acc.length - 1].content += ` ${node.content}`;
+      } else {
+        acc.push({
+          type: 'char',
+          content: node.content,
+        });
+      }
+      return acc;
+    }
+
+    return [...acc, node];
+  }, []);
+};
+
+const getIndent = (line) => {
+  if (!line.startsWith('\\indent')) return 1;
+  const [, indent] = /^\\indent\((\d)\)/.exec(line);
+  return parseInt(indent, 10);
+};
+
 // TODO: clean up the parser
 const parseMarkdown = async (content, pathname) => {
   const ref = path.basename(pathname, '.md').replace(/(\d*)$/, ' $1');
   const chapterVerse = cv(ref);
   const value = content.trim();
-  const tokens = tokenize(value);
 
-  const items = tokens.reduce((acc, token, idx) => {
-    const item = convertTokenToItem(token, chapterVerse);
-    // Token relates to an item type, otherwise ignore
-    if (item) {
-      // If this isn't the first element and we've encountered
-      // a *_start token, close out the previous block
-      if (idx > 0 && item.type.endsWith('_start')) {
-        const lastBlockStart = [...acc].reverse().find(({ type }) => type.endsWith('_start'));
-        const lastBlockEnd = [...acc].reverse().find(({ type }) => type.endsWith('_end'));
+  const items = parse(value).blocks.reduce((acc, block) => {
+    const node = {
+      type: block.name === 'p' ? 'paragraph' : 'poetry',
+      children:
+        block.name === 'q'
+          ? block.content
+              .trim()
+              .split('\n')
+              .map((line) => ({
+                type: 'poetry_line',
+                indent: getIndent(line),
+                children: (() => {
+                  const cleanedLine = line
+                    .trim()
+                    .replace(/^\\indent\((\d)\)/, '')
+                    .trim();
+                  const tokens = tokenize(cleanedLine);
+                  return mergeText(tokens.map((token) => convertTokenToItem(token, chapterVerse)));
+                })(),
+              }))
+          : mergeText(
+              tokenize(block.content.trim()).map((token) =>
+                convertTokenToItem(token, chapterVerse),
+              ),
+            ),
+    };
 
-        if (
-          lastBlockStart.type !== 'poetry_start' &&
-          lastBlockEnd &&
-          lastBlockEnd.type !== 'poetry_end'
-        ) {
-          acc.push({ type: lastBlockStart.type.replace('_start', '_end') });
-        }
-      }
-      acc.push(item);
-    }
-    if (idx === tokens.length - 1) {
-      const lastBlockStart = [...acc].reverse().find(({ type }) => type.endsWith('_start'));
-      acc.push({ type: lastBlockStart.type.replace('_start', '_end') });
-    }
-    return acc;
+    return [...acc, node];
   }, []);
 
   return JSON.stringify(items);
 };
 
 (async () => {
-  await mapFiles('raw', 'md', 'intermediate', 'json', parseMarkdown);
+  await mapFiles('raw', 'md', 'final', 'json', parseMarkdown);
 })();

@@ -1,16 +1,10 @@
 [
-  { "type": "poetry_start" },
   { "type": "poetic_line_start", "indent": 1 },
-  {
-    "type": "verse",
-    "reference": { "id": "PS1:1", "chapter": 1, "book": "Ps", "verse": 1, "readable": "Psalms 1:1" }
-  },
   { "type": "_text", "content": "Blessed" },
   { "type": "_text", "content": "is" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "person" },
-  { "type": "_text", "content": "" },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "who" },
   { "type": "_text", "content": "does" },
   { "type": "_text", "content": "not" },
@@ -21,7 +15,6 @@
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "wicked," },
-  { "type": "poetic_line_start", "indent": 1 },
   { "type": "_text", "content": "Nor" },
   { "type": "_text", "content": "stand" },
   { "type": "_text", "content": "in" },
@@ -29,7 +22,7 @@
   { "type": "_text", "content": "path" },
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "sinners," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "Nor" },
   { "type": "_text", "content": "sit" },
   { "type": "_text", "content": "in" },
@@ -37,7 +30,6 @@
   { "type": "_text", "content": "seat" },
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "scoffers!" },
-  { "type": "poetic_line_start", "indent": 1 },
   {
     "type": "verse",
     "reference": { "id": "PS1:2", "chapter": 1, "book": "Ps", "verse": 2, "readable": "Psalms 1:2" }
@@ -52,7 +44,7 @@
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "Lord," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "And" },
   { "type": "_text", "content": "on" },
   { "type": "_text", "content": "His" },
@@ -62,7 +54,6 @@
   { "type": "_text", "content": "day" },
   { "type": "_text", "content": "and" },
   { "type": "_text", "content": "night." },
-  { "type": "poetic_line_start", "indent": 1 },
   {
     "type": "verse",
     "reference": { "id": "PS1:3", "chapter": 1, "book": "Ps", "verse": 3, "readable": "Psalms 1:3" }
@@ -78,7 +69,7 @@
   { "type": "_text", "content": "streams" },
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "water," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "Which" },
   { "type": "_text", "content": "yields" },
   { "type": "_text", "content": "its" },
@@ -86,14 +77,13 @@
   { "type": "_text", "content": "in" },
   { "type": "_text", "content": "its" },
   { "type": "_text", "content": "season," },
-  { "type": "poetic_line_start", "indent": 1 },
   { "type": "_text", "content": "And" },
   { "type": "_text", "content": "its" },
   { "type": "_text", "content": "leaf" },
   { "type": "_text", "content": "does" },
   { "type": "_text", "content": "not" },
   { "type": "_text", "content": "wither;" },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "And" },
   { "type": "_text", "content": "in" },
   { "type": "_text", "content": "whatever" },
@@ -101,9 +91,7 @@
   { "type": "_text", "content": "does," },
   { "type": "_text", "content": "he" },
   { "type": "_text", "content": "prospers." },
-  { "type": "poetry_end" },
   { "type": "_text", "content": "" },
-  { "type": "poetry_start" },
   { "type": "poetic_line_start", "indent": 1 },
   {
     "type": "verse",
@@ -114,7 +102,7 @@
   { "type": "_text", "content": "are" },
   { "type": "_text", "content": "not" },
   { "type": "_text", "content": "so," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "But" },
   { "type": "_text", "content": "they" },
   { "type": "_text", "content": "are" },
@@ -125,7 +113,6 @@
   { "type": "_text", "content": "wind" },
   { "type": "_text", "content": "blows" },
   { "type": "_text", "content": "away." },
-  { "type": "poetic_line_start", "indent": 1 },
   {
     "type": "verse",
     "reference": { "id": "PS1:5", "chapter": 1, "book": "Ps", "verse": 5, "readable": "Psalms 1:5" }
@@ -139,7 +126,7 @@
   { "type": "_text", "content": "in" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "judgment," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "Nor" },
   { "type": "_text", "content": "sinners" },
   { "type": "_text", "content": "in" },
@@ -148,7 +135,6 @@
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "righteous." },
-  { "type": "poetic_line_start", "indent": 1 },
   {
     "type": "verse",
     "reference": { "id": "PS1:6", "chapter": 1, "book": "Ps", "verse": 6, "readable": "Psalms 1:6" }
@@ -162,7 +148,7 @@
   { "type": "_text", "content": "of" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "righteous," },
-  { "type": "poetic_line_start", "indent": 2 },
+  { "type": "_text", "content": "\\indent(2)" },
   { "type": "_text", "content": "But" },
   { "type": "_text", "content": "the" },
   { "type": "_text", "content": "way" },
@@ -171,6 +157,5 @@
   { "type": "_text", "content": "wicked" },
   { "type": "_text", "content": "will" },
   { "type": "_text", "content": "perish." },
-  { "type": "poetry_end" },
   { "type": "poetic_line_end" }
 ]

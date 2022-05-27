@@ -1,331 +1,330 @@
 [
   {
-    "type": "paragraph_start"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:1",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 1,
+          "readable": "Revelation 1:1"
+        }
+      },
+      {
+        "type": "char",
+        "content": "The Revelation of Jesus Christ, which God gave Him to show to His bond-servants, the things which must soon take place; and He sent and communicated it by His angel to His bond-servant John,"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:2",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 2,
+          "readable": "Revelation 1:2"
+        }
+      },
+      {
+        "type": "char",
+        "content": "who testified to the word of God and to the testimony of Jesus Christ, everything that he saw."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:3",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 3,
+          "readable": "Revelation 1:3"
+        }
+      },
+      {
+        "type": "hyperlink",
+        "link": "Blessed is the one who reads",
+        "content": "Blessed is the one who reads"
+      },
+      {
+        "type": "char",
+        "content": ", and those who hear the words of the prophecy and keep the things which are written in it; for the time is near."
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:1",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 1,
-      "readable": "Revelation 1:1"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:4",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 4,
+          "readable": "Revelation 1:4"
+        }
+      },
+      {
+        "type": "char",
+        "content": "John to the seven churches that are in Asia: Grace to you and peace from Him who is, and who was, and who is to come, and from the seven spirits who are before His throne,"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:5",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 5,
+          "readable": "Revelation 1:5"
+        }
+      },
+      {
+        "type": "char",
+        "content": "and from Jesus Christ, the faithful witness, the firstborn of the dead, and the ruler of the kings of the earth. To Him who loves us and released us from our sins by His blood—"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:6",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 6,
+          "readable": "Revelation 1:6"
+        }
+      },
+      {
+        "type": "char",
+        "content": "and He made us into a kingdom, priests to His God and Father—to Him be the glory and the dominion forever and ever. Amen."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:7",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 7,
+          "readable": "Revelation 1:7"
+        }
+      },
+      {
+        "type": "hyperlink",
+        "link": "Behold, He is coming with the clouds",
+        "content": "Behold, He is coming with the clouds"
+      },
+      {
+        "type": "char",
+        "content": ", and every eye will see Him, even those who pierced Him; and all the tribes of the earth will mourn over Him. So it is to be. Amen."
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "The Revelation of Jesus Christ, which God gave Him to show to His bond-servants, the things which must soon take place; and He sent and communicated it by His angel to His bond-servant John,"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:8",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 8,
+          "readable": "Revelation 1:8"
+        }
+      },
+      {
+        "type": "char",
+        "content": "“I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.”"
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:2",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 2,
-      "readable": "Revelation 1:2"
-    }
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:9",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 9,
+          "readable": "Revelation 1:9"
+        }
+      },
+      {
+        "type": "char",
+        "content": "I, John, your brother and fellow participant in the tribulation and kingdom and perseverance in Jesus, was on the island called Patmos because of the word of God and the testimony of Jesus."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:10",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 10,
+          "readable": "Revelation 1:10"
+        }
+      },
+      { "type": "char", "content": "I was" },
+      { "type": "hyperlink", "link": "in the Spirit", "content": "in the Spirit" },
+      {
+        "type": "char",
+        "content": " on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:11",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 11,
+          "readable": "Revelation 1:11"
+        }
+      },
+      {
+        "type": "char",
+        "content": "saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”"
+      }
+    ]
   },
   {
-    "type": "char",
-    "content": "who testified to the word of God and to the testimony of Jesus Christ, everything that he saw."
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:12",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 12,
+          "readable": "Revelation 1:12"
+        }
+      },
+      {
+        "type": "char",
+        "content": "Then I turned to see the voice that was speaking with me. And after turning"
+      },
+      {
+        "type": "hyperlink",
+        "link": "I saw seven golden lampstands",
+        "content": "I saw seven golden lampstands"
+      },
+      { "type": "char", "content": ";" },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:13",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 13,
+          "readable": "Revelation 1:13"
+        }
+      },
+      {
+        "type": "char",
+        "content": "and in the middle of the lampstands I saw one like a son of man, clothed in a robe reaching to the feet, and wrapped around the chest with a golden sash."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:14",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 14,
+          "readable": "Revelation 1:14"
+        }
+      },
+      {
+        "type": "char",
+        "content": "His head and His hair were white like white wool, like snow; and His eyes were like a flame of fire."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:15",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 15,
+          "readable": "Revelation 1:15"
+        }
+      },
+      {
+        "type": "char",
+        "content": "His feet were like burnished bronze when it has been heated to a glow in a furnace, and His voice was like the sound of many waters."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:16",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 16,
+          "readable": "Revelation 1:16"
+        }
+      },
+      {
+        "type": "char",
+        "content": "In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength."
+      }
+    ]
   },
   {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:3",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 3,
-      "readable": "Revelation 1:3"
-    }
-  },
-  {
-    "type": "hyperlink",
-    "link": "Blessed is the one who reads",
-    "content": "Blessed is the one who reads"
-  },
-  {
-    "type": "char",
-    "content": ", and those who hear the words of the prophecy and keep the things which are written in it; for the time is near."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:4",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 4,
-      "readable": "Revelation 1:4"
-    }
-  },
-  {
-    "type": "char",
-    "content": "John to the seven churches that are in Asia: Grace to you and peace from Him who is, and who was, and who is to come, and from the seven spirits who are before His throne,"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:5",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 5,
-      "readable": "Revelation 1:5"
-    }
-  },
-  {
-    "type": "char",
-    "content": "and from Jesus Christ, the faithful witness, the firstborn of the dead, and the ruler of the kings of the earth. To Him who loves us and released us from our sins by His blood—"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:6",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 6,
-      "readable": "Revelation 1:6"
-    }
-  },
-  {
-    "type": "char",
-    "content": "and He made us into a kingdom, priests to His God and Father—to Him be the glory and the dominion forever and ever. Amen."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:7",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 7,
-      "readable": "Revelation 1:7"
-    }
-  },
-  {
-    "type": "hyperlink",
-    "link": "Behold, He is coming with the clouds",
-    "content": "Behold, He is coming with the clouds"
-  },
-  {
-    "type": "char",
-    "content": ", and every eye will see Him, even those who pierced Him; and all the tribes of the earth will mourn over Him. So it is to be. Amen."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:8",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 8,
-      "readable": "Revelation 1:8"
-    }
-  },
-  {
-    "type": "char",
-    "content": "“I am the Alpha and the Omega,” says the Lord God, “who is and who was and who is to come, the Almighty.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:9",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 9,
-      "readable": "Revelation 1:9"
-    }
-  },
-  {
-    "type": "char",
-    "content": "I, John, your brother and fellow participant in the tribulation and kingdom and perseverance in Jesus, was on the island called Patmos because of the word of God and the testimony of Jesus."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:10",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 10,
-      "readable": "Revelation 1:10"
-    }
-  },
-  {
-    "type": "char",
-    "content": "I was"
-  },
-  {
-    "type": "hyperlink",
-    "link": "in the Spirit",
-    "content": "in the Spirit"
-  },
-  {
-    "type": "char",
-    "content": "on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:11",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 11,
-      "readable": "Revelation 1:11"
-    }
-  },
-  {
-    "type": "char",
-    "content": "saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”"
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:12",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 12,
-      "readable": "Revelation 1:12"
-    }
-  },
-  {
-    "type": "char",
-    "content": "Then I turned to see the voice that was speaking with me. And after turning"
-  },
-  {
-    "type": "hyperlink",
-    "link": "I saw seven golden lampstands",
-    "content": "I saw seven golden lampstands"
-  },
-  {
-    "type": "char",
-    "content": ";"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:13",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 13,
-      "readable": "Revelation 1:13"
-    }
-  },
-  {
-    "type": "char",
-    "content": "and in the middle of the lampstands I saw one like a son of man, clothed in a robe reaching to the feet, and wrapped around the chest with a golden sash."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:14",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 14,
-      "readable": "Revelation 1:14"
-    }
-  },
-  {
-    "type": "char",
-    "content": "His head and His hair were white like white wool, like snow; and His eyes were like a flame of fire."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:15",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 15,
-      "readable": "Revelation 1:15"
-    }
-  },
-  {
-    "type": "char",
-    "content": "His feet were like burnished bronze when it has been heated to a glow in a furnace, and His voice was like the sound of many waters."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:16",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 16,
-      "readable": "Revelation 1:16"
-    }
-  },
-  {
-    "type": "char",
-    "content": "In His right hand He held seven stars, and out of His mouth came a sharp two-edged sword; and His face was like the sun shining in its strength."
-  },
-  {
-    "type": "paragraph_start"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:17",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 17,
-      "readable": "Revelation 1:17"
-    }
-  },
-  {
-    "type": "char",
-    "content": "When I saw Him, I fell at His feet like a dead man. And He placed His right hand on me, saying, “Do not be afraid; I am the first and the last,"
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:18",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 18,
-      "readable": "Revelation 1:18"
-    }
-  },
-  {
-    "type": "char",
-    "content": "and the living One; and I was dead, and behold, I am alive forevermore, and I have the keys of death and of Hades."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:19",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 19,
-      "readable": "Revelation 1:19"
-    }
-  },
-  {
-    "type": "char",
-    "content": "Therefore write the things which you have seen, and the things which are, and the things which will take place after these things."
-  },
-  {
-    "type": "verse",
-    "reference": {
-      "id": "REV1:20",
-      "chapter": 1,
-      "book": "Rev",
-      "verse": 20,
-      "readable": "Revelation 1:20"
-    }
-  },
-  {
-    "type": "char",
-    "content": "As for the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches."
-  },
-  {
-    "type": "paragraph_end"
+    "type": "paragraph",
+    "children": [
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:17",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 17,
+          "readable": "Revelation 1:17"
+        }
+      },
+      {
+        "type": "char",
+        "content": "When I saw Him, I fell at His feet like a dead man. And He placed His right hand on me, saying, “Do not be afraid; I am the first and the last,"
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:18",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 18,
+          "readable": "Revelation 1:18"
+        }
+      },
+      {
+        "type": "char",
+        "content": "and the living One; and I was dead, and behold, I am alive forevermore, and I have the keys of death and of Hades."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:19",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 19,
+          "readable": "Revelation 1:19"
+        }
+      },
+      {
+        "type": "char",
+        "content": "Therefore write the things which you have seen, and the things which are, and the things which will take place after these things."
+      },
+      {
+        "type": "verse",
+        "reference": {
+          "id": "REV1:20",
+          "chapter": 1,
+          "book": "Rev",
+          "verse": 20,
+          "readable": "Revelation 1:20"
+        }
+      },
+      {
+        "type": "char",
+        "content": "As for the mystery of the seven stars which you saw in My right hand, and the seven golden lampstands: the seven stars are the angels of the seven churches, and the seven lampstands are the seven churches."
+      }
+    ]
   }
 ]

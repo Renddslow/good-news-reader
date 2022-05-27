@@ -11,8 +11,7 @@
     "start": "netlify dev",
     "build:js": "node build.js",
     "build:md": "node tools/parseMarkdown.js",
-    "build:json": "node tools/parseJSON.js",
-    "build:data": "run-s build:md build:json build:compile",
+    "build:data": "run-s build:md build:compile",
     "build:compile": "node tools/compileAssets.js",
     "build": "run-p build:data build:js",
     "lint-staged": "lint-staged",
@@ -73,6 +72,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^1.9.0",
+    "@saibotsivad/blockdown": "^3.0.0",
     "@sendgrid/mail": "^7.6.2",
     "await-to-js": "^3.0.0",
     "cookie": "^0.5.0",
