@@ -6,23 +6,6 @@ import mapFiles from './mapFiles.js';
 import tokenize from './tokenize.js';
 
 const convertTokenToItem = (token, chapterVerse) => {
-  if (/---!/.test(token)) {
-    const [, block] = /---!(.*)/.exec(token);
-
-    if (block === 'p') {
-      return {
-        type: 'paragraph_start',
-      };
-    }
-
-    if (block.includes('q')) {
-      return {
-        type: 'poetic_line_start',
-        indent: parseInt(block.replace(/(\D*)/, '') || '1', 10),
-      };
-    }
-  }
-
   const verseRegexp = /{(\d*)}/;
   if (verseRegexp.test(token)) {
     const [, verse] = verseRegexp.exec(token);
@@ -61,23 +44,12 @@ const convertTokenToItem = (token, chapterVerse) => {
   const linkRegexp = /\[\[(.*)]]/;
   if (linkRegexp.test(token)) {
     const [, text] = linkRegexp.exec(token);
-    const [link, label] = text.split('|').map((t) => t.trim());
+    const [link, label, id] = text.split('|').map((t) => t.trim());
     return {
+      id: id ?? link,
       type: 'hyperlink',
       link,
       content: label ?? link,
-    };
-  }
-
-  if (token === '<poem>') {
-    return {
-      type: 'poetry_start',
-    };
-  }
-
-  if (token === '</poem>') {
-    return {
-      type: 'poetry_end',
     };
   }
 
@@ -111,7 +83,6 @@ const getIndent = (line) => {
   return parseInt(indent, 10);
 };
 
-// TODO: clean up the parser
 const parseMarkdown = async (content, pathname) => {
   const ref = path.basename(pathname, '.md').replace(/(\d*)$/, ' $1');
   const chapterVerse = cv(ref);

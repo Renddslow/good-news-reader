@@ -9,7 +9,7 @@ import Text from '../../components/Text';
 import ProfileButton from './ProfileButton';
 
 const Wrapper = styled.div`
-  max-width: 480px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
 `;

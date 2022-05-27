@@ -41,6 +41,7 @@
         }
       },
       {
+        "id": "Blessed is the one who reads",
         "type": "hyperlink",
         "link": "Blessed is the one who reads",
         "content": "Blessed is the one who reads"
@@ -107,6 +108,7 @@
         }
       },
       {
+        "id": "Behold, He is coming with the clouds",
         "type": "hyperlink",
         "link": "Behold, He is coming with the clouds",
         "content": "Behold, He is coming with the clouds"
@@ -164,7 +166,12 @@
         }
       },
       { "type": "char", "content": "I was" },
-      { "type": "hyperlink", "link": "in the Spirit", "content": "in the Spirit" },
+      {
+        "id": "in the Spirit",
+        "type": "hyperlink",
+        "link": "in the Spirit",
+        "content": "in the Spirit"
+      },
       {
         "type": "char",
         "content": " on the Lord’s day, and I heard behind me a loud voice like the sound of a trumpet,"
@@ -203,6 +210,7 @@
         "content": "Then I turned to see the voice that was speaking with me. And after turning"
       },
       {
+        "id": "I saw seven golden lampstands",
         "type": "hyperlink",
         "link": "I saw seven golden lampstands",
         "content": "I saw seven golden lampstands"

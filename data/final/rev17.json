@@ -41,7 +41,12 @@
         }
       },
       { "type": "char", "content": "And he carried me away" },
-      { "type": "hyperlink", "link": "in the Spirit", "content": "in the Spirit" },
+      {
+        "id": "in the Spirit",
+        "type": "hyperlink",
+        "link": "in the Spirit",
+        "content": "in the Spirit"
+      },
       {
         "type": "char",
         "content": " into a wilderness; and I saw a woman sitting on a scarlet beast, full of blasphemous names, having seven heads and ten horns."

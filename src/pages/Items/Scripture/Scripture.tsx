@@ -1,6 +1,9 @@
 import React from 'react';
 
 import { ContentWrapper } from '../Markdown/Markdown';
+import Poetry from './Poetry';
+import hash from '../../../utils/hash';
+import Paragraph from './Paragraph';
 
 type ChapterRef = `rev${number}`;
 type Ref = {
@@ -25,7 +28,15 @@ const Scripture = ({ data, includeTitle = true }) => {
   return (
     <>
       {title && <h1>{title}</h1>}
-      <ContentWrapper>Hello</ContentWrapper>
+      <ContentWrapper>
+        {data.content.map((block) =>
+          block.type === 'poetry' ? (
+            <Poetry key={hash(JSON.stringify(block))} content={block} />
+          ) : (
+            <Paragraph key={hash(JSON.stringify(block))} content={block} />
+          ),
+        )}
+      </ContentWrapper>
     </>
   );
 };

@@ -8,7 +8,7 @@ import Video from './Items/Video';
 import Footer from './Footer';
 
 const Wrapper = styled.div`
-  max-width: 480px;
+  max-width: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 48px 24px 24px;
