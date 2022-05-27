@@ -5,7 +5,7 @@ export type Char = {
 };
 
 export type Verse = {
-  type: 'verse';
+  type: 'verse' | 'verse_end';
   reference: {
     id: string;
     chapter: number;

@@ -21,6 +21,38 @@ const outputJson = (o, movement, item) => {
     .then(() => console.log(`${kleur.gray('Created JSON asset at')} ${filepath}`));
 };
 
+const chapterRefToInt = (ref) => {
+  const [, ch] = /([\d]+)$/.exec(ref);
+  return parseInt(ch, 10);
+};
+
+const findVerse =
+  (ref, type = 'verse') =>
+  (block) =>
+    block.children.some(
+      (c) =>
+        c.type === type &&
+        c.reference.chapter === chapterRefToInt(ref.chapter) &&
+        c.reference.verse === ref.verse,
+    );
+
+const trim = (asset, start, end) => {
+  const blockStartIdx = asset.content.findIndex(findVerse(start));
+
+  const blockEndIdx = asset.content.findIndex(findVerse(end, 'verse_end'));
+  const verseEndIdx = asset.content[blockEndIdx].children.findIndex(
+    (c) => c.type === 'verse_end' && c.reference.verse === end.verse,
+  );
+
+  asset.content[blockEndIdx].children = asset.content[blockEndIdx].children.slice(
+    0,
+    verseEndIdx + 1,
+  );
+
+  asset.content = asset.content.slice(blockStartIdx, blockEndIdx + 1);
+  return asset;
+};
+
 const getStringFromFile = async (p) => (await fs.readFile(path.join(process.cwd(), p))).toString();
 
 const compileAssets = async () => {
@@ -59,7 +91,7 @@ const compileAssets = async () => {
           )
         ).reduce((acc, ch) => [...acc, ...ch], []);
 
-        await outputJson(asset, asset.movement, asset.item);
+        await outputJson(trim(asset, asset.start, asset.end), asset.movement, asset.item);
       }
     }),
   );
