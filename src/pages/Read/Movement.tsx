@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { CaretDown } from 'phosphor-react';
+import { CaretDown, Lock } from 'phosphor-react';
 
 type Props = {
   illustration?: string; // TODO: remove optional before flight
@@ -8,6 +8,8 @@ type Props = {
   reference: string;
   title: string;
   children: React.ReactElement[];
+  locked: boolean;
+  unlocks: Date;
 };
 
 const resize = keyframes`
@@ -110,29 +112,61 @@ const Panel = styled.div`
   background: hsl(240deg, 14%, 30%);
 `;
 
-const Movement = ({ illustration, reference, title, children, first = false }: Props) => {
+const UnlockTag = styled.span`
+  font-size: 14px;
+  font-weight: 600;
+  background: #efefef;
+  color: #666;
+  border-radius: 4px;
+  padding: 4px;
+  width: max-content;
+`;
+
+const fmt = new Intl.DateTimeFormat('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+});
+
+const Movement = ({
+  illustration,
+  reference,
+  title,
+  children,
+  first = false,
+  locked,
+  unlocks,
+}: Props) => {
   const [open, setOpen] = useState(false);
+
+  const props = locked
+    ? { tabIndex: -1 }
+    : {
+        role: 'button',
+        'aria-label':
+          'Click/tap to expand the movement to see activities and readings associated with this movement',
+        onClick: () => setOpen((s) => !s),
+        tabIndex: 0,
+      };
 
   return (
     <MovementContainer open={open}>
-      <Wrapper
-        first={first}
-        role="button"
-        aria-label="Click/tap to expand the movement to see activities and readings associated with this movement"
-        tabIndex={0}
-        onClick={() => setOpen((s) => !s)}
-      >
+      <Wrapper {...props} first={first}>
         <Illustration
           src={illustration || '/dragon.png'}
           alt={`Movement illustration of ${title}`}
         />
         <div>
           <Title>{title}</Title>
-          <Reference>Revelation {reference}</Reference>
+          <Reference>
+            {locked ? (
+              <UnlockTag>Unlocks {fmt.format(unlocks)}</UnlockTag>
+            ) : (
+              `Revelation ${reference}`
+            )}
+          </Reference>
         </div>
-        <Rotator up={open}>
-          <CaretDown size={24} />
-        </Rotator>
+        <Rotator up={open}>{locked ? <Lock size={24} /> : <CaretDown size={24} />}</Rotator>
       </Wrapper>
       {open && <Panel>{children}</Panel>}
     </MovementContainer>

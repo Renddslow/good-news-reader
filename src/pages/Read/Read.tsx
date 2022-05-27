@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import isBefore from 'date-fns/isBefore';
 
 import { useAuthenticatedUser } from '../../providers/Authentication';
 import Movement from './Movement';
@@ -63,6 +64,8 @@ const Header = styled.header`
 const Read = () => {
   const { user } = useAuthenticatedUser();
 
+  const today = new Date();
+
   return (
     <Wrapper>
       <Header>
@@ -79,15 +82,25 @@ const Read = () => {
           <img src="https://dma9sdczpu5q0.cloudfront.net/media/explore-v2/How%20to%20Read%20the%20Bible/Poetry/Apocalyptic%20Literature/poetry-apocolyptic_standard.png?q=65&fit=max&w=600" />
         </IntroCard>
         <div className="movements">
-          <Movement title="Prologue + Movement 1" reference="1:1-3:22" first>
+          <Movement
+            title="Prologue + Movement 1"
+            reference="1:1-3:22"
+            first
+            locked={isBefore(today, new Date(2022, 4, 29))}
+            unlocks={new Date(2022, 4, 29)}
+          >
             <Item title="The Throne Room of Heaven" type="essay" idx={0} movement={1} />
             <Item title="Apocalyptic Literature" type="video" idx={1} movement={1} />
             <Item title="Revelation Overview, pt 1" type="video" idx={2} movement={1} />
             <Item title="1:1-1:8" type="read" idx={3} movement={1} />
             <Item title="1:9-3:22" type="read" idx={4} movement={1} />
-            <Item title="Bonus Resources" type="bonus" idx={5} movement={1} />
           </Movement>
-          <Movement title="Movement 2" reference="4:1-16:21">
+          <Movement
+            title="Movement 2"
+            reference="4:1-16:21"
+            locked={isBefore(today, new Date(2022, 5, 5))}
+            unlocks={new Date(2022, 5, 5)}
+          >
             <Item title="The Judgement of Evil" type="essay" movement={2} idx={0} />
             <Item title="4:1-5:14" type="read" movement={2} idx={1} />
             <Item title="6:1-8:13" type="read" movement={2} idx={2} />
@@ -95,22 +108,29 @@ const Read = () => {
             <Item title="Revelation Overview, pt 2" type="video" movement={2} idx={4} />
             <Item title="12:1-14:20" type="read" movement={2} idx={5} />
             <Item title="15:1-16:21" type="read" movement={2} idx={6} />
-            <Item title="Bonus Resources" type="bonus" movement={2} idx={7} />
           </Movement>
-          <Movement title="Movement 3" reference="17:1-21:8">
+          <Movement
+            title="Movement 3"
+            reference="17:1-21:8"
+            locked={isBefore(today, new Date(2022, 5, 19))}
+            unlocks={new Date(2022, 5, 19)}
+          >
             <Item title="The Day of the Lord" type="essay" movement={3} idx={0} />
             <Item title="Day of the Lord" type="video" movement={3} idx={1} />
             <Item title="17:1-19:10" type="read" movement={3} idx={2} />
             <Item title="19:11-21:8" type="read" movement={3} idx={3} />
-            <Item title="Bonus Resources" type="bonus" movement={3} idx={4} />
           </Movement>
-          <Movement title="Movement 4 + Epilogue" reference="21:9-22:21">
+          <Movement
+            title="Movement 4 + Epilogue"
+            reference="21:9-22:21"
+            locked={isBefore(today, new Date(2022, 5, 26))}
+            unlocks={new Date(2022, 5, 26)}
+          >
             <Item title="The Resurrection" type="essay" movement={4} idx={0} />
             <Item title="21:9-22:9" type="read" movement={4} idx={1} />
             <Item title="Heaven and Earth" type="video" movement={4} idx={2} />
             <Item title="22:10-22:21" type="read" movement={4} idx={3} />
             <Item title="Eternal Life" type="video" movement={4} idx={4} />
-            <Item title="Bonus Resources" type="bonus" movement={4} idx={5} />
           </Movement>
         </div>
       </div>
