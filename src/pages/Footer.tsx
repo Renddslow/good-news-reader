@@ -1,7 +1,9 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useParams, useNavigate } from 'react-router-dom';
 import React from 'react';
 import styled from 'styled-components';
 import { CaretLeft } from 'phosphor-react';
+
+import { useProgress } from '../providers/Authentication';
 
 const Footer = styled.footer`
   padding: 24px 0;
@@ -51,8 +53,39 @@ const MOVEMENT_MAX = {
   4: 4,
 };
 
+const isComplete = (completions, page) => {
+  const record = completions.find((c) => c.movement === page.movement && c.page === page.page);
+  return !!record;
+};
+
 const AppFooter = () => {
   const params = useParams();
+  const navigate = useNavigate();
+  const { completions, completePage } = useProgress();
+
+  const handlePageCompletion = async () => {
+    const payload = window.location.pathname.includes('intro')
+      ? {
+          movement: 0,
+          page: 0,
+        }
+      : {
+          movement: parseInt(params.movement, 10),
+          page: parseInt(params.item, 10),
+        };
+
+    if (!isComplete(completions, payload)) {
+      return completePage(payload.movement, payload.page);
+    }
+
+    return Promise.resolve();
+  };
+
+  const completeAndRoute = () => {
+    handlePageCompletion().then(() => {
+      navigate('/read');
+    });
+  };
 
   return (
     <Footer>
@@ -67,24 +100,30 @@ const AppFooter = () => {
           )}
           {/* TODO: Mark complete if not already completed otherwise, next page */}
           {MOVEMENT_MAX[parseInt(params.movement)] !== parseInt(params.item) ? (
-            <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}>
+            <LinkButton
+              to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}
+              onClick={handlePageCompletion}
+            >
               Next Page
             </LinkButton>
           ) : (
-            <LinkButton as="button">
+            <LinkButton as="button" onClick={completeAndRoute}>
               Complete{' '}
-              <>
-                {parseInt(params.movement) < 4
-                  ? `Movement ${params.movement}`
-                  : `the Last Movement`}
-              </>
+              {parseInt(params.movement) < 4 ? `Movement ${params.movement}` : `the Last Movement`}
             </LinkButton>
           )}
         </Row>
       ) : (
         <Row>
           <div />
-          <LinkButton as="button">Mark as Read</LinkButton>{' '}
+          <LinkButton as="button" onClick={completeAndRoute}>
+            {isComplete(completions, {
+              movement: 0,
+              page: 0,
+            })
+              ? 'Return Home'
+              : 'Mark as Read'}
+          </LinkButton>
         </Row>
       )}
       <Copyright>

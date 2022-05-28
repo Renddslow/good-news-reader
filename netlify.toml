@@ -27,7 +27,7 @@ status=200
 
 [[redirects]]
 from="/api/completions"
-to="/.netlify/functions/completion"
+to="/.netlify/functions/complete"
 status=200
 
 [[redirects]]

@@ -5,13 +5,32 @@ export type User = {
   firstName: string;
   lastName: string;
   email: string;
+  completions: Completion[];
+  links: Link[];
+};
+
+export type Completion = {
+  read_at: string;
+  movement: number;
+  page: number;
+};
+
+export type Link = {
+  collected_at: string;
+  movement: number;
+  page: number;
+  link: string;
 };
 
 export type AuthenticationContextType = {
   isAuthenticated: boolean;
   isLoading: boolean;
+  completions: Completion[];
+  links: Link[];
   user: User;
   getProfile: () => Promise<void>;
+  completePage: (movement: number, page: number) => Promise<void>;
+  collectLink: (link: string, movement: number, page: number) => Promise<void>;
 };
 
 const AuthenticationContext = createContext<AuthenticationContextType>({
@@ -19,8 +38,17 @@ const AuthenticationContext = createContext<AuthenticationContextType>({
   user: null,
 } as AuthenticationContextType);
 
+const post = (route: string, body: Record<string, unknown>) =>
+  fetch(route, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  }).then((d) => d.json());
+
 const AuthenticationProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [completions, setCompletions] = useState([]);
+  const [links, setLinks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -43,13 +71,41 @@ const AuthenticationProvider = ({ children }) => {
     getProfile();
   }, []);
 
+  useEffect(() => {
+    if (user) {
+      setCompletions(user.completions);
+      setLinks(user.links);
+    }
+  }, [user]);
+
+  const completePage = async (movement: number, page: number) => {
+    const completion = await post('/api/completions', {
+      movement,
+      page,
+    });
+    setCompletions((s) => [...s, completion]);
+  };
+
+  const collectLink = async (link: string, movement: number, page: number) => {
+    const linkResponse = await post('/api/links', {
+      link,
+      movement,
+      page,
+    });
+    setCompletions((s) => [...s, linkResponse]);
+  };
+
   return (
     <AuthenticationContext.Provider
       value={{
         user,
+        completions,
+        links,
         isAuthenticated,
         isLoading,
         getProfile,
+        completePage,
+        collectLink,
       }}
     >
       {children}
@@ -62,4 +118,9 @@ export default AuthenticationProvider;
 export const useAuthenticatedUser = () => {
   const { user, isAuthenticated, isLoading } = useContext(AuthenticationContext);
   return { user, isAuthenticated, isLoading };
+};
+
+export const useProgress = () => {
+  const { links, completions, completePage, collectLink } = useContext(AuthenticationContext);
+  return { links, completions, completePage, collectLink };
 };

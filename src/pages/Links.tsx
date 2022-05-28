@@ -4,10 +4,12 @@ import { Triangle } from 'phosphor-react';
 import ProgressWrapper from './styles/ProgressWrapper';
 import ProgressContainer from './styles/ProgressContainer';
 import ProgressTooltip from './styles/ProgressTooltip';
+import { useProgress } from '../providers/Authentication';
 
 const Progress = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const ref = createRef();
+  const { links } = useProgress();
 
   useEffect(() => {
     let cancel;
@@ -40,9 +42,9 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Triangle weight="bold" size="16" />
-        <span>0/50</span>
+        <span>{links.length}/50</span>
       </ProgressWrapper>
-      {showTooltip && <ProgressTooltip>You have collected 12 links.</ProgressTooltip>}
+      {showTooltip && <ProgressTooltip>You have collected {links.length} links.</ProgressTooltip>}
     </ProgressContainer>
   );
 };

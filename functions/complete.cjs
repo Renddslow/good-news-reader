@@ -58,10 +58,9 @@ const handler = async (event) => {
 
   await client.query(q.Create(q.Collection('completions'), { data: payload }));
 
-  return Promise.resolve({
-    ...response,
-    body: JSON.stringify(payload),
-  });
+  response.body = JSON.stringify(payload);
+
+  return Promise.resolve(response);
 };
 
 exports.handler = handler;

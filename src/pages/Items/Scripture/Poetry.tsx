@@ -34,7 +34,6 @@ const IndentableParagraph = styled.p<{ indent: number }>`
 `;
 
 const Poetry = ({ content }: Props) => {
-  console.log(content);
   return (
     <PoetryWrapper>
       {content.children.map((line) => (

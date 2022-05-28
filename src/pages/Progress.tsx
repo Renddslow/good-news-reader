@@ -4,10 +4,32 @@ import { BookmarkSimple } from 'phosphor-react';
 import ProgressWrapper from './styles/ProgressWrapper';
 import ProgressContainer from './styles/ProgressContainer';
 import ProgressTooltip from './styles/ProgressTooltip';
+import { useProgress } from '../providers/Authentication';
+
+const affirmation = (completions: number) => {
+  if (completions < 11) {
+    return 'Keep it up!';
+  }
+
+  if (completions === 11) {
+    return `You're half-way there!`;
+  }
+
+  if (completions < 16) {
+    return `You're really stickin' with it!`;
+  }
+
+  if (completions < 22) {
+    return `You're almost there!`;
+  }
+
+  return 'You did it!';
+};
 
 const Progress = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const ref = createRef();
+  const { completions } = useProgress();
 
   useEffect(() => {
     let cancel;
@@ -40,11 +62,17 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <BookmarkSimple weight="bold" size="16" />
-        <span>0/22</span>
+        <span>{completions.length}/22</span>
       </ProgressWrapper>
       {showTooltip && (
         <ProgressTooltip>
-          You have read through 12 pages so far for the Revelation reading challenge. Keep it up!
+          {completions.length > 0
+            ? `You have read through ${
+                completions.length
+              } pages so far for the Revelation reading challenge. ${affirmation(
+                completions.length,
+              )}`
+            : `You haven't read through any pages yet, complete this page to get your first!`}
         </ProgressTooltip>
       )}
     </ProgressContainer>
