@@ -8,6 +8,7 @@ import Movement from './Movement';
 import Item from './Item';
 import Text from '../../components/Text';
 import ProfileButton from './ProfileButton';
+import CompletionTag from '../../components/CompletionTag';
 
 const Wrapper = styled.div`
   max-width: 600px;
@@ -62,7 +63,7 @@ const Header = styled.header`
 `;
 
 const isComplete = (completions, movement: number, page: number) =>
-  !!completions.find((p) => p.movement === movement && p.page === page);
+  completions.find((p) => p.movement === movement && p.page === page);
 
 const Read = () => {
   const { user } = useAuthenticatedUser();
@@ -83,6 +84,7 @@ const Read = () => {
           <div>
             <Text>A new way of reading John's apocalypse</Text>
             <Link to="/read/movement/intro">See How it Works</Link>
+            {introComplete && <CompletionTag completedAt={introComplete.read_at as Date} />}
           </div>
           {/* PLACEHOLDER - DO NOT SHIP */}
           <img src="https://dma9sdczpu5q0.cloudfront.net/media/explore-v2/How%20to%20Read%20the%20Bible/Poetry/Apocalyptic%20Literature/poetry-apocolyptic_standard.png?q=65&fit=max&w=600" />
