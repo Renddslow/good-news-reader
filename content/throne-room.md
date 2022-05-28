@@ -3,7 +3,7 @@ of step with the rest of the book. For that reason, a lot of
 people tend to approach them as if they are two entirely different
 messages.
 
-You're got the **prologue** in which God's Spirit
+You've got the **prologue** in which God's Spirit
 instructs John to write to seven churches scattered throughout
 modern-day Turkey. There are seven letters, but really, there is
 just one message: remain faithful to Jesus.
@@ -22,3 +22,6 @@ who the main character of this book really is. It's not some
 antichrist, beast, or dragon. It's not even the saints, the
 martyrs, or the overcomers. The book of Revelation is an act of
 worship of the Triune God and an invitation to join in that worship.
+
+_Don't feel rushed to read every page in one day. Read
+thoughtfully and at an unhurried pace._

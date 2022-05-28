@@ -8,7 +8,7 @@ type Props = {
   reference: string;
   title: string;
   children: React.ReactElement[];
-  locked: boolean;
+  locked?: boolean;
   unlocks: Date;
 };
 
@@ -134,7 +134,7 @@ const Movement = ({
   title,
   children,
   first = false,
-  locked,
+  locked = false,
   unlocks,
 }: Props) => {
   const [open, setOpen] = useState(false);
