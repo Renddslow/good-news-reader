@@ -7,6 +7,7 @@ import Read from './pages/Read';
 import Item from './pages/Items';
 import ReadHeader from './pages/ReadHeader';
 import Intro from './pages/Intro';
+import Profile from './pages/Profile';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -36,10 +37,10 @@ const App = () => {
           }
         />
         <Route
-          path="/account"
+          path="/profile"
           element={
             <RequireAuth>
-              <div>Hello</div>
+              <Profile />
             </RequireAuth>
           }
         />

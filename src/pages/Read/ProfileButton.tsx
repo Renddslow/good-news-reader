@@ -23,7 +23,7 @@ const ButtonWrapper = styled(Link)`
 `;
 
 const ProfileButton = () => (
-  <ButtonWrapper to="">
+  <ButtonWrapper to="/profile">
     <span>Profile</span>
     <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" viewBox="0 0 256 256">
       <circle cx="128" cy="96" r="64" strokeMiterlimit="10" strokeWidth="16" />

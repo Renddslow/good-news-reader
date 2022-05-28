@@ -6,7 +6,7 @@ import Progress from './Progress';
 import Home from './Home';
 import Links from './Links';
 
-const Header = styled.header`
+export const Header = styled.header`
   display: flex;
   justify-content: end;
   align-items: center;
