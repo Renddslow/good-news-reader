@@ -58,6 +58,7 @@ const AuthenticationProvider = ({ children }) => {
       if (d.status >= 400) {
         setUser(null);
         setIsAuthenticated(null);
+        setIsLoading(false);
         return null;
       }
 

@@ -13,8 +13,6 @@ const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
   const location = useLocation();
 
-  console.log({ isAuthenticated, isLoading });
-
   if (isLoading) {
     return <div />;
   }
