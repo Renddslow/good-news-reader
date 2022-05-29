@@ -1,17 +1,19 @@
 import React from 'react';
-import { Info, BookmarkSimple } from 'phosphor-react';
+import { Info } from 'phosphor-react';
 import styled from 'styled-components';
 import { default as ColorHash } from 'color-hash';
 
-import { useProgress } from '../../providers/Authentication';
+import { useAuthenticatedUser, useProgress } from '../../providers/Authentication';
 import { FadeInWrapper } from '../Items';
 import { Header } from '../ReadHeader';
 import Home from '../Home';
 import withData from '../Items/withData';
-import CompletionTag from '../../components/CompletionTag';
 import Empty from './Empty';
+import ProgressCard from './ProgressCard';
 
-const GridHeader = styled.div``;
+const GridHeader = styled.div`
+  margin-top: 32px;
+`;
 
 const Wrapper = styled.div`
   max-width: 600px;
@@ -70,11 +72,10 @@ const getChapter = (ch: string) => {
 
 const Profile = ({ loading, data }) => {
   const { completions, links } = useProgress();
-
-  const color = new ColorHash.default();
+  const { user } = useAuthenticatedUser();
 
   const filteredCompletions = !loading
-    ? [{ title: 'Introduction', movement: 0, item: 0 }, ...data].filter((item) =>
+    ? [{ title: 'Introduction', movement: 0, item: 0 }, ...data.plan].filter((item) =>
         isComplete(completions, item.movement, item.item),
       )
     : [];
@@ -87,6 +88,11 @@ const Profile = ({ loading, data }) => {
       <Wrapper>
         {!loading && (
           <FadeInWrapper>
+            <h2 style={{ marginBottom: 12 }}>Shalom, {user.firstName}!</h2>
+            <p>
+              This is your profile. Every page you've read and link you've collected is tracked
+              below.
+            </p>
             <GridHeader>
               <h2>Links</h2>
               <Information>
@@ -96,9 +102,23 @@ const Profile = ({ loading, data }) => {
                 the readings and look for the missing link so you can experience the Bible as
                 unified, meditation literature.
               </Information>
-              <Empty label="You haven't collected any links yet." />
             </GridHeader>
-            <Grid />
+            {!links.length ? (
+              <Empty label="You haven't collected any links yet." />
+            ) : (
+              <Grid>
+                {links.map((link) => (
+                  <ProgressCard
+                    key={link.link}
+                    movement={link.movement}
+                    page={link.page}
+                    title={data.hyperlinks[link.link].title}
+                    done={link.collected_at}
+                    type="link"
+                  />
+                ))}
+              </Grid>
+            )}
             <GridHeader>
               <h2>Pages</h2>
               <Information>
@@ -115,32 +135,28 @@ const Profile = ({ loading, data }) => {
                 on it.
               </Information>
             </GridHeader>
-            <Grid>
-              {!filteredCompletions.length ? (
-                <Empty label="You haven't read any pages yet." />
-              ) : (
-                filteredCompletions.map((asset) => (
-                  <Card key={`${asset.movement}-${asset.item}`}>
-                    <BookmarkSimple
-                      weight="duotone"
-                      size={48}
-                      color={color.hex(JSON.stringify(asset))}
-                    />
-                    <div>
-                      <h3>
-                        {asset.title ||
-                          `Revelation ${getChapter(asset.start.chapter)}:${
-                            asset.start.verse
-                          }-${getChapter(asset.end.chapter)}:${asset.end.verse}`}
-                      </h3>
-                      <CompletionTag
-                        completedAt={isComplete(completions, asset.movement, asset.item).read_at}
-                      />
-                    </div>
-                  </Card>
-                ))
-              )}
-            </Grid>
+
+            {!filteredCompletions.length ? (
+              <Empty label="You haven't read any pages yet." />
+            ) : (
+              <Grid>
+                {filteredCompletions.map((asset) => (
+                  <ProgressCard
+                    key={`${asset.movement}-${asset.item}`}
+                    type="progress"
+                    movement={asset.movement}
+                    page={asset.page}
+                    title={
+                      asset.title ||
+                      `Revelation ${getChapter(asset.start.chapter)}:${
+                        asset.start.verse
+                      }-${getChapter(asset.end.chapter)}:${asset.end.verse}`
+                    }
+                    done={isComplete(completions, asset.movement, asset.item).read_at}
+                  />
+                ))}
+              </Grid>
+            )}
           </FadeInWrapper>
         )}
       </Wrapper>
