@@ -1,0 +1,38 @@
+{
+  "meditation-literature": {
+    "description": "<p>John here affirms a theme that we see appear twice in the Hebrew Bible: the one who meditates (Hebrew: <em>hagah</em>) on Scripture day and night is blessed. Read this short snippet from the opening chapter of Joshua and the first Psalm.</p><p>And interesting note: these two admonitions to meditate on Scripture are the two seams linking the TaNaK (the Hebrew ordering of the Old Testament that Jesus grew up with) together.",
+    "readings": [
+      {
+        "ref": "jos1",
+        "title": "Joshua 1:7-8"
+      },
+      {
+        "ref": "psa1",
+        "title": "Psalm 1"
+      }
+    ]
+  },
+  "royal-priests": {
+    "description": "<p>The theme of priesthood is one that begins in Genesis chapter 1 and 2 and continues to unfurl in magnificent – and often confusing – ways throughout the storyline of Scripture. Ultimately we see two themes play out. Throughout the Bible we see God calling a specific set of people out of their current cultural context to be priests – mediators of God's goodness, blessing, and grace – to the nations.</p><p>We see this call given to Adam and Eve, to the Israelites, then the Levites (a specific tribe within Israel), and then to a specific family within the Levites. Each call bore with it the idea that all humans were meant to carry on God's goodness and blessing to the world. That was the call to Israel in Exodus 19. Peter picks up this call in 1 Peter 2, calling the whole Christian community a kingdom of priests just like Israel was supposed to be.</p><p>When we see priest in the Bible, we also think about specially anointed (Hebrew: <em>meshiakh</em> or Messiah) person who goes between the people and YHWH and is able to forgive sins.</p><p>In the New Testament we discover that all of these specially anointed people were a template for the work of grace and salvation Jesus was ultimately bringing.</p>",
+    "readings": [
+      {
+        "ref": "exo19",
+        "title": "Exodus 19:5-8"
+      },
+      {
+        "ref": "1pt2",
+        "title": "1 Peter 2:9"
+      }
+    ]
+  },
+  "numbers": {},
+  "son-of-man-1": {},
+  "son-of-man-2": {},
+  "hinge-1": {},
+  "seven-lampstands": {},
+  "ancient-of-days": {},
+  "reverence": {},
+  "jezebel": {},
+  "wisdom-rebuke": {},
+  "bear-the-name": {}
+}

@@ -29,7 +29,7 @@ pierced Him; and all the tribes of the earth will mourn over Him. So it is to be
 {9} I, John, your brother and fellow participant in the 
 tribulation and kingdom and perseverance in Jesus, was on the 
 island called Patmos because of the word of God and the testimony 
-of Jesus. {10} I was [[hinge|in the Spirit]] on the Lord’s 
+of Jesus. {10} I was [[hinge-1|in the Spirit]] on the Lord’s 
 day, and I 
 heard behind me a loud voice like the sound of a trumpet, {11} saying, “Write on a scroll what you see, and send it to the seven churches: to Ephesus, Smyrna, Pergamum, Thyatira, Sardis, Philadelphia, and Laodicea.”
 

@@ -84,13 +84,13 @@ const Read = () => {
           <div>
             <Text>A new way of reading John's apocalypse</Text>
             <Link to="/read/movement/intro">See How it Works</Link>
-            {introComplete && <CompletionTag completedAt={introComplete.read_at as Date} />}
+            {introComplete && <CompletionTag completedAt={introComplete.read_at} />}
           </div>
-          {/* PLACEHOLDER - DO NOT SHIP */}
           <img src="https://dma9sdczpu5q0.cloudfront.net/media/explore-v2/How%20to%20Read%20the%20Bible/Poetry/Apocalyptic%20Literature/poetry-apocolyptic_standard.png?q=65&fit=max&w=600" />
         </IntroCard>
         <div className="movements">
           <Movement
+            illustration="/cherubim.png"
             title="Prologue + Movement 1"
             reference="1:1-3:22"
             first
@@ -133,6 +133,7 @@ const Read = () => {
             />
           </Movement>
           <Movement
+            illustration="/lamb.png"
             title="Movement 2"
             reference="4:1-16:21"
             locked={isBefore(today, new Date(2022, 5, 5))}
@@ -189,6 +190,7 @@ const Read = () => {
             />
           </Movement>
           <Movement
+            illustration="/woman.png"
             title="Movement 3"
             reference="17:1-21:8"
             locked={isBefore(today, new Date(2022, 5, 19))}
@@ -224,6 +226,7 @@ const Read = () => {
             />
           </Movement>
           <Movement
+            illustration="/temple.png"
             title="Movement 4 + Epilogue"
             reference="21:9-22:21"
             locked={isBefore(today, new Date(2022, 5, 26))}
