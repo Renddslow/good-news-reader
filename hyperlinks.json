@@ -1,7 +1,7 @@
 {
   "meditation-literature": {
     "title": "Meditation Literature",
-    "description": "<p>John here affirms a theme that we see appear twice in the Hebrew Bible: the one who meditates (Hebrew: <em>hagah</em>) on Scripture day and night is blessed. Read this short snippet from the opening chapter of Joshua and the first Psalm.</p><p>And interesting note: these two admonitions to meditate on Scripture are the two seams linking the TaNaK (the Hebrew ordering of the Old Testament that Jesus grew up with) together.",
+    "description": "<p>John here affirms a theme that we see appear twice in the Hebrew Bible: the one who meditates (Hebrew: <em>hagah</em>) on Scripture day and night is blessed. Read this short snippet from the opening chapter of Joshua and the first Psalm.</p><p>An interesting note: these two admonitions to meditate on Scripture are the two seams linking the TaNaK (the Hebrew ordering of the Old Testament that Jesus grew up with) together.",
     "readings": [
       {
         "ref": "jos1",
@@ -33,7 +33,11 @@
     "readings": [
       {
         "ref": "num22",
-        "title": "Numbers 22:1-6, 24:1-19"
+        "title": "Numbers 22:1-6"
+      },
+      {
+        "ref": "num24",
+        "title": "Numbers 24:1-19"
       },
       { "ref": "num25", "title": "Numbers 25:1-13" }
     ]

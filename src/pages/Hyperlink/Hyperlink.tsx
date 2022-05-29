@@ -1,8 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link, useParams } from 'react-router-dom';
 import { X } from 'phosphor-react';
+
 import { ButtonWrapper } from '../Read/ProfileButton';
+import Markdown from '../Items/Markdown';
+import { ParagraphBlock } from '../Items/Scripture/Paragraph';
+import { PoetryBlock } from '../Items/Scripture/Poetry';
+import Scripture from '../Items/Scripture';
+import { LinkButton } from '../Footer';
+import { useProgress } from '../../providers/Authentication';
 
 const slideUp = keyframes`
   from {
@@ -49,10 +56,37 @@ const Wrapper = styled.div`
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
+  overflow: scroll;
+  height: 100%;
+  padding: 0 4px 56px;
+
+  h2 {
+    margin-top: 24px;
+  }
+
+  ${LinkButton} {
+    width: max-content;
+    margin: 48px auto 0;
+  }
 `;
+
+type HyperlinkReading = {
+  ref: string;
+  title: string;
+  content: (ParagraphBlock | PoetryBlock)[];
+};
+
+type HyperlinkType = {
+  title: string;
+  description: string;
+  readings: HyperlinkReading[];
+};
 
 const Hyperlink = () => {
   const params = useParams();
+  const [data, setData] = useState<HyperlinkType>({} as HyperlinkType);
+  const [loading, setLoading] = useState(true);
+  const { links, collectLink } = useProgress();
 
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -64,12 +98,57 @@ const Hyperlink = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/assets/hyperlink.${params.hyperlink}.json`)
+      .then((d) => d.json())
+      .then((d) => setData(d))
+      .then(() => setLoading(false));
+  }, [params]);
+
+  const handleCollectLink = () => {
+    if (!links.find(({ link }) => link === params.hyperlink)) {
+      collectLink(params.hyperlink, parseInt(params.movement, 10), parseInt(params.item, 10));
+    }
+  };
+
   return (
     <HyperlinkWrapper>
       <ButtonWrapper to={`/read/movement/${params.movement}/${params.item}`}>
         <span>Close</span> <X />
       </ButtonWrapper>
-      <Wrapper>Hello</Wrapper>
+      <Wrapper>
+        {!loading && (
+          <>
+            <Markdown
+              data={{
+                title: data.title,
+                content: data.description,
+              }}
+            />
+            <div>
+              {data.readings.map((reading) => (
+                <div key={reading.ref}>
+                  <h2>{reading.title}</h2>
+                  <Scripture data={{ content: reading.content }} includeTitle={false} />
+                </div>
+              ))}
+            </div>
+          </>
+        )}
+        {!links.find(({ link }) => link === params.hyperlink) ? (
+          <LinkButton
+            to={`/read/movement/${params.movement}/${params.item}`}
+            onClick={handleCollectLink}
+          >
+            Collect Link
+          </LinkButton>
+        ) : (
+          <LinkButton to={`/read/movement/${params.movement}/${params.item}`}>
+            Return to the Reading
+          </LinkButton>
+        )}
+      </Wrapper>
     </HyperlinkWrapper>
   );
 };

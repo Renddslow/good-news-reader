@@ -15,7 +15,7 @@ const Copyright = styled.p`
   margin-top: 16px;
 `;
 
-const LinkButton = styled(Link)`
+export const LinkButton = styled(Link)`
   font-size: 14px;
   padding: 12px 16px;
   font-weight: 600;

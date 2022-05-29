@@ -11,7 +11,7 @@ type PoetryLine = {
   children: InlineType[];
 };
 
-type PoetryBlock = {
+export type PoetryBlock = {
   type: 'poetry';
   children: PoetryLine[];
 };

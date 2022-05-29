@@ -88,8 +88,14 @@ const convertVerseToEndVerse = (verse) => {
 };
 
 const parseMarkdown = async (content, pathname) => {
-  const ref = path.basename(pathname, '.md').replace(/(\d*)$/, ' $1');
+  const [ref] = path
+    .basename(pathname, '.md')
+    .replace(/(\d*)$/, ' $1')
+    .split('.');
   const chapterVerse = cv(ref);
+  if (!chapterVerse?.book?.id) {
+    console.log(chapterVerse, ref);
+  }
   const value = content.trim();
 
   let lastVerse;

@@ -1,0 +1,2 @@
+---!p
+{20} “Behold, I am going to send an angel before you to guard you along the way and to bring you into the place which I have prepared. {21} Be attentive to him and obey his voice; do not be rebellious toward him, for he will not pardon your rebellion, since My name is in him. {22} But if you truly obey his voice and do all that I say, then I will be an enemy to your enemies and an adversary to your adversaries.

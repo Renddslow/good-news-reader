@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Inline as InlineType } from './types';
 import Inline from './Inline';
 
-type ParagraphBlock = {
+export type ParagraphBlock = {
   type: 'paragraph';
   children: InlineType[];
 };
