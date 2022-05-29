@@ -64,7 +64,11 @@ const Login = () => {
 
   const handleLogin = async (email: string) => {
     setSubmitting(true);
-    await sleep();
+    await fetch('/api/user', {
+      method: 'POST',
+      body: JSON.stringify({ email }),
+      headers: { 'Content-Type': 'application/json' },
+    });
     setSubmitted(true);
     setSubmitting(false);
   };

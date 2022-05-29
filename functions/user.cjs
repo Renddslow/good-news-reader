@@ -112,7 +112,12 @@ const handler = async (event) => {
 
   await sgMail
     .send({
-      html: emailBody(token, firstName, lastName, email),
+      html: emailBody(
+        token,
+        user?.data?.firstName || firstName,
+        user?.data?.lastName || lastName,
+        email,
+      ),
       to: email,
       from: {
         email: 'no-reply@flatland.church',
@@ -122,7 +127,7 @@ const handler = async (event) => {
         email: 'mubatt@wyopub.com',
         name: 'Matt McElwee',
       },
-      subject: `${firstName}, Your magic link for the Revelation Reader`,
+      subject: `${user?.data?.firstName || firstName}, Your magic link for the Revelation Reader`,
     })
     .catch((e) => {
       console.log(e);
