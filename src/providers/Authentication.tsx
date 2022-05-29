@@ -93,7 +93,7 @@ const AuthenticationProvider = ({ children }) => {
       movement,
       page,
     });
-    setCompletions((s) => [...s, linkResponse]);
+    setLinks((s) => [...s, linkResponse]);
   };
 
   return (

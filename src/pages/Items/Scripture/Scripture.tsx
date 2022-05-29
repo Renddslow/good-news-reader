@@ -1,5 +1,5 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import { ContentWrapper } from '../Markdown/Markdown';
 import Poetry from './Poetry';
@@ -22,9 +22,23 @@ const getReference = (ref: Ref) => {
 };
 
 const Scripture = ({ data, includeTitle = true }) => {
+  const location = useLocation();
   const title = includeTitle
     ? `Revelation ${getReference(data.start)}-${getReference(data.end)}`
     : '';
+
+  useEffect(() => {
+    let cancel;
+    if (location.hash) {
+      cancel = setTimeout(() => {
+        document.getElementById(location.hash.replace('#', '')).scrollIntoView({
+          block: 'center',
+        });
+      }, 400);
+    }
+
+    return () => clearTimeout(cancel);
+  }, [location.hash]);
 
   return (
     <>

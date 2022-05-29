@@ -114,7 +114,7 @@ const Hyperlink = () => {
 
   return (
     <HyperlinkWrapper>
-      <ButtonWrapper to={`/read/movement/${params.movement}/${params.item}`}>
+      <ButtonWrapper to={`/read/movement/${params.movement}/${params.item}#${params.hyperlink}`}>
         <span>Close</span> <X />
       </ButtonWrapper>
       <Wrapper>
@@ -127,24 +127,25 @@ const Hyperlink = () => {
               }}
             />
             <div>
-              {data.readings.map((reading) => (
-                <div key={reading.ref}>
-                  <h2>{reading.title}</h2>
-                  <Scripture data={{ content: reading.content }} includeTitle={false} />
-                </div>
-              ))}
+              {data.readings &&
+                data.readings.map((reading) => (
+                  <div key={reading.ref}>
+                    <h2>{reading.title}</h2>
+                    <Scripture data={{ content: reading.content }} includeTitle={false} />
+                  </div>
+                ))}
             </div>
           </>
         )}
         {!links.find(({ link }) => link === params.hyperlink) ? (
           <LinkButton
-            to={`/read/movement/${params.movement}/${params.item}`}
+            to={`/read/movement/${params.movement}/${params.item}#${params.hyperlink}`}
             onClick={handleCollectLink}
           >
             Collect Link
           </LinkButton>
         ) : (
-          <LinkButton to={`/read/movement/${params.movement}/${params.item}`}>
+          <LinkButton to={`/read/movement/${params.movement}/${params.item}#${params.hyperlink}`}>
             Return to the Reading
           </LinkButton>
         )}
