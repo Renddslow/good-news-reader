@@ -1,5 +1,6 @@
 {
   "meditation-literature": {
+    "title": "Meditation Literature",
     "description": "<p>John here affirms a theme that we see appear twice in the Hebrew Bible: the one who meditates (Hebrew: <em>hagah</em>) on Scripture day and night is blessed. Read this short snippet from the opening chapter of Joshua and the first Psalm.</p><p>And interesting note: these two admonitions to meditate on Scripture are the two seams linking the TaNaK (the Hebrew ordering of the Old Testament that Jesus grew up with) together.",
     "readings": [
       {
@@ -13,6 +14,7 @@
     ]
   },
   "royal-priests": {
+    "title": "Royal Priests",
     "description": "<p>The theme of priesthood is one that begins in Genesis chapter 1 and 2 and continues to unfurl in magnificent – and often confusing – ways throughout the storyline of Scripture. Ultimately we see two themes play out. Throughout the Bible we see God calling a specific set of people out of their current cultural context to be priests – mediators of God's goodness, blessing, and grace – to the nations.</p><p>We see this call given to Adam and Eve, to the Israelites, then the Levites (a specific tribe within Israel), and then to a specific family within the Levites. Each call bore with it the idea that all humans were meant to carry on God's goodness and blessing to the world. That was the call to Israel in Exodus 19. Peter picks up this call in 1 Peter 2, calling the whole Christian community a kingdom of priests just like Israel was supposed to be.</p><p>When we see priest in the Bible, we also think about specially anointed (Hebrew: <em>meshiakh</em> or Messiah) person who goes between the people and YHWH and is able to forgive sins.</p><p>In the New Testament we discover that all of these specially anointed people were a template for the work of grace and salvation Jesus was ultimately bringing.</p>",
     "readings": [
       {
@@ -25,14 +27,99 @@
       }
     ]
   },
-  "numbers": {},
-  "son-of-man-1": {},
-  "son-of-man-2": {},
-  "hinge-1": {},
-  "seven-lampstands": {},
-  "ancient-of-days": {},
-  "reverence": {},
-  "jezebel": {},
-  "wisdom-rebuke": {},
-  "bear-the-name": {}
+  "numbers": {
+    "title": "Balak",
+    "description": "<p>John mentions these characters of Balak and Balaam here. These characters are two enemies of Israel who show up during Israel's desert wanderings at the end of the book of Numbers. They engage in two attempts to undermine God's people.</p><p>Balak was king of the Moabites, and he feared that the Israelites were going to mean trouble for him and his people. Instead of treating them with hospitality and openness, he chooses the way of scarcity. In fact, his statement to the elders of Moab sounds eerily familiar to the Pharaoh of Exodus 1. Balak hires a shaman named Balaam to curse the Israelites. When that fails, he tries to send women into the camp to entice men not only to sexual immorality, but to forsake YHWH in favor of Moabite gods.</p><p>It is through YHWH's own faithfulness against the powers of Balaam and the zeal and faithfulness of Phinehas the young priest that ultimately win the day and thwart Balak's schemes.</p>",
+    "readings": [
+      {
+        "ref": "num22",
+        "title": "Numbers 22:1-6, 24:1-19"
+      },
+      { "ref": "num25", "title": "Numbers 25:1-13" }
+    ]
+  },
+  "son-of-man-1": {
+    "title": "Son of Man I",
+    "description": "<p>We have a lot of words and titles we give to Jesus: Lord, Son of God, Messiah. But during his life and ministry, Jesus used one more than any other to describe himself: Son of Man.</p><p>The language and imagery around this title originate in Daniel 7. It's so important and so common a hyperlink that appears in the New Testament we'll revisit this section of Daniel every time a hyperlink appears in Revelation. Meditate on it.</p>",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      },
+      {
+        "ref": "mrk14",
+        "title": "Mark 14:55-64"
+      }
+    ]
+  },
+  "son-of-man-2": {
+    "title": "Son of Man II",
+    "description": "<p>Yet another example of John's use of the Son of Man imagery, so back again we go to Daniel 7.</p>",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      }
+    ]
+  },
+  "hinge-1": {
+    "title": "Hinge I",
+    "description": "<p>This is our first hinge in the literary structure of the book of Revelation. John uses this phrase, \"In the Spirit\" four times in total, and each time it marks a shift in the subject matter between each hinge. With this we see that we're moving out of the prologue and into our first movement.</p>"
+  },
+  "seven-lampstands": {
+    "description": "<p>The image of the lampstands come to us from a vision of the prophet Zechariah. Zechariah lived after the Babylonian exile in a time when the people of Israel were coming into a newly restored Temple. They were once again called to live in faithfulness and obedience to God's teaching as they waited for the coming of God's Messiah.</p><p>This imagery is a bit puzzling, but meditating on Zechariah 4 brings the first movement of Revelation into surprising conversation with the prophet.</p>",
+    "readings": [
+      {
+        "ref": "zec4",
+        "title": "Zechariah 4"
+      }
+    ]
+  },
+  "ancient-of-days": {
+    "title": "Ancient of Days",
+    "description": "<p>Once again we return to Daniel 7 imagery. This time we see the imagery applied to the Ancient of Days applied to Jesus. Excitingly, this affirms Jesus' divinity while connecting God the Father with him, a subtle image of the Trinity in the opening pages of Revelation.</p>",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      }
+    ]
+  },
+  "reverence": {
+    "title": "Reverence",
+    "description": "<p>Appearance of God in his glory are always different throughout Scripture. Sometimes there is a whirlwind, sometimes a still small voice. But in almost all cases, the human response is the same: awe and reverence.</p><p>There are many examples of this throughout Scripture, but these two examples are worth your meditation.</p>",
+    "readings": [
+      {
+        "ref": "exo34",
+        "title": "Exodus 34:5-8"
+      },
+      {
+        "ref": "ezk1",
+        "title": "Ezekiel 1:4-28"
+      }
+    ]
+  },
+  "jezebel": {
+    "title": "Jezebel",
+    "description": "<p>Often the template of a femme fatale, Jezebel is a chief example of why the people of Israel – and especially their rulers – were warned against marrying outside the nation of Israel. It wasn't because every foreign woman was evil or incapable of faithfulness to YHWH (look at Rahab and Ruth). Instead, the marriage of foreign women brought with it the risk that she might bring to the family her traditions and gods.</p><p>This was totally normal in the Ancient Near East, a little mixing of pantheons and traditions was no big thing. But the Israelites were called to strict worship of YHWH, there was no room for other gods in Israel.</p><p>Now I said that not every woman was evil, just that they might be an introduction to foreign worship. It so happens, that Jezebel was both.</p>",
+    "readings": [{ "ref": "1ki21", "title": "1 Kings 21" }]
+  },
+  "bear-the-name": {
+    "title": "Bear the Name",
+    "description": "<p></p>",
+    "readings": [
+      {
+        "ref": "exo20.7",
+        "title": "Exodus 20:7"
+      },
+      {
+        "ref": "exo23",
+        "title": "Exodus 23:20-22"
+      },
+      {
+        "ref": "deu12",
+        "title": "Deuteronomy 12:4-7"
+      }
+    ]
+  }
 }
