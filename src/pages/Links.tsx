@@ -42,9 +42,14 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Triangle weight="bold" size="16" />
-        <span>{links.length}/50</span>
+        <span>{links.length}/15</span>
       </ProgressWrapper>
-      {showTooltip && <ProgressTooltip>You have collected {links.length} links.</ProgressTooltip>}
+      {showTooltip && (
+        <ProgressTooltip>
+          You have collected {links.length} links. (The total count represents the current number of
+          links unlocked)
+        </ProgressTooltip>
+      )}
     </ProgressContainer>
   );
 };

@@ -23,7 +23,7 @@ const Tag = styled.div`
 `;
 
 type Props = {
-  completedAt: Date;
+  completedAt: string;
   type?: 'read' | 'collect';
 };
 

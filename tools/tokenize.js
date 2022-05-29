@@ -28,7 +28,7 @@ const tokenize = (value) => {
       i += 1;
       string += ']]';
       inLink = false;
-      tokens.push(string);
+      tokens.push(string.replace(/[\n\r]+/, ''));
       string = '';
       continue;
     }

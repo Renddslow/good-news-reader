@@ -30,6 +30,7 @@ const LinkButton = styled(Link)`
   text-align: center;
   border: 0;
   appearance: none;
+  cursor: pointer;
 
   &:first-child {
     opacity: 0.8;

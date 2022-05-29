@@ -9,6 +9,7 @@ import { Header } from '../ReadHeader';
 import Home from '../Home';
 import withData from '../Items/withData';
 import CompletionTag from '../../components/CompletionTag';
+import Empty from './Empty';
 
 const GridHeader = styled.div``;
 
@@ -62,10 +63,21 @@ const Card = styled.div`
 const isComplete = (completions, movement: number, page: number) =>
   completions.find((p) => p.movement === movement && p.page === page);
 
+const getChapter = (ch: string) => {
+  const [, chapter] = /([\d]+)$/.exec(ch);
+  return parseInt(chapter, 10);
+};
+
 const Profile = ({ loading, data }) => {
   const { completions, links } = useProgress();
 
   const color = new ColorHash.default();
+
+  const filteredCompletions = !loading
+    ? [{ title: 'Introduction', movement: 0, item: 0 }, ...data].filter((item) =>
+        isComplete(completions, item.movement, item.item),
+      )
+    : [];
 
   return (
     <>
@@ -79,10 +91,12 @@ const Profile = ({ loading, data }) => {
               <h2>Links</h2>
               <Information>
                 <Info weight="bold" />
-                These are all the links you've collected from the readings so far. If you missed
-                one, head back into that reading and look for the missing link so you can experience
-                the Bible as unified, meditation literature.
+                These are all the links you've collected from the readings so far. There are{' '}
+                <strong>12</strong> collectable links unlocked. If you missed one, head back into
+                the readings and look for the missing link so you can experience the Bible as
+                unified, meditation literature.
               </Information>
+              <Empty label="You haven't collected any links yet." />
             </GridHeader>
             <Grid />
             <GridHeader>
@@ -102,9 +116,10 @@ const Profile = ({ loading, data }) => {
               </Information>
             </GridHeader>
             <Grid>
-              {[{ title: 'Introduction', movement: 0, item: 0 }, ...data]
-                .filter((item) => isComplete(completions, item.movement, item.item))
-                .map((asset) => (
+              {!filteredCompletions.length ? (
+                <Empty label="You haven't read any pages yet." />
+              ) : (
+                filteredCompletions.map((asset) => (
                   <Card key={`${asset.movement}-${asset.item}`}>
                     <BookmarkSimple
                       weight="duotone"
@@ -112,13 +127,19 @@ const Profile = ({ loading, data }) => {
                       color={color.hex(JSON.stringify(asset))}
                     />
                     <div>
-                      <h3>{asset.title || ''}</h3>
+                      <h3>
+                        {asset.title ||
+                          `Revelation ${getChapter(asset.start.chapter)}:${
+                            asset.start.verse
+                          }-${getChapter(asset.end.chapter)}:${asset.end.verse}`}
+                      </h3>
                       <CompletionTag
                         completedAt={isComplete(completions, asset.movement, asset.item).read_at}
                       />
                     </div>
                   </Card>
-                ))}
+                ))
+              )}
             </Grid>
           </FadeInWrapper>
         )}
