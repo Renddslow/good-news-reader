@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 import { ContentWrapper } from '../Markdown/Markdown';
 import Poetry from './Poetry';
@@ -36,6 +37,7 @@ const Scripture = ({ data, includeTitle = true }) => {
             <Paragraph key={hash(JSON.stringify(block))} content={block} />
           ),
         )}
+        <Outlet />
       </ContentWrapper>
     </>
   );

@@ -28,7 +28,11 @@ const Inline = ({ content }: Props) => {
         }
 
         if (char.type === 'hyperlink') {
-          return <Hyperlink key={hash(JSON.stringify(char))}>{char.content}</Hyperlink>;
+          return (
+            <Hyperlink key={hash(JSON.stringify(char))} to={`hyperlinks/${char.link}`}>
+              {char.content}
+            </Hyperlink>
+          );
         }
 
         if (char.type === 'char' && char.style === 'bold') {

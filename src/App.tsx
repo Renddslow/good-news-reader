@@ -8,6 +8,7 @@ import Item from './pages/Items';
 import ReadHeader from './pages/ReadHeader';
 import Intro from './pages/Intro';
 import Profile from './pages/Profile';
+import Hyperlink from './pages/Hyperlink';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -68,7 +69,7 @@ const App = () => {
               </RequireAuth>
             }
           >
-            <Route path="hyperlinks/:hyperlink" />
+            <Route path="hyperlinks/:hyperlink" element={<Hyperlink />} />
           </Route>
           <Route
             path="intro"

@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Hyperlink = styled.span`
+const Hyperlink = styled(Link)`
+  text-decoration: none;
   position: relative;
   box-sizing: border-box;
   padding: 0 6px;
@@ -9,6 +11,8 @@ const Hyperlink = styled.span`
   background: linear-gradient(0deg, var(--light-purple) 50%, #fff0);
   display: inline-block;
   cursor: pointer;
+  font-weight: 400;
+  color: #000;
 
   &::after {
     content: '';
