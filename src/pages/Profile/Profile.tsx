@@ -98,9 +98,9 @@ const Profile = ({ loading, data }) => {
               <Information>
                 <Info weight="bold" />
                 These are all the links you've collected from the readings so far. There are{' '}
-                <strong>12</strong> collectable links unlocked. If you missed one, head back into
-                the readings and look for the missing link so you can experience the Bible as
-                unified, meditation literature.
+                <strong>{Object.keys(data.hyperlinks).length}</strong> collectable links unlocked.
+                If you missed one, head back into the readings and look for the missing link so you
+                can experience the Bible as unified, meditation literature.
               </Information>
             </GridHeader>
             {!links.length ? (
