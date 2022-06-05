@@ -173,5 +173,124 @@
         "title": "1 Corinthians 5:7b-8a"
       }
     ]
+  },
+  "horsemen": {
+    "title": "The Four Horsemen of the Apocalypse",
+    "description": "",
+    "readings": [
+      {
+        "ref": "zec1",
+        "title": "Zechariah 1"
+      }
+    ]
+  },
+  "the-day-1": {
+    "title": "The Day of the Lord",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa2.12",
+        "title": "Isaiah 2:12-21"
+      }
+    ]
+  },
+  "enthroned": {
+    "title": "Enthroned on the Praises",
+    "description": "",
+    "readings": [
+      {
+        "ref": "psa22",
+        "title": "Psalm 22"
+      }
+    ]
+  },
+  "plague-hail": {
+    "title": "Plagues",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo9",
+        "title": "Exodus 9"
+      }
+    ]
+  },
+  "plague-blood": {
+    "title": "Water to Blood",
+    "readings": [
+      {
+        "ref": "exo7",
+        "title": "Exodus 7:19-25"
+      }
+    ]
+  },
+  "plague-darkness": {
+    "title": "Darkness",
+    "readings": [
+      {
+        "ref": "exo10.21",
+        "title": "Exodus 10:21-29"
+      },
+      {
+        "ref": "amo5.18",
+        "title": "Amos 5:18"
+      }
+    ]
+  },
+  "plague-locusts": {
+    "title": "Demon Locusts",
+    "readings": [
+      {
+        "ref": "exo10.3",
+        "title": "Exodus 10:3-20"
+      },
+      {
+        "ref": "joel1",
+        "title": "Joel 1:4-12"
+      }
+    ]
+  },
+  "honey": {
+    "title": "Eat this Book",
+    "description": "",
+    "readings": [
+      {
+        "ref": "ezk3",
+        "title": "Ezekiel 3:1-14"
+      }
+    ]
+  },
+  "measuring-rod": {
+    "title": "Measure the Temple",
+    "description": "",
+    "readings": [
+      {
+        "ref": "ezk40.1",
+        "title": "Ezekiel 40:1-4"
+      }
+    ]
+  },
+  "elijah": {
+    "title": "The Man of God",
+    "description": "",
+    "readings": [
+      {
+        "ref": "1ki17",
+        "title": "1 Kings 17:1-7"
+      }
+    ]
+  },
+  "sodom": {
+    "title": "Sodom",
+    "description": "",
+    "readings": [
+      {
+        "ref": "gen19",
+        "title": "Genesis 19:1-11"
+      },
+      {
+        "ref": "ezk16",
+        "title": "Ezekiel 16:49-50"
+      }
+    ]
   }
 }
