@@ -3,8 +3,8 @@
 \indent(2) who does not walk in the counsel of the wicked,
 Nor stand in the path of sinners,
 \indent(2) Nor sit in the seat of scoffers!
-{2} But his delight is in the Law of YHWH,
-\indent(2) And on His Law he meditates day and night.
+{2} But his delight is in the torah of YHWH,
+\indent(2) And on His torah he meditates day and night.
 {3} He will be like a tree planted by streams of water,
 \indent(2) Which yields its fruit in its season,
 And its leaf does not wither;

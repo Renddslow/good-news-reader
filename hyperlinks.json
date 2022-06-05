@@ -125,5 +125,53 @@
         "title": "Deuteronomy 12:4-7"
       }
     ]
+  },
+  "hinge-2": {
+    "title": "Hinge II",
+    "description": "<p>You found John's second literary \"hinge,\" marking the beginning of a new movement. He'll use this two more times letting us know when an old movement has concluded and a new one begins.</p>"
+  },
+  "living-creatures": {
+    "title": "Four Living Creatures",
+    "description": "",
+    "readings": [
+      {
+        "ref": "ezk10",
+        "title": "Ezekiel 10"
+      }
+    ]
+  },
+  "holy": {
+    "title": "Holy, Holy, Holy",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa6",
+        "title": "Isaiah 6"
+      }
+    ]
+  },
+  "lion-judah": {
+    "title": "Lion of the Tribe of Judah",
+    "description": "",
+    "readings": [
+      {
+        "ref": "gen49",
+        "title": "Genesis 49:8-12"
+      }
+    ]
+  },
+  "passover-lamb": {
+    "title": "Christ Our Passover",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo12.21",
+        "title": "Exodus 12:21-30"
+      },
+      {
+        "ref": "1cor5",
+        "title": "1 Corinthians 5:7b-8a"
+      }
+    ]
   }
 }
