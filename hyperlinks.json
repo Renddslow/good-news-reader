@@ -446,5 +446,96 @@
         "title": "Daniel 7:2-14"
       }
     ]
+  },
+  "moses-song": {
+    "title": "The Song of Moses",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo15",
+        "title": "Exodus 15:1-18"
+      }
+    ]
+  },
+  "temple-smoke": {
+    "title": "Filled with Smoke",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo40",
+        "title": "Exodus 40:33-38"
+      },
+      {
+        "ref": "psa18",
+        "title": "Psalm 18:1-15"
+      }
+    ]
+  },
+  "plague-boils": {
+    "title": "Boils",
+    "readings": [
+      {
+        "ref": "exo9",
+        "title": "Exodus 9"
+      }
+    ]
+  },
+  "plague-blood-2": {
+    "title": "Water to Blood II",
+    "readings": [
+      {
+        "ref": "exo7",
+        "title": "Exodus 7:19-25"
+      }
+    ]
+  },
+  "plague-darkness-2": {
+    "title": "Darkness II",
+    "readings": [
+      {
+        "ref": "exo10.21",
+        "title": "Exodus 10:21-29"
+      },
+      {
+        "ref": "amo5.18",
+        "title": "Amos 5:18"
+      }
+    ]
+  },
+  "kings-east": {
+    "title": "Kings of the East",
+    "description": "<p>With only one or two notable exceptions, Israel's enemies lay to the east. Moab, Edom, Assyria, and Babylon – each one a significant antagonist of Israel – found their borders east of Israel. John uses this imagery to draw to mind all of the conflicts of the past as evil empires and oppressive powers waged war against Israel. But now, instead of Israel, he has the people of God (the Church) in mind. And instead of a specific set of nations or superpowers, John is describing a conflict composed of all who oppose and persecute God's people.</p>"
+  },
+  "thief": {
+    "title": "Thief in the Night",
+    "description": "<p></p>",
+    "readings": [
+      {
+        "ref": "mat24.42",
+        "title": "Matthew 24:42-44"
+      },
+      {
+        "ref": "1thes5",
+        "title": "1 Thessalonians 5:1-11"
+      },
+      {
+        "ref": "2pt3",
+        "title": "2 Peter 3:8-10"
+      }
+    ]
+  },
+  "moed": {
+    "title": "War on a Mountain",
+    "description": "<p>You may have heard it said that the final battle of the Bible is called Armageddon or you may have even heard that the battle will be fought at a place called Megiddo. The typical reading is based on the way John wrought a Hebrew word using the Greek language. However, if we follow the hyperlinks, we might find that the final battle is actually fought on the Mount (<em>har</em>) of Assembly (<em>mo'edon</em>).</p>",
+    "readings": [
+      {
+        "ref": "zec12",
+        "title": "Zechariah 12"
+      },
+      {
+        "ref": "isa14",
+        "title": "Isaiah 14:1-23"
+      }
+    ]
   }
 }
