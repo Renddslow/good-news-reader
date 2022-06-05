@@ -186,7 +186,7 @@ const Read = () => {
               type="read"
               movement={2}
               idx={6}
-              complete={isComplete(completions, 0, 0)}
+              complete={isComplete(completions, 2, 6)}
             />
           </Movement>
           <Movement
