@@ -72,7 +72,10 @@ const compileAssets = async () => {
       }
 
       if (asset.type === 'markdown') {
-        asset.content = enhancedSnarkdown(await getStringFromFile(asset.src));
+        asset.content = enhancedSnarkdown(await getStringFromFile(asset.src)).replace(
+          '---',
+          '<hr />',
+        );
         return outputJson(asset, asset.movement, asset.item);
       }
 

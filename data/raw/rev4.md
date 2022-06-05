@@ -6,7 +6,7 @@ heaven, and the first voice which I had heard, like the sound of a trumpet speak
 {5} Out from the throne came flashes of lightning and sounds and peals of thunder. And there were seven lamps of fire burning before the throne, which are the seven spirits of God; {6} and before the throne there was something like a sea of glass, like crystal; and in the center and around the throne, four living creatures full of eyes in front and behind. {7} The first living creature was like a lion, the second creature like a calf, the third creature had a face like that of a man, and the fourth creature was like a flying eagle. {8} And the four living creatures, each one of them having six wings, are full of eyes around and within; and day and night they do not cease to say,
 
 ---!q
-“Holy, holy, holy is the Lord God, the Almighty, who was and who is and who is to come.”
+“Holy, holy, holy is YHWH God, the Almighty, who was and who is and who is to come.”
 
 ---!p
 {9} And when the living creatures give glory, honor, and thanks to Him who sits on the throne, to Him who lives forever and ever, {10} the twenty-four elders will fall down before Him who sits on the throne, and they will worship Him who lives forever and ever, and will cast their crowns before the throne, saying,

@@ -33,6 +33,16 @@ export const ContentWrapper = styled.div`
     align-items: center;
     line-height: 1;
   }
+
+  hr {
+    width: 45%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    appearance: none;
+    border: 1px solid #d3d1d2;
+  }
 `;
 
 const Title = styled.h1`

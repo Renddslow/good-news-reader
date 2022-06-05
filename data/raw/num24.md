@@ -1,5 +1,5 @@
 ---!p
-{1} When Balaam saw that it pleased the Lord to bless Israel, he did 
+{1} When Balaam saw that it pleased YHWH to bless Israel, he did 
 not go as at other times to seek omens, rather he turned his attention toward the wilderness. {2} And Balaam raised his eyes and saw Israel camping tribe by tribe; and the Spirit of God came upon him. {3} Then he took up his discourse and said,
 
 ---!q
@@ -12,7 +12,7 @@ Who sees the vision of the Almighty,
 \indent(2) Your dwelling places, Israel!
 {6} Like valleys that stretch out,
 \indent(2) Like gardens beside a river,
-Like aloes planted by the Lord,
+Like aloes planted by YHWH,
 \indent(2) Like cedars beside the waters.
 {7} Water will flow from his buckets,
 \indent(2) And his seed will be by many waters,
@@ -29,7 +29,7 @@ Blessed is everyone who blesses you,
 \indent(2) And cursed is everyone who curses you.”
 
 ---!p
-{10} Then Balak’s anger burned against Balaam, and he struck his hands together; and Balak said to Balaam, “I called you to curse my enemies, but behold, you have persisted in blessing them these three times! {11} So flee to your place now. I said I would honor you greatly, but behold, the Lord has held you back from honor.” {12} And Balaam said to Balak, “Did I not in fact tell your messengers whom you had sent to me, saying, {13} ‘If Balak were to give me his house full of silver and gold, I could not do anything contrary to the command of the Lord, either good or bad, of my own accord. What the Lord speaks, I will speak’? {14} So now, behold, I am going to my people; come, and I will advise you of what this people will do to your people in the days to come.”
+{10} Then Balak’s anger burned against Balaam, and he struck his hands together; and Balak said to Balaam, “I called you to curse my enemies, but behold, you have persisted in blessing them these three times! {11} So flee to your place now. I said I would honor you greatly, but behold, YHWH has held you back from honor.” {12} And Balaam said to Balak, “Did I not in fact tell your messengers whom you had sent to me, saying, {13} ‘If Balak were to give me his house full of silver and gold, I could not do anything contrary to the command of YHWH, either good or bad, of my own accord. What YHWH speaks, I will speak’? {14} So now, behold, I am going to my people; come, and I will advise you of what this people will do to your people in the days to come.”
 
 ---!p
 {15} Then he took up his discourse and said,
