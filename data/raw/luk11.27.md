@@ -1,0 +1,2 @@
+---!p
+{27} While Jesus was saying these things, one of the women in the crowd raised her voice and said to Him, “Blessed is the womb that carried You, and the breasts at which You nursed!” {28} But He said, “On the contrary, blessed are those who hear the word of God and follow it.”

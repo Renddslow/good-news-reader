@@ -9,7 +9,7 @@ written inside and on the back, sealed up with seven seals. {2} And I saw a stro
 “Worthy are You to take the scroll and to break its seals; for You were slaughtered, and You purchased people for God with Your blood from every tribe, language, people, and nation.
 
 ---!q
-{10} You have made them into a [[royal-priests|kingdom and priests]] to our God, and they will reign upon the earth.”
+{10} You have made them into a [[royal-priests-2|kingdom and priests]] to our God, and they will reign upon the earth.”
 
 ---!p
 {11} Then I looked, and I heard the voices of many angels around the throne and the living creatures and the elders; and the number of them was myriads of myriads, and thousands of thousands, {12} saying with a loud voice,

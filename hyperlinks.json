@@ -292,5 +292,159 @@
         "title": "Ezekiel 16:49-50"
       }
     ]
+  },
+  "royal-priests-2": {
+    "title": "Royal Priests",
+    "description": "<p></p>",
+    "readings": [
+      {
+        "ref": "exo19",
+        "title": "Exodus 19:5-8"
+      },
+      {
+        "ref": "1pt2",
+        "title": "1 Peter 2:9"
+      }
+    ]
+  },
+  "woman": {
+    "title": "Seed of the Woman",
+    "description": "",
+    "readings": [
+      {
+        "ref": "gen3.14",
+        "title": "Genesis 3:14-16"
+      }
+    ]
+  },
+  "pharaoh": {
+    "title": "Pharaohs",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo1",
+        "title": "Exodus 1:8-22"
+      },
+      {
+        "ref": "mat2",
+        "title": "Matthew 2:1-18"
+      }
+    ]
+  },
+  "why-the-nations": {
+    "title": "Why Do the Nations Rage?",
+    "description": "",
+    "readings": [
+      {
+        "ref": "psa2",
+        "title": "Psalm 2"
+      }
+    ]
+  },
+  "michael": {
+    "title": "Michael and Spiritual Conflict",
+    "description": "",
+    "readings": [
+      {
+        "ref": "dan10",
+        "title": "Daniel 10"
+      }
+    ]
+  },
+  "keep-my-commandments": {
+    "title": "Keep My Commandments",
+    "description": "",
+    "readings": [
+      {
+        "ref": "psa119.1",
+        "title": "Psalm 119:1-8"
+      },
+      {
+        "ref": "luk11.27",
+        "title": "Luke 11:27-28"
+      }
+    ]
+  },
+  "son-of-man-3": {
+    "title": "Son of Man III",
+    "description": "",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      }
+    ]
+  },
+  "disarm-all-of-us": {
+    "title": "...Disarmed All of Us",
+    "description": "",
+    "readings": [
+      {
+        "ref": "mat26.51",
+        "title": "Matthew 26:51-54"
+      }
+    ]
+  },
+  "shema": {
+    "title": "Shema, Israel",
+    "description": "",
+    "readings": [
+      {
+        "ref": "deu6",
+        "title": "Deuteronomy 6:1-9"
+      }
+    ]
+  },
+  "nero": {
+    "title": "Nero",
+    "description": "<p>There are different approaches to solving the riddle of 666. The solution that has enjoyed the most respect is a practice called \"gematria.\" Gematria is simply the practice of assigning a numerical value to a name. Typically a number is assigned to each letter of an alphabet, and then each letter of a name is added together.</p><p>The tradition that 666 might be a gematria goes back a long time. Our best guess is that in this case, the gematria is done with the name \"Nero Caesar\" when written in Hebrew letter. Ultimately, whoever the figure is pointing to, the point of the image remains the same: our allegiance belongs to Jesus, not to the beast.</p>"
+  },
+  "bear-the-name-2": {
+    "title": "Bear the Name II",
+    "description": "<p></p>",
+    "readings": [
+      {
+        "ref": "exo20.7",
+        "title": "Exodus 20:7"
+      },
+      {
+        "ref": "exo23",
+        "title": "Exodus 23:20-22"
+      },
+      {
+        "ref": "deu12",
+        "title": "Deuteronomy 12:4-7"
+      }
+    ]
+  },
+  "watchtower": {
+    "title": "Fallen is Babylon",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa21",
+        "title": "Isaiah 21:8-10"
+      }
+    ]
+  },
+  "wine-of-gods-wrath": {
+    "title": "Wine of God's Wrath",
+    "description": "",
+    "readings": [
+      {
+        "ref": "jer25",
+        "title": "Jeremiah 25:15-29"
+      }
+    ]
+  },
+  "son-of-man-4": {
+    "title": "Son of Man IV",
+    "description": "",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      }
+    ]
   }
 }
