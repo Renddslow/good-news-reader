@@ -42,7 +42,7 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Triangle weight="bold" size="16" />
-        <span>{links.length}/27</span>
+        <span>{links.length}/49</span>
       </ProgressWrapper>
       {showTooltip && (
         <ProgressTooltip>
