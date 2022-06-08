@@ -1,4 +1,4 @@
-# revelation-reader
+# [Revelation Reader](https://revelation.flatland.church)
 
 > A Bible reader for the book of Revelation.
 
