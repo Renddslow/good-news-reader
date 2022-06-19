@@ -80,6 +80,8 @@
     "cookie": "^0.5.0",
     "date-fns": "^2.28.0",
     "faunadb": "^4.5.4",
+    "got": "^12.1.0",
+    "isomorphic-fetch": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
     "kleur": "^4.1.4",
     "phosphor-react": "^1.4.1",

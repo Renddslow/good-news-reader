@@ -1,9 +1,9 @@
 ---!p
-{1} Then I saw a new heaven and a new earth; for the first heaven and
+{1} Then I saw a [[new-heaven|new heaven and a new earth]]; for the first heaven and
 the first earth passed away, and there is no longer any sea. {2} And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband. {3} And I heard a loud voice from the throne, saying, “Behold, the tabernacle of God is among the people, and He will dwell among them, and they shall be His people, and God Himself will be among them, {4} and He will wipe away every tear from their eyes; and there will no longer be any death; there will no longer be any mourning, or crying, or pain; the first things have passed away.”
 
 ---!p
-{5} And He who sits on the throne said, “Behold, I am making all things new.” And He said, “Write, for these words are faithful and true.” {6} Then He said to me, “It is done. I am the Alpha and the Omega, the beginning and the end. I will give water to the one who thirsts from the spring of the water of life, without cost. {7} The one who overcomes will inherit these things, and I will be his God and he will be My son. {8} But for the cowardly, and unbelieving, and abominable, and murderers, and sexually immoral persons, and sorcerers, and idolaters, and all liars, their part will be in the lake that burns with fire and brimstone, which is the second death.”
+{5} And He who sits on the throne said, “Behold, I am making all things new.” And He said, “Write, for these words are faithful and true.” {6} Then He said to me, “It is done. I am the Alpha and the Omega, the beginning and the end. I will give water to the one who thirsts from the spring of [[water-of-life|the water of life]], without cost. {7} The one who overcomes will inherit these things, and I will be his God and he will be My son. {8} But for the cowardly, and unbelieving, and abominable, and murderers, and sexually immoral persons, and sorcerers, and idolaters, and all liars, their part will be in the lake that burns with fire and brimstone, which is the second death.”
 
 ---!p
 {9} Then one of the seven angels who had the seven bowls, full of the seven last plagues, came and spoke with me, saying, “Come here, I will show you the bride, the wife of the Lamb.”

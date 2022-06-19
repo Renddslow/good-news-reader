@@ -71,6 +71,7 @@
     "description": "<p>This is our first hinge in the literary structure of the book of Revelation. John uses this phrase, \"In the Spirit\" four times in total, and each time it marks a shift in the subject matter between each hinge. With this we see that we're moving out of the prologue and into our first movement.</p>"
   },
   "seven-lampstands": {
+    "title": "Seven Lampstands",
     "description": "<p>The image of the lampstands come to us from a vision of the prophet Zechariah. Zechariah lived after the Babylonian exile in a time when the people of Israel were coming into a newly restored Temple. They were once again called to live in faithfulness and obedience to God's teaching as they waited for the coming of God's Messiah.</p><p>This imagery is a bit puzzling, but meditating on Zechariah 4 brings the first movement of Revelation into surprising conversation with the prophet.</p>",
     "readings": [
       {
@@ -535,6 +536,186 @@
       {
         "ref": "isa14",
         "title": "Isaiah 14:1-23"
+      }
+    ]
+  },
+  "hinge-3": {
+    "title": "Hinge III",
+    "description": "<p>The penultimate hinge launches into a flurry of activity with violence and war, but climaxing in the return of Jesus.</p>"
+  },
+  "scroll": {
+    "title": "Seal up the Scroll",
+    "description": "",
+    "readings": [
+      {
+        "ref": "dan12",
+        "title": "Daniel 12:1-4"
+      }
+    ]
+  },
+  "fallen": {
+    "title": "Fallen is Babylon II",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa21",
+        "title": "Isaiah 21:8-10"
+      }
+    ]
+  },
+  "like-sodom": {
+    "title": "Like Sodom and Gomorrah",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa13",
+        "title": "Isaiah 13"
+      }
+    ]
+  },
+  "tyre": {
+    "title": "Without House or Harbor",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa23",
+        "title": "Isaiah 23"
+      },
+      {
+        "ref": "ezk27",
+        "title": "Ezekiel 27:25-36"
+      }
+    ]
+  },
+  "wage-war": {
+    "title": "Wage War Against the Lamb",
+    "description": "",
+    "readings": [
+      {
+        "ref": "psa2",
+        "title": "Psalm 2"
+      }
+    ]
+  },
+  "god-who-hears": {
+    "title": "A God Who Hears",
+    "description": "",
+    "readings": [
+      {
+        "ref": "gen4",
+        "title": "Genesis 4:8-12"
+      },
+      {
+        "ref": "gen16",
+        "title": "Genesis 16:8-14"
+      }
+    ]
+  },
+  "rejoice": {
+    "title": "Rejoice, O Heaven",
+    "description": "",
+    "readings": [
+      {
+        "ref": "rev6.9",
+        "title": "Revelation 6:9-11"
+      }
+    ]
+  },
+  "elders": {
+    "title": "Fall Down in Worship",
+    "description": "chiasm",
+    "readings": [
+      {
+        "ref": "rev5.13",
+        "title": "Revelation 5:13-14"
+      }
+    ]
+  },
+  "dipped-in-blood": {
+    "title": "Dipped in Blood",
+    "description": "",
+    "readings": [
+      {
+        "ref": "exo12.21",
+        "title": "Exodus 12:21-30"
+      },
+      {
+        "ref": "1cor5",
+        "title": "1 Corinthians 5:7-8"
+      }
+    ]
+  },
+  "king-of-kings": {
+    "title": "King of Kings",
+    "description": "",
+    "readings": [
+      {
+        "ref": "1ti6",
+        "title": "1 Timothy 6:13-16"
+      }
+    ]
+  },
+  "sword": {
+    "title": "Sword from His Mouth",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa11",
+        "title": "Isaiah 11"
+      },
+      {
+        "ref": "isa49",
+        "title": "Isaiah 49:1-4"
+      }
+    ]
+  },
+  "serpent": {
+    "title": "That Serpent of Old",
+    "description": "",
+    "readings": [
+      {
+        "ref": "gen3",
+        "title": "Genesis 3"
+      }
+    ]
+  },
+  "resurrection": {
+    "title": "The Resurrection of Dead",
+    "description": "",
+    "readings": [
+      {
+        "ref": "1cor15",
+        "title": "1 Corinthians 15"
+      }
+    ]
+  },
+  "judgement": {
+    "title": "Son of Man V",
+    "description": "",
+    "readings": [
+      {
+        "ref": "dan7",
+        "title": "Daniel 7:2-14"
+      }
+    ]
+  },
+  "new-heaven": {
+    "title": "New Heavens and New Earth",
+    "description": "",
+    "readings": [
+      {
+        "ref": "isa65",
+        "title": "Isaiah 65:17-25"
+      }
+    ]
+  },
+  "water-of-life": {
+    "title": "The Water of Life",
+    "description": "",
+    "readings": [
+      {
+        "ref": "john4",
+        "title": "John 4:7-14"
       }
     ]
   }

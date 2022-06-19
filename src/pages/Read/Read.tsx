@@ -204,7 +204,7 @@ const Read = () => {
               complete={isComplete(completions, 3, 0)}
             />
             <Item
-              title="Day of the Lord"
+              title="Day of the Lord (video)"
               type="video"
               movement={3}
               idx={1}

@@ -1,0 +1,2 @@
+---!p
+{9} When he opened the fifth seal, I saw under the altar the souls of those who had been slain because of the word of God and the testimony they had maintained. {10} They called out in a loud voice, “How long, Sovereign Lord, holy and true, until you judge the inhabitants of the earth and avenge our blood?” {11} Then each of them was given a white robe, and they were told to wait a little longer, until the full number of their fellow servants, their brothers and sisters, were killed just as they had been.
