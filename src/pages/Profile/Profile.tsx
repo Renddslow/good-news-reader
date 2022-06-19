@@ -107,16 +107,22 @@ const Profile = ({ loading, data }) => {
               <Empty label="You haven't collected any links yet." />
             ) : (
               <Grid>
-                {links.map((link) => (
-                  <ProgressCard
-                    key={link.link}
-                    movement={link.movement}
-                    page={link.page}
-                    title={data.hyperlinks[link.link].title}
-                    done={link.collected_at}
-                    type="link"
-                  />
-                ))}
+                {links
+                  .reduce((acc, link) => {
+                    if (acc.find((l) => l.link === link.link)) return acc;
+                    acc.push(link);
+                    return acc;
+                  }, [])
+                  .map((link) => (
+                    <ProgressCard
+                      key={link.link}
+                      movement={link.movement}
+                      page={link.page}
+                      title={data.hyperlinks[link.link].title}
+                      done={link.collected_at}
+                      type="link"
+                    />
+                  ))}
               </Grid>
             )}
             <GridHeader>

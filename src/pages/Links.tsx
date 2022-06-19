@@ -9,7 +9,13 @@ import { useProgress } from '../providers/Authentication';
 const Progress = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const ref = createRef();
-  const { links } = useProgress();
+  const { links: rawLinks } = useProgress();
+
+  const links = rawLinks.reduce((acc, link) => {
+    if (acc.find((l) => l.link === link.link)) return acc;
+    acc.push(link);
+    return acc;
+  }, []);
 
   useEffect(() => {
     let cancel;
@@ -42,7 +48,7 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Triangle weight="bold" size="16" />
-        <span>{links.length}/49</span>
+        <span>{links.length}/66</span>
       </ProgressWrapper>
       {showTooltip && (
         <ProgressTooltip>

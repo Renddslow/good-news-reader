@@ -50,13 +50,20 @@ const handler = async (event) => {
 
   const completions = await client.query(
     q.Map(
-      q.Paginate(q.Match(q.Index('completion-user'), userRef)),
+      q.Paginate(q.Match(q.Index('completion-user'), userRef), {
+        size: 150,
+      }),
       q.Lambda('x', q.Get(q.Var('x'))),
     ),
   );
 
   const links = await client.query(
-    q.Map(q.Paginate(q.Match(q.Index('link-user'), userRef)), q.Lambda('x', q.Get(q.Var('x')))),
+    q.Map(
+      q.Paginate(q.Match(q.Index('link-user'), userRef), {
+        size: 150,
+      }),
+      q.Lambda('x', q.Get(q.Var('x'))),
+    ),
   );
 
   response.body = JSON.stringify({
