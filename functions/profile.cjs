@@ -8,7 +8,7 @@ const CLIENT_SECRET = process.env.COOKIE_TOKEN || '';
 const q = fauna.query;
 const client = new fauna.Client({
   secret: process.env.FAUNA_KEY || '',
-  domain: 'db.fauna.com',
+  domain: 'db.us.fauna.com',
   scheme: 'https',
 });
 
@@ -36,7 +36,7 @@ const handler = async (event) => {
     return Promise.resolve(response);
   }
 
-  const token = cookie.parse(cookies)['revelation-token'];
+  const token = cookie.parse(cookies)['good-news-token'];
   const tokenPayload = safelyVerify(token);
 
   if (!tokenPayload) {
@@ -57,9 +57,9 @@ const handler = async (event) => {
     ),
   );
 
-  const links = await client.query(
+  const words = await client.query(
     q.Map(
-      q.Paginate(q.Match(q.Index('link-user'), userRef), {
+      q.Paginate(q.Match(q.Index('word-user'), userRef), {
         size: 150,
       }),
       q.Lambda('x', q.Get(q.Var('x'))),
@@ -68,7 +68,7 @@ const handler = async (event) => {
 
   response.body = JSON.stringify({
     ...user.data,
-    links: links.data.map(({ data }) => data),
+    words: words.data.map(({ data }) => data),
     completions: completions.data.map(({ data }) => data),
   });
 

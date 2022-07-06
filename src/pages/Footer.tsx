@@ -21,7 +21,7 @@ export const LinkButton = styled(Link)`
   font-weight: 600;
   font-family: var(--sans-serif);
   text-decoration: none;
-  background: var(--purple);
+  background: var(--green);
   color: #fff;
   border-radius: 8px;
   display: flex;

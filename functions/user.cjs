@@ -6,7 +6,7 @@ const sgMail = require('@sendgrid/mail');
 const q = fauna.query;
 const client = new fauna.Client({
   secret: process.env.FAUNA_KEY || '',
-  domain: 'db.fauna.com',
+  domain: 'db.us.fauna.com',
   scheme: 'https',
 });
 
@@ -31,7 +31,7 @@ const emailBody = (token, firstName, lastName, email) => `<!DOCTYPE html>
          -webkit-appearance: none;
          border: none;
          border-radius: 8px;
-         background: #7c39ec;
+         background: #2a9d8f;
          font-weight: 600;
          display: block;
          max-width: max-content;
@@ -46,11 +46,11 @@ const emailBody = (token, firstName, lastName, email) => `<!DOCTYPE html>
    <body>
       <p>Hey there, ${firstName}!</p>
       <p>
-         Thank you so much for reading Revelation with us this series. I'm so excited for what you'll discover as you move slowly and thoughtfully through this book.
+         I'm so excited to explore the Gospel with you by tracking 6 key words. This reader will take you from Genesis to Revelation and back again, but always spending time in John's Gospel account. 
       </p>
       <p>Below is your magic link. Just click it and you'll be logged in!</p>
       <a
-         href="https://revelation.flatland.church/auth?token=${token}"
+         href="https://goodnews.flatland.church/auth?token=${token}"
          class="cta"
          >✨ Your Magic Link ✨</a>
       <div class="copy-link">
@@ -58,14 +58,14 @@ const emailBody = (token, firstName, lastName, email) => `<!DOCTYPE html>
             If you have trouble with the button, copy and paste the link below into your browser bar:
          </p>
          <p>
-            https://revelation.flatland.church/auth?token=${token}
+            https://goodnews.flatland.church/auth?token=${token}
          </p>
       </div>
       <footer style="text-align: center; margin-top: 24px">
          <div style="font-size: 12px; color: #434443">
             <p style="margin-bottom: 0">
                This system email was sent to ${firstName} ${lastName} (${email}) regarding your
-               revelation.flatland.church account
+               goodnews.flatland.church account
             </p>
             <p>by Flatland Group, 501(c)3 47-0795919, 4801 N 144th Street, Omaha, NE 68116</p>
          </div>
@@ -127,7 +127,7 @@ const handler = async (event) => {
         email: 'mubatt@wyopub.com',
         name: 'Matt McElwee',
       },
-      subject: `${user?.data?.firstName || firstName}, Your magic link for the Revelation Reader`,
+      subject: `${user?.data?.firstName || firstName}, Your magic link for the Good News Reader`,
     })
     .catch((e) => {
       console.log(e);

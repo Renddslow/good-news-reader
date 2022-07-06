@@ -18,7 +18,7 @@ const Hyperlink = styled(Link)`
     content: '';
     width: calc(100% - 12px);
     height: 0;
-    border-bottom: 3px dashed var(--purple);
+    border-bottom: 3px dashed var(--green);
     position: absolute;
     bottom: 3px;
     left: 6px;

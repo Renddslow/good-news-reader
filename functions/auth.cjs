@@ -32,7 +32,7 @@ const handler = async (event) => {
 
   return Promise.resolve({
     headers: {
-      'set-cookie': cookie.serialize('revelation-token', cookieToken, {
+      'set-cookie': cookie.serialize('good-news-token', cookieToken, {
         maxAge: 60 * 60 * 24 * 30 * 6, // ~6 months
         httpOnly: true,
       }),

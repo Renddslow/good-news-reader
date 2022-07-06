@@ -42,8 +42,6 @@ const Header = styled.header`
   }
 `;
 
-const sleep = () => new Promise((res) => setTimeout(res, 3000));
-
 const Login = () => {
   const [showSignUp, setShowSignUp] = useState(true);
   const [submitted, setSubmitted] = useState(false);
@@ -77,17 +75,15 @@ const Login = () => {
     <Container>
       <Jumbotron
         role="img"
-        aria-label="A woodcut illustration by Albrecht Dürer of the woman of Revelation 12 being set upon by a dragon"
+        aria-label="A woodcut illustration of the Baptism of Jesus"
       />
       <FormWrapper>
         <Wrapper>
           <Header>
             <p>Flatland Church</p>
-            <h1>Revelation Reader</h1>
+            <h1>Good News Reader</h1>
             <p>
-              Read along with us on a five-week journey through the book of Revelation and discover
-              how Revelation concludes a unified story that leads to Jesus and provides
-              encouragement for believers today.
+              Read along with us on a six-week journey through the Bible as we discover 6 words (and their Greek and Hebrew roots) that point us to the Good News of Jesus Christ.
             </p>
           </Header>
           {showSignUp ? (

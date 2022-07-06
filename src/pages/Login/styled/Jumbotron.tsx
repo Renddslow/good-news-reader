@@ -7,12 +7,13 @@ const Jumbotron = styled.div`
   background-color: var(--red);
   position: relative;
   background-blend-mode: multiply;
-  background-image: url('/jumbo.png');
+  background-image: url('/baptism.jpeg');
   background-size: cover;
 
   @media screen and (max-width: 820px) {
     height: 0;
     padding-bottom: 50%;
+    background-position: center 30%;
   }
 
   @media screen and (max-width: 480px) {

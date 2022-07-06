@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Button = styled.button`
   font-size: inherit;
   appearance: none;
-  background: var(--purple);
+  background: var(--green);
   color: #fff;
   border-radius: 4px;
   border: 0;
@@ -16,7 +16,7 @@ const Button = styled.button`
   &:hover,
   &:focus,
   &:active {
-    background: hsl(var(--purple-hue), var(--purple-sat), 37%);
+    background: hsl(var(--green-hue), var(--green-sat), 37%);
   }
 `;
 

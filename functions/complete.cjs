@@ -8,7 +8,7 @@ const CLIENT_SECRET = process.env.COOKIE_TOKEN || '';
 const q = fauna.query;
 const client = new fauna.Client({
   secret: process.env.FAUNA_KEY || '',
-  domain: 'db.fauna.com',
+  domain: 'db.us.fauna.com',
   scheme: 'https',
 });
 
@@ -37,7 +37,7 @@ const handler = async (event) => {
     return Promise.resolve(response);
   }
 
-  const token = cookie.parse(cookies)['revelation-token'];
+  const token = cookie.parse(cookies)['good-news-token'];
   const tokenPayload = safelyVerify(token);
 
   if (!tokenPayload) {

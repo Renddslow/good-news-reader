@@ -6,7 +6,7 @@ const LoginRow = styled.div`
 
   button {
     margin-left: 8px;
-    color: var(--purple);
+    color: var(--green);
     font-size: 18px;
     appearance: none;
     border: 0;
