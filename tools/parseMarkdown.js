@@ -91,7 +91,7 @@ const parseMarkdown = async (content, pathname) => {
   const [ref] = path
     .basename(pathname, '.md')
     .replace(/(\d*)$/, ' $1')
-    .split('.');
+    .split('_');
   const chapterVerse = cv(ref);
   if (!chapterVerse?.book?.id) {
     console.log(chapterVerse, ref);
