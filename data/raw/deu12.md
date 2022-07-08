@@ -1,2 +1,0 @@
----!p
-{4} You shall not act this way toward YHWH your God. {5} But you shall seek YHWH at the place which YHWH your God will choose from all your tribes, to establish His name there for His dwelling, and you shall come there. {6} You shall bring there your burnt offerings, your sacrifices, your tithes, the contribution of your hand, your vowed offerings, your voluntary offerings, and the firstborn of your herd and of your flock. {7} There you and your households shall eat before YHWH your God, and rejoice in all your undertakings in which YHWH your God has blessed you.

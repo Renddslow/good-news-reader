@@ -1,0 +1,5 @@
+---!p
+{13} No one has ascended into heaven, except He who descended from heaven: the Son of Man. {14} And just as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, {15} so that everyone who believes will have eternal [[zoe|life]] in Him.
+
+---!p
+{16} “For God so loved the world, that He gave His only Son, so that everyone who believes in Him will not perish, but have eternal [[zoe|life]]. {17} For God did not send the Son into the world to judge the world, but so that the world might be saved through Him. {18} The one who believes in Him is not judged; the one who does not believe has been judged already, because he has not believed in the name of the only Son of God. {19} And this is the judgment, that the Light has come into the world, and people loved the darkness rather than the Light; for their deeds were evil. {20} For everyone who does evil hates the Light, and does not come to the Light, so that his deeds will not be exposed. {21} But the one who practices the truth comes to the Light, so that his deeds will be revealed as having been performed in God.”

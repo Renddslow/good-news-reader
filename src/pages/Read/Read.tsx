@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import isBefore from 'date-fns/isBefore';
 import { Star } from 'phosphor-react';
@@ -14,54 +14,49 @@ import Item from './Item';
 import ProfileButton from './ProfileButton';
 import Text from '../../components/Text';
 import Practice from './Practice';
+import { FadeInWrapper } from '../Items';
 
 const isComplete = (completions, movement: number, page: number) =>
   completions.find((p) => p.movement === movement && p.page === page);
 
-const WEEKS = [
-  {
-    illustration: '/cherubim.png',
-    title: 'Life',
-    subtitle: 'Week 1 • July 10th – 16th',
-    unlocks: new Date(2022, 6, 10),
-  },
-  {
-    illustration: '/cherubim.png',
-    title: 'Love',
-    subtitle: 'Week 2 • July 17th – 23rd',
-    unlocks: new Date(2022, 6, 17),
-  },
-  {
-    illustration: '/cherubim.png',
-    title: 'Name',
-    subtitle: 'Week 3 • July 24th – 30th',
-    unlocks: new Date(2022, 6, 24),
-  },
-  {
-    illustration: '/cherubim.png',
-    title: 'Blood',
-    subtitle: 'Week 4 • July 31st – 6th',
-    unlocks: new Date(2022, 6, 31),
-  },
-  {
-    illustration: '/cherubim.png',
-    title: 'Believe',
-    subtitle: 'Week 5 • July 7th – 13th',
-    unlocks: new Date(2022, 7, 7),
-  },
-  {
-    illustration: '/cherubim.png',
-    title: 'Witness',
-    subtitle: 'Week 6 • July 14th – 20th',
-    unlocks: new Date(2022, 7, 14),
-  },
-];
+type Week = {
+  illustration: string;
+  title: string;
+  subtitle: string;
+  unlocks: [year: number, month: number, day: number];
+  totalWords: number;
+  words: string[];
+  pages: number[];
+};
+
+type Page = {
+  page: number;
+  title: string;
+  chapters: { id: string; reference: string }[];
+  titleReference: string;
+  words: string[];
+};
+
+type Assets = {
+  weeks: Week[];
+  pages: Page[];
+};
 
 const Read = () => {
   const { user } = useAuthenticatedUser();
   const { completions } = useProgress();
+  const [assets, setAssets] = useState<Assets>({} as Assets);
+  const [loading, setLoading] = useState(false);
 
   const today = new Date();
+
+  useEffect(() => {
+    setLoading(true);
+    fetch('/assets/assets.json')
+      .then((d) => d.json())
+      .then((d) => setAssets(d))
+      .then(() => setLoading(false));
+  }, []);
 
   return (
     <Wrapper>
@@ -80,40 +75,50 @@ const Read = () => {
               <Link to="/read/intro">Learn More</Link>
               <Link to="/practice">
                 <Star weight="fill" size="16" />
-                Practice Words (24/28)
+                Practice Words (0/21)
               </Link>
             </Row>
           </div>
         </IntroCard>
-        <div className="movements">
-          {WEEKS.map((week, idx) => (
-            <Movement
-              key={week.title}
-              illustration={week.illustration}
-              title={week.title}
-              subtitle={week.subtitle}
-              first={idx === 0}
-              locked={isBefore(today, week.unlocks)}
-              unlocks={week.unlocks}
-            >
-              <Item
-                title="The Throne Room of Heaven"
-                reference="Genesis 1-2"
-                words="Chayyim/Chay"
-                id={0}
-                complete={isComplete(completions, 1, 0)}
-              />
-              <Item
-                reference="Genesis 3"
-                words="Chay"
-                title="The Throne Room of Heaven"
-                id={0}
-                complete={isComplete(completions, 1, 0)}
-              />
-              <Practice word="Life" total={6} collected={4} />
-            </Movement>
-          ))}
-        </div>
+        {!loading && (
+          <FadeInWrapper>
+            <div className="movements">
+              {(assets?.weeks || []).map((week, idx) => {
+                const [y, m, d] = week.unlocks;
+                const unlocks = new Date(y, m, d);
+
+                return (
+                  <Movement
+                    key={week.title}
+                    illustration={week.illustration}
+                    title={week.title}
+                    subtitle={week.subtitle}
+                    first={idx === 0}
+                    locked={isBefore(today, unlocks)}
+                    unlocks={unlocks}
+                  >
+                    <>
+                      {week.pages.map((id) => {
+                        const page = assets?.pages.find((p) => p.page === id);
+                        return (
+                          <Item
+                            key={id}
+                            title={page.title}
+                            reference={page.titleReference}
+                            words={page.words.join(', ')}
+                            id={id}
+                            complete={isComplete(completions, 1, 0)}
+                          />
+                        );
+                      })}
+                      <Practice word={week.title} total={week.totalWords} collected={0} />
+                    </>
+                  </Movement>
+                );
+              })}
+            </div>
+          </FadeInWrapper>
+        )}
       </div>
     </Wrapper>
   );

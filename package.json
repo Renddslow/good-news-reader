@@ -16,7 +16,7 @@
     "build:hyperlinks": "node tools/compileHyperlinks.js",
     "build": "run-p build:data build:js",
     "lint-staged": "lint-staged",
-    "postbuild": "cp data/final/psa1.json public/assets/psa1.json && cp asset-plan.json public/assets && cp hyperlinks.json public/assets"
+    "postbuild": "cp assets.json public/assets && cp hyperlinks.json public/assets"
   },
   "type": "module",
   "husky": {

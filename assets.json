@@ -1,0 +1,134 @@
+{
+  "weeks": [
+    {
+      "illustration": "/life.png",
+      "title": "Life",
+      "subtitle": "Week 1 • July 10th – 16th",
+      "unlocks": [2022, 6, 10],
+      "totalWords": 3,
+      "words": ["chay", "chayyim", "zoe", "zao", "zoopoieo"],
+      "pages": [1, 2, 3, 4, 5]
+    },
+    {
+      "illustration": "/cherubim.png",
+      "title": "Love",
+      "subtitle": "Week 2 • July 17th – 23rd",
+      "unlocks": [2022, 6, 17],
+      "pages": []
+    },
+    {
+      "illustration": "/cherubim.png",
+      "title": "Name",
+      "subtitle": "Week 3 • July 24th – 30th",
+      "unlocks": [2022, 6, 24],
+      "pages": []
+    },
+    {
+      "illustration": "/cherubim.png",
+      "title": "Blood",
+      "subtitle": "Week 4 • July 31st – 6th",
+      "unlocks": [2022, 6, 31],
+      "pages": []
+    },
+    {
+      "illustration": "/cherubim.png",
+      "title": "Believe",
+      "subtitle": "Week 5 • July 7th – 13th",
+      "unlocks": [2022, 7, 7],
+      "pages": []
+    },
+    {
+      "illustration": "/cherubim.png",
+      "title": "Witness",
+      "subtitle": "Week 6 • July 14th – 20th",
+      "unlocks": [2022, 7, 14],
+      "pages": []
+    }
+  ],
+  "pages": [
+    {
+      "title": "The Human Project Begins",
+      "page": 1,
+      "chapters": [
+        {
+          "id": "gen1",
+          "reference": "Genesis 1"
+        },
+        {
+          "id": "gen2",
+          "reference": "Genesis 2"
+        }
+      ],
+      "titleReference": "Genesis 1-2",
+      "words": ["chayyim", "chay"]
+    },
+    {
+      "title": "Rebellion and Confrontation",
+      "page": 2,
+      "chapters": [
+        {
+          "id": "gen3",
+          "reference": "Genesis 3"
+        },
+        {
+          "id": "gen8",
+          "reference": "Genesis 8:13-22"
+        }
+      ],
+      "words": ["chayyim", "chay"],
+      "titleReference": "Genesis 3, 8:13-22"
+    },
+    {
+      "title": "Where Life is Found",
+      "page": 3,
+      "chapters": [
+        {
+          "id": "psa27",
+          "reference": "Psalm 27"
+        },
+        {
+          "id": "pro8",
+          "reference": "Proverbs 8"
+        },
+        {
+          "id": "john14",
+          "reference": "John 14:1-6"
+        }
+      ],
+      "titleReference": "Psalm 8, Proverbs 8, John 14:1-6",
+      "words": ["chayyim", "chay", "zoe"]
+    },
+    {
+      "title": "Eternal Life",
+      "page": 4,
+      "chapters": [
+        {
+          "id": "dan12",
+          "reference": "Daniel 12:1-4"
+        },
+        {
+          "id": "john3",
+          "reference": "John 3:13-21"
+        },
+        {
+          "id": "1co15",
+          "reference": "1 Corinthians 15:42-58"
+        }
+      ],
+      "titleReference": "Daniel 12:1-4, John 3:13-21, 1 Corinthians 15:42-58",
+      "words": ["chay", "zoe", "zao", "zoopoieo"]
+    },
+    {
+      "title": "In the Beginning",
+      "page": 5,
+      "chapters": [
+        {
+          "id": "john1_life",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "titleReference": "John 1:1-18",
+      "words": ["zoe"]
+    }
+  ]
+}

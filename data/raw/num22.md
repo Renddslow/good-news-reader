@@ -1,6 +1,0 @@
----!p
-{1} Then the sons of Israel journeyed on, and camped in the plains of 
-Moab beyond the Jordan opposite Jericho.
-
----!p
-{2} Now Balak the son of Zippor saw all that Israel had done to the Amorites. {3} So Moab was in great fear because of the people, for they were numerous; and Moab was in dread of the sons of Israel. {4} Moab said to the elders of Midian, “Now this horde will eat up all that is around us, as the ox eats up the grass of the field!” And Balak the son of Zippor was king of Moab at that time. {5} So he sent messengers to Balaam the son of Beor, at Pethor, which is near the Euphrates River, in the land of the sons of his people, to call for him, saying, “Behold, a people came out of Egypt; behold, they have covered the surface of the land, and they are living opposite me. {6} Now, therefore, please come, curse this people for me since they are too mighty for me; perhaps I will be able to defeat them and drive them out of the land. For I know that he whom you bless is blessed, and he whom you curse is cursed.”

@@ -1,2 +1,0 @@
----!p
-{49} Behold, this was the guilt of your sister Sodom: she and her daughters had arrogance, plenty of food, and carefree ease, but she did not help the poor and needy. {50} So they were haughty and committed abominations before Me. Therefore I removed them when I saw it.

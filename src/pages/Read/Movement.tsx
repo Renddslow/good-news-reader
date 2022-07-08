@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { CaretDown, Lock } from 'phosphor-react';
 
 import MovementWrapper from './styled/MovementWrapper';
@@ -14,7 +14,7 @@ type Props = {
   first?: boolean;
   subtitle: string;
   title: string;
-  children: React.ReactElement[];
+  children: React.ReactElement;
   locked?: boolean;
   unlocks: Date;
 };

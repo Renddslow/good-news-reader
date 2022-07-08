@@ -1,2 +1,0 @@
----!p
-{42} “Therefore be on the alert, for you do not know which day your Lord is coming. {43} But be sure of this, that if the head of the house had known at what time of the night the thief was coming, he would have been on the alert and would not have allowed his house to be broken into. {44} For this reason you must be ready as well; for the Son of Man is coming at an hour when you do not think He will.

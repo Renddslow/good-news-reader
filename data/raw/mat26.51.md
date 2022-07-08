@@ -1,2 +1,0 @@
----!p
-{51} And behold, one of those who were with Jesus reached and drew his sword, and struck the slave of the high priest and cut off his ear. {52} Then Jesus said to him, “Put your sword back into its place; for all those who take up the sword will perish by the sword. {53} Or do you think that I cannot appeal to My Father, and He will at once put at My disposal more than twelve legions of angels? {54} How then would the Scriptures be fulfilled, which say that it must happen this way?”

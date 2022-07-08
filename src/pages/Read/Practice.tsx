@@ -55,7 +55,7 @@ const Practice = ({ word, total, collected }) => (
         {collected}/{total} collected
       </Collection>
     </div>
-    <Link to={`/practice/${word}`}>
+    <Link to={`/practice/${word.toLowerCase()}`}>
       <Star weight="fill" /> Practice
     </Link>
   </PracticeWrapper>

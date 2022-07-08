@@ -10,7 +10,7 @@ Cursed are you more than all the livestock,
 \indent(2) And more than any animal of the field;
 On your belly you shall go,
 \indent(2) And dust you shall eat
-\indent(2) All the days of your life;
+\indent(2) All the days of your [[chay|life]];
 {15} And I will make enemies
 \indent(2) Of you and the woman,
 \indent(2) And of your offspring and her Descendant;
@@ -33,7 +33,7 @@ Yet your desire will be for your husband,
 ---!q
 Cursed is the ground because of you;
 \indent(2) With hard labor you shall eat from it
-\indent(2) All the days of your life.
+\indent(2) All the days of your [[chay|life]].
 {18} Both thorns and thistles it shall grow for you;
 \indent(2) Yet you shall eat the plants of the field;
 {19} By the sweat of your face
@@ -47,4 +47,4 @@ For you are dust,
 {20} Now the man named his wife Eve, because she was the mother of all the living. {21} And the Lord God made garments of skin for Adam and his wife, and clothed them.
 
 ---!p
-{22} Then the Lord God said, “Behold, the man has become like one of Us, knowing good and evil; and now, he might reach out with his hand, and take fruit also from the tree of life, and eat, and live forever”— {23} therefore the Lord God sent him out of the Garden of Eden, to cultivate the ground from which he was taken. {24} So He drove the man out; and at the east of the Garden of Eden He stationed the cherubim and the flaming sword which turned every direction to guard the way to the tree of life.
+{22} Then the Lord God said, “Behold, the man has become like one of Us, knowing good and evil; and now, he might reach out with his hand, and take fruit also from the tree of [[chayyim|life]], and eat, and [[chay|live]] forever”— {23} therefore the Lord God sent him out of the Garden of Eden, to cultivate the ground from which he was taken. {24} So He drove the man out; and at the east of the Garden of Eden He stationed the cherubim and the flaming sword which turned every direction to guard the way to the tree of [[chayyim|life]].
