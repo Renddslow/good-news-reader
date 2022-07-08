@@ -111,7 +111,7 @@ const Read = () => {
                           />
                         );
                       })}
-                      <Practice word={week.title} total={week.totalWords} collected={0} />
+                      <Practice word={week.title} total={week?.words?.length} collected={0} />
                     </>
                   </Movement>
                 );

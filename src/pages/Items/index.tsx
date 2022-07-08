@@ -35,7 +35,6 @@ export const FadeInWrapper = styled.div`
 `;
 
 const Item = ({ loading, data }) => {
-  console.log(data);
   return (
     <Wrapper>
       {!loading && (

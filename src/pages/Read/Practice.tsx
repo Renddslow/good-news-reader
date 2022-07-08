@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Star } from 'phosphor-react';
+import { Star, Stack } from 'phosphor-react';
 import styled from 'styled-components';
 
 const PracticeWrapper = styled.div`
@@ -55,8 +55,8 @@ const Practice = ({ word, total, collected }) => (
         {collected}/{total} collected
       </Collection>
     </div>
-    <Link to={`/practice/${word.toLowerCase()}`}>
-      <Star weight="fill" /> Practice
+    <Link to={`/review/${word.toLowerCase()}`}>
+      <Stack weight="bold" /> Review
     </Link>
   </PracticeWrapper>
 );
