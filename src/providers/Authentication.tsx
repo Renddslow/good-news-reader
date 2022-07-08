@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import mixpanel from 'mixpanel-browser'
+import mixpanel from 'mixpanel-browser';
 
 export type User = {
   id: string;
@@ -7,30 +7,28 @@ export type User = {
   lastName: string;
   email: string;
   completions: Completion[];
-  links: Link[];
+  words: Word[];
 };
 
 export type Completion = {
   read_at: string;
-  movement: number;
   page: number;
 };
 
-export type Link = {
+export type Word = {
   collected_at: string;
-  movement: number;
   page: number;
-  link: string;
+  word: string;
 };
 
 export type AuthenticationContextType = {
   isAuthenticated: boolean;
   isLoading: boolean;
   completions: Completion[];
-  links: Link[];
+  words: Word[];
   user: User;
   getProfile: () => Promise<void>;
-  completePage: (movement: number, page: number) => Promise<void>;
+  completePage: (page: number) => Promise<void>;
   collectLink: (link: string, movement: number, page: number) => Promise<void>;
 };
 
@@ -49,7 +47,7 @@ const post = (route: string, body: Record<string, unknown>) =>
 const AuthenticationProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [completions, setCompletions] = useState([]);
-  const [links, setLinks] = useState([]);
+  const [words, setWords] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -63,15 +61,15 @@ const AuthenticationProvider = ({ children }) => {
         return null;
       }
 
-      const user = await d.json()
+      const user = await d.json();
 
       mixpanel.identify(user.id);
       mixpanel.people.set({
-        '$first_name': user.firstName,
-        '$last_name': user.lastName,
-        '$distinct_id': user.id,
-        '$email': user.email,
-        '$created': user.created,
+        $first_name: user.firstName,
+        $last_name: user.lastName,
+        $distinct_id: user.id,
+        $email: user.email,
+        $created: user.created,
       });
       setUser(user);
       setIsAuthenticated(true);
@@ -86,25 +84,23 @@ const AuthenticationProvider = ({ children }) => {
   useEffect(() => {
     if (user) {
       setCompletions(user.completions);
-      setLinks(user.links);
+      setWords(user.words);
     }
   }, [user]);
 
-  const completePage = async (movement: number, page: number) => {
+  const completePage = async (page: number) => {
     const completion = await post('/api/completions', {
-      movement,
       page,
     });
     setCompletions((s) => [...s, completion]);
   };
 
-  const collectLink = async (link: string, movement: number, page: number) => {
-    const linkResponse = await post('/api/words', {
-      link,
-      movement,
+  const collectLink = async (word: string, page: number) => {
+    const wordResponse = await post('/api/words', {
+      words,
       page,
     });
-    setLinks((s) => [...s, linkResponse]);
+    setWords((s) => [...s, wordResponse]);
   };
 
   return (
@@ -112,7 +108,7 @@ const AuthenticationProvider = ({ children }) => {
       value={{
         user,
         completions,
-        links,
+        words,
         isAuthenticated,
         isLoading,
         getProfile,
@@ -133,6 +129,6 @@ export const useAuthenticatedUser = () => {
 };
 
 export const useProgress = () => {
-  const { links, completions, completePage, collectLink } = useContext(AuthenticationContext);
-  return { links, completions, completePage, collectLink };
+  const { words, completions, completePage, collectLink } = useContext(AuthenticationContext);
+  return { words, completions, completePage, collectLink };
 };

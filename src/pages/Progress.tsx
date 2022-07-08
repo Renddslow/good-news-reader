@@ -7,19 +7,23 @@ import ProgressTooltip from './styles/ProgressTooltip';
 import { useProgress } from '../providers/Authentication';
 
 const affirmation = (completions: number) => {
-  if (completions < 11) {
+  if (completions < 15) {
     return 'Keep it up!';
   }
 
-  if (completions === 11) {
+  if (completions === 15) {
     return `You're half-way there!`;
   }
 
-  if (completions < 16) {
+  if (completions < 20) {
+    return `You're doing great!`;
+  }
+
+  if (completions < 25) {
     return `You're really stickin' with it!`;
   }
 
-  if (completions < 22) {
+  if (completions < 30) {
     return `You're almost there!`;
   }
 
@@ -62,14 +66,14 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <BookmarkSimple weight="bold" size="16" />
-        <span>{completions.length}/22</span>
+        <span>{completions.length}/30</span>
       </ProgressWrapper>
       {showTooltip && (
         <ProgressTooltip>
           {completions.length > 0
             ? `You have read through ${
                 completions.length
-              } pages so far for the Revelation reading challenge. ${affirmation(
+              } pages so far for the Good News reading challenge. ${affirmation(
                 completions.length,
               )}`
             : `You haven't read through any pages yet, complete this page to get your first!`}

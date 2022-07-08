@@ -31,52 +31,64 @@ export const LinkButton = styled(Link)`
   border: 0;
   appearance: none;
   cursor: pointer;
+  width: max-content;
+  margin-left: auto;
+`;
 
-  &:first-child {
-    opacity: 0.8;
-    background: var(--light-purple);
-    padding: 12px 12px;
-    color: #111;
-  }
+const CloseButton = styled(LinkButton)`
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  margin-left: 0;
 `;
 
 const Row = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: end;
+  align-items: start;
+  justify-content: space-between;
   grid-gap: 4px;
 `;
 
-const MOVEMENT_MAX = {
-  1: 4,
-  2: 6,
-  3: 3,
-  4: 4,
-};
+const NextTitle = styled.p`
+  font-family: var(--sans-serif);
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  text-align: right;
+  margin-top: 8px;
+`;
+
+const NextReference = styled.p`
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 4px;
+  font-family: var(--sans-serif);
+  text-align: right;
+`;
 
 const isComplete = (completions, page) => {
-  const record = completions.find((c) => c.movement === page.movement && c.page === page.page);
+  const record = completions.find((c) => c.page === page.page);
   return !!record;
 };
 
-const AppFooter = () => {
+const AppFooter = ({ data }) => {
   const params = useParams();
   const navigate = useNavigate();
   const { completions, completePage } = useProgress();
 
+  // Do not add to the index as the pages are not zero-indexed
+  const nextPage =
+    Number.isInteger(parseInt(params.page, 10)) && data?.plan?.pages[parseInt(params.page, 10)];
+
   const handlePageCompletion = async () => {
-    const payload = window.location.pathname.includes('intro')
-      ? {
-          movement: 0,
-          page: 0,
-        }
-      : {
-          movement: parseInt(params.movement, 10),
-          page: parseInt(params.item, 10),
-        };
+    const payload = {
+      page: window.location.pathname.includes('intro') ? 0 : parseInt(params.item, 10),
+    };
 
     if (!isComplete(completions, payload)) {
-      return completePage(payload.movement, payload.page);
+      return completePage(payload.page);
     }
 
     return Promise.resolve();
@@ -92,25 +104,22 @@ const AppFooter = () => {
     <Footer>
       {!window.location.pathname.includes('intro') ? (
         <Row>
-          {parseInt(params.item) !== 0 ? (
-            <LinkButton to={`/read/movement/${params.movement}/${parseInt(params.item) - 1}`}>
-              <CaretLeft weight="bold" size={18} />
-            </LinkButton>
+          {!window.location.pathname.includes('background') ? (
+            <CloseButton to="/read">Done for now</CloseButton>
           ) : (
             <div />
           )}
-          {/* TODO: Mark complete if not already completed otherwise, next page */}
-          {MOVEMENT_MAX[parseInt(params.movement)] !== parseInt(params.item) ? (
-            <LinkButton
-              to={`/read/movement/${params.movement}/${parseInt(params.item) + 1}`}
-              onClick={handlePageCompletion}
-            >
-              Next Page
-            </LinkButton>
+          {parseInt(params.page) % 5 !== 0 ? (
+            <div>
+              <LinkButton to={`/read/${parseInt(params.page) + 1}`} onClick={handlePageCompletion}>
+                Keep going
+              </LinkButton>
+              <NextTitle>{nextPage?.title}</NextTitle>
+              <NextReference>{nextPage?.titleReference}</NextReference>
+            </div>
           ) : (
             <LinkButton as="button" onClick={completeAndRoute}>
-              Complete{' '}
-              {parseInt(params.movement) < 4 ? `Movement ${params.movement}` : `the Last Movement`}
+              Finish this week
             </LinkButton>
           )}
         </Row>
@@ -119,7 +128,6 @@ const AppFooter = () => {
           <div />
           <LinkButton as="button" onClick={completeAndRoute}>
             {isComplete(completions, {
-              movement: 0,
               page: 0,
             })
               ? 'Return Home'

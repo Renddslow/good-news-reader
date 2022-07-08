@@ -35,6 +35,7 @@ export const FadeInWrapper = styled.div`
 `;
 
 const Item = ({ loading, data }) => {
+  console.log(data);
   return (
     <Wrapper>
       {!loading && (
@@ -42,7 +43,7 @@ const Item = ({ loading, data }) => {
           {data.type === 'markdown' && <Markdown data={data} />}
           {data.type === 'scripture' && <Scripture data={data} />}
           {data.type === 'video' && <Video data={data} />}
-          <AppFooter />
+          <AppFooter data={data} />
         </FadeInWrapper>
       )}
     </Wrapper>

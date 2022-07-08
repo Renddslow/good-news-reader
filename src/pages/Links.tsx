@@ -9,10 +9,10 @@ import { useProgress } from '../providers/Authentication';
 const Progress = () => {
   const [showTooltip, setShowTooltip] = useState(false);
   const ref = createRef();
-  const { links: rawLinks } = useProgress();
+  const { words: rawWords } = useProgress();
 
-  const links = rawLinks.reduce((acc, link) => {
-    if (acc.find((l) => l.link === link.link)) return acc;
+  const links = rawWords.reduce((acc, link) => {
+    if (acc.find((l) => l.word === link.word)) return acc;
     acc.push(link);
     return acc;
   }, []);
@@ -48,14 +48,9 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Star weight="fill" size="16" />
-        <span>{links.length}/66</span>
+        <span>{links.length}/23</span>
       </ProgressWrapper>
-      {showTooltip && (
-        <ProgressTooltip>
-          You have collected {links.length} links. (The total count represents the current number of
-          links unlocked)
-        </ProgressTooltip>
-      )}
+      {showTooltip && <ProgressTooltip>You have collected {links.length} words.</ProgressTooltip>}
     </ProgressContainer>
   );
 };
