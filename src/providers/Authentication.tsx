@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import mixpanel from 'mixpanel-browser'
 
 export type User = {
   id: string;
@@ -62,7 +63,17 @@ const AuthenticationProvider = ({ children }) => {
         return null;
       }
 
-      setUser(await d.json());
+      const user = await d.json()
+
+      mixpanel.identify(user.id);
+      mixpanel.people.set({
+        '$first_name': user.firstName,
+        '$last_name': user.lastName,
+        '$distinct_id': user.id,
+        '$email': user.email,
+        '$created': user.created,
+      });
+      setUser(user);
       setIsAuthenticated(true);
       setIsLoading(false);
     });
@@ -88,7 +99,7 @@ const AuthenticationProvider = ({ children }) => {
   };
 
   const collectLink = async (link: string, movement: number, page: number) => {
-    const linkResponse = await post('/api/links', {
+    const linkResponse = await post('/api/words', {
       link,
       movement,
       page,

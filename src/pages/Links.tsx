@@ -1,5 +1,5 @@
 import React, { createRef, useEffect, useState } from 'react';
-import { Triangle } from 'phosphor-react';
+import { Star } from 'phosphor-react';
 
 import ProgressWrapper from './styles/ProgressWrapper';
 import ProgressContainer from './styles/ProgressContainer';
@@ -47,7 +47,7 @@ const Progress = () => {
         aria-label="Tap to display current links collected count"
         onClick={() => setShowTooltip(true)}
       >
-        <Triangle weight="bold" size="16" />
+        <Star weight="fill" size="16" />
         <span>{links.length}/66</span>
       </ProgressWrapper>
       {showTooltip && (

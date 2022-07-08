@@ -68,6 +68,7 @@ const handler = async (event) => {
 
   response.body = JSON.stringify({
     ...user.data,
+    id: userRef,
     words: words.data.map(({ data }) => data),
     completions: completions.data.map(({ data }) => data),
   });

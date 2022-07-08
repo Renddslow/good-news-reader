@@ -84,6 +84,7 @@
     "isomorphic-fetch": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
     "kleur": "^4.1.4",
+    "mixpanel-browser": "^2.45.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

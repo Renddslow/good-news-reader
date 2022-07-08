@@ -1,27 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  BookOpen,
-  ArticleMedium,
-  YoutubeLogo,
-  CaretRight,
-  CheckCircle,
-  Gift,
-} from 'phosphor-react';
+import { CaretRight, CheckCircle } from 'phosphor-react';
 import { Link } from 'react-router-dom';
 
-const icons = {
-  read: BookOpen,
-  video: YoutubeLogo,
-  essay: ArticleMedium,
-  bonus: Gift,
-};
-
 const ItemStyled = styled.div<{ complete: boolean; isNext: boolean }>`
-  color: #fff;
+  color: #000;
   margin-left: calc(60px + 12px);
   display: grid;
-  grid-template-columns: minmax(0, max-content) minmax(0, 1fr) minmax(0, max-content);
+  grid-template-columns: minmax(0, 1fr) minmax(0, max-content);
   grid-gap: 12px;
   align-items: center;
   padding: 32px 0;
@@ -32,9 +18,16 @@ const ItemStyled = styled.div<{ complete: boolean; isNext: boolean }>`
     border-bottom: 1px solid hsl(240deg, 14%, 75%);
   }
 
-  p {
-    color: ${(props) => (props.complete ? '#dfdfef' : '#fff')};
+  p:first-child {
+    color: ${(props) => (props.complete ? '#666' : '#000')};
     text-decoration: none !important;
+  }
+
+  p:last-child {
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
   }
 
   svg {
@@ -42,24 +35,41 @@ const ItemStyled = styled.div<{ complete: boolean; isNext: boolean }>`
   }
 `;
 
+const Row = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 4px;
+  justify-content: start;
+  align-items: center;
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+`;
+
 type Props = {
   title: string;
-  type: 'read' | 'video' | 'essay' | 'bonus';
+  reference: string;
+  words: string;
   complete?: boolean;
   isNext?: boolean;
-  idx: number;
-  movement: number;
+  id: number;
 };
 
-const Item = ({ title, type, complete = false, isNext = false, idx, movement }: Props) => {
-  const Icon = icons[type];
-
+const Item = ({ title, complete = false, isNext = false, id, words, reference }: Props) => {
   return (
-    <Link to={`/read/movement/${movement}/${idx}`} style={{ textDecoration: 'none' }}>
+    <Link to={`/read/${id}`} style={{ textDecoration: 'none' }}>
       <ItemStyled complete={complete} isNext={isNext}>
-        {complete ? <CheckCircle size={24} color="#47FFE7" /> : <Icon size={24} />}
-        <p>{title}</p>
-        <CaretRight size={24} weight={isNext ? 'bold' : 'regular'} />
+        {complete && <CheckCircle size={24} color="#47FFE7" />}
+        <div>
+          <p>{title}</p>
+          <p>{reference}</p>
+        </div>
+        <Row>
+          <p>{words}</p>
+          <CaretRight size={24} weight={isNext ? 'bold' : 'regular'} />
+        </Row>
       </ItemStyled>
     </Link>
   );

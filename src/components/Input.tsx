@@ -29,7 +29,7 @@ const InputStyled = styled.input`
 
   &:focus {
     background: #fff;
-    border-color: hsl(240deg, 100%, 75%);
+    border-color: hsl(var(--green-hue), 70%, 40%);
     outline: none;
     outline-offset: 2px;
   }
@@ -39,11 +39,11 @@ const InputStyled = styled.input`
     top: -6px;
     background: linear-gradient(0deg, #fff 90%, #fff0);
     padding: 0 2px;
-    color: hsl(240deg, 100%, 65%);
+    color: hsl(var(--green-hue), 70%, 35%);
   }
 
   &:not(:placeholder-shown):not(:focus) ~ ${Label} {
-    color: hsl(240deg, 14%, 45%);
+    color: hsl(var(--green-hue), 14%, 45%);
   }
 `;
 

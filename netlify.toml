@@ -22,7 +22,7 @@ status=200
 
 [[redirects]]
 from="/api/links"
-to="/.netlify/functions/link"
+to="/.netlify/functions/words"
 status=200
 
 [[redirects]]
