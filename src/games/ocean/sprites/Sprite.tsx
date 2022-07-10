@@ -1,15 +1,9 @@
 import React, { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 
-import Squid from './Squid';
-import Starfish from './Starfish';
-import Puffer from './Puffer';
-import Jelly from './Jelly';
-import Flier from './Flier';
-import Angler from './Angler';
-
 type Props = {
   id: string;
+  children?: React.ReactElement;
   correct?: boolean;
   word: string;
   onClick: (word: string) => void;
@@ -66,18 +60,6 @@ const WordBox = styled.div<{ correct: boolean }>`
   animation: ${(props) => props.correct && wordColor} 6s ease-in-out infinite;
 `;
 
-const getRandomSprite = (sprite: React.ReactElement[], weights: number[]) => {
-  const total = weights.reduce((acc, cur) => acc + cur, 0);
-  const random = Math.floor(Math.random() * total);
-  let sum = 0;
-  for (let i = 0; i < sprite.length; i++) {
-    sum += weights[i];
-    if (random < sum) {
-      return sprite[i];
-    }
-  }
-};
-
 const Sprite = (props: Props) => {
   useEffect(() => {
     setTimeout(() => {
@@ -88,10 +70,7 @@ const Sprite = (props: Props) => {
   return (
     <SpriteContainer onClick={() => props.onClick(props.word)}>
       <WordBox correct={props.correct}>{props.word}</WordBox>
-      {getRandomSprite(
-        [<Squid />, <Starfish />, <Puffer />, <Jelly />, <Flier />, <Angler />],
-        [1, 1.2, 1.5, 1, 2, 10],
-      )}
+      {props.children}
     </SpriteContainer>
   );
 };

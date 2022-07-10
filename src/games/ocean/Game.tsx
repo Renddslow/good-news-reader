@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { v4 as uuid } from 'uuid';
 
@@ -7,6 +7,13 @@ import HUD from './HUD';
 import Sprite from './sprites/Sprite';
 import { useProgress, Word } from '../../providers/Authentication';
 import Instructions from './Instructions';
+
+import Squid from './sprites/Squid';
+import Starfish from './sprites/Starfish';
+import Puffer from './sprites/Puffer';
+import Jelly from './sprites/Jelly';
+import Flier from './sprites/Flier';
+import Angler from './sprites/Angler';
 
 const SpriteLayer = styled.div`
   width: 100%;
@@ -89,9 +96,21 @@ const addWordOrNull = (words: Word[], word: string) => {
   return null;
 };
 
+const pickRandom = (bucket: any[]) => {
+  const index = Math.floor(Math.random() * bucket.length);
+  return bucket[index];
+};
+
 const Game = () => {
   const { words } = useProgress();
   const [instructionsOpen, setInstructionsOpen] = useState(true);
+  const [laneOneStack, setLaneOneStack] = useState([]);
+  const [laneTwoStack, setLaneTwoStack] = useState([]);
+  const [laneThreeStack, setLaneThreeStack] = useState([]);
+  const [tick, setTick] = useState(0);
+  const [score, setScore] = useState(0);
+
+  const setters = [setLaneOneStack, setLaneTwoStack, setLaneThreeStack];
 
   const correctWords = collectWords([
     addWordOrNull(words, 'chay'),
@@ -100,6 +119,33 @@ const Game = () => {
     addWordOrNull(words, 'zao'),
     addWordOrNull(words, 'zoopoieo'),
   ]);
+
+  const RandomSprites = [Squid, Starfish, Puffer, Jelly, Flier, ...Array(10).fill(Angler)];
+
+  useEffect(() => {
+    if (!instructionsOpen) {
+      setTick(performance.now());
+    }
+  }, [instructionsOpen]);
+
+  useEffect(() => {
+    if (!tick) return;
+
+    const cancel = setTimeout(() => {
+      setLaneOneStack((s) => [
+        ...s,
+        {
+          word: 'chay',
+          id: uuid(),
+          Component: RandomSprites[Math.floor(Math.random() * RandomSprites.length)],
+        },
+      ]);
+      setTick(performance.now());
+    }, 2000);
+    return () => clearTimeout(cancel);
+  }, [tick, setTick]);
+
+  const removeWord = (word: string, id: string) => {};
 
   return (
     <Wrapper>
@@ -111,35 +157,50 @@ const Game = () => {
           <>
             <SpriteLayer>
               <Score>
-                <h2>Score: 1</h2>
+                <h2>Score: {score}</h2>
               </Score>
               <LanesContainer>
                 <div>
-                  <Sprite
-                    correct
-                    id={uuid()}
-                    word="chay"
-                    onClick={console.log}
-                    onExit={(word, id) => console.log(word, id)}
-                  />
+                  {laneOneStack.map(({ id, word, Component }) => (
+                    <Sprite
+                      key={id}
+                      id={id}
+                      word={word}
+                      correct={correctWords.includes(word)}
+                      onClick={() => {}}
+                      onExit={removeWord}
+                    >
+                      <Component />
+                    </Sprite>
+                  ))}
                 </div>
                 <div>
-                  <Sprite
-                    correct
-                    id={uuid()}
-                    word="chay"
-                    onClick={console.log}
-                    onExit={(word, id) => console.log(word, id)}
-                  />
+                  {laneTwoStack.map(({ id, word, Component }) => (
+                    <Sprite
+                      key={id}
+                      id={id}
+                      word={word}
+                      correct={correctWords.includes(word)}
+                      onClick={() => {}}
+                      onExit={removeWord}
+                    >
+                      <Component />
+                    </Sprite>
+                  ))}
                 </div>
                 <div>
-                  <Sprite
-                    correct
-                    id={uuid()}
-                    word="chay"
-                    onClick={console.log}
-                    onExit={(word, id) => console.log(word, id)}
-                  />
+                  {laneThreeStack.map(({ id, word, Component }) => (
+                    <Sprite
+                      key={id}
+                      id={id}
+                      word={word}
+                      correct={correctWords.includes(word)}
+                      onClick={() => {}}
+                      onExit={removeWord}
+                    >
+                      <Component />
+                    </Sprite>
+                  ))}
                 </div>
               </LanesContainer>
             </SpriteLayer>
