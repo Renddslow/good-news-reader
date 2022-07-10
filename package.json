@@ -90,6 +90,7 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "snarkdown": "^2.0.0",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "uuid": "^8.3.2"
   }
 }

@@ -16,8 +16,7 @@ import Text from '../../components/Text';
 import Practice from './Practice';
 import { FadeInWrapper } from '../Items';
 
-const isComplete = (completions, movement: number, page: number) =>
-  completions.find((p) => p.movement === movement && p.page === page);
+const isComplete = (completions, page: number) => completions.find((p) => p.page === page);
 
 type Week = {
   illustration: string;
@@ -44,7 +43,7 @@ type Assets = {
 
 const Read = () => {
   const { user } = useAuthenticatedUser();
-  const { completions } = useProgress();
+  const { completions, words } = useProgress();
   const [assets, setAssets] = useState<Assets>({} as Assets);
   const [loading, setLoading] = useState(false);
 
@@ -78,10 +77,11 @@ const Read = () => {
             </Text>
             <Row>
               <Link to="/read/intro">Learn More</Link>
-              <Link to="/practice">
-                <Star weight="fill" size="16" />
-                Practice Words (0/{allUniqueWords.size})
-              </Link>
+              {/* TODO: week 2 unlock */}
+              {/*<Link to="/practice">*/}
+              {/*  <Star weight="fill" size="16" />*/}
+              {/*  Practice Words (0/{allUniqueWords.size})*/}
+              {/*</Link>*/}
             </Row>
           </div>
         </IntroCard>
@@ -91,6 +91,9 @@ const Read = () => {
               {(assets?.weeks || []).map((week, idx) => {
                 const [y, m, d] = week.unlocks;
                 const unlocks = new Date(y, m, d);
+                const thisWeeksWords = words.filter((word) => {
+                  return week.words.includes(word.word);
+                });
 
                 return (
                   <Movement
@@ -112,11 +115,17 @@ const Read = () => {
                             reference={page.titleReference}
                             words={page.words.join(', ')}
                             id={id}
-                            complete={isComplete(completions, 1, 0)}
+                            complete={isComplete(completions, page.page)}
                           />
                         );
                       })}
-                      <Practice word={week.title} total={week?.words?.length} collected={0} />
+                      {!!thisWeeksWords.length && (
+                        <Practice
+                          word={week.title}
+                          total={week?.words?.length}
+                          collected={thisWeeksWords.length}
+                        />
+                      )}
                     </>
                   </Movement>
                 );

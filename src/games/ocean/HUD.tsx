@@ -41,6 +41,7 @@ const BackButton = styled(Link)`
   align-items: center;
   text-decoration: none;
   gap: 8px;
+  border: 2px solid #000;
 `;
 
 const HUD = ({ livesRemaining = 3 }: Props) => (
