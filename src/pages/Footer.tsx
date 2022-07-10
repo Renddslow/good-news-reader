@@ -78,16 +78,20 @@ const AppFooter = ({ data }) => {
   const navigate = useNavigate();
   const { completions, completePage } = useProgress();
 
+  const isPreread = window.location.pathname.includes('preread');
+
+  const sub = isPreread ? 1 : 0;
   // Do not add to the index as the pages are not zero-indexed
   const nextPage =
-    Number.isInteger(parseInt(params.page, 10)) && data?.plan?.pages[parseInt(params.page, 10)];
+    Number.isInteger(parseInt(params.page, 10)) &&
+    data?.plan?.pages[parseInt(params.page, 10) - sub];
 
   const handlePageCompletion = async () => {
     const payload = {
       page: window.location.pathname.includes('intro') ? 0 : parseInt(params.item, 10),
     };
 
-    if (!isComplete(completions, payload)) {
+    if (!isComplete(completions, payload) && !isPreread) {
       return completePage(payload.page);
     }
 
@@ -100,18 +104,16 @@ const AppFooter = ({ data }) => {
     });
   };
 
+  const to = isPreread ? `/read/${params.page}` : `/read/${parseInt(params.page, 10) + 1}/preread`;
+
   return (
     <Footer>
       {!window.location.pathname.includes('intro') ? (
         <Row>
-          {!window.location.pathname.includes('background') ? (
-            <CloseButton to="/read">Done for now</CloseButton>
-          ) : (
-            <div />
-          )}
+          {!isPreread ? <CloseButton to="/read">Done for now</CloseButton> : <div />}
           {parseInt(params.page) % 5 !== 0 ? (
             <div>
-              <LinkButton to={`/read/${parseInt(params.page) + 1}`} onClick={handlePageCompletion}>
+              <LinkButton to={to} onClick={handlePageCompletion}>
                 Keep going
               </LinkButton>
               <NextTitle>{nextPage?.title}</NextTitle>

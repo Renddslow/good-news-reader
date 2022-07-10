@@ -59,7 +59,7 @@ type Props = {
 
 const Item = ({ title, complete = false, isNext = false, id, words, reference }: Props) => {
   return (
-    <Link to={`/read/${id}`} style={{ textDecoration: 'none' }}>
+    <Link to={`/read/${id}/preread`} style={{ textDecoration: 'none' }}>
       <ItemStyled complete={complete} isNext={isNext}>
         {complete && <CheckCircle size={24} color="#47FFE7" />}
         <div>

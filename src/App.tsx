@@ -10,6 +10,7 @@ import Intro from './pages/Intro';
 import Profile from './pages/Profile';
 
 import OceanGame from './games/ocean';
+import PreRead from './pages/PreRead';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -67,6 +68,14 @@ const App = () => {
             element={
               <RequireAuth>
                 <Item />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path=":page/preread"
+            element={
+              <RequireAuth>
+                <PreRead />
               </RequireAuth>
             }
           />
