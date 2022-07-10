@@ -33,6 +33,7 @@ const LanesContainer = styled.div`
   grid-template-rows: repeat(3, minmax(0, 1fr));
   z-index: 1000;
   position: relative;
+  padding-bottom: 50px;
 `;
 
 const Score = styled.div`
