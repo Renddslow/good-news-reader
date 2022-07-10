@@ -153,6 +153,7 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   height: 100vh;
+  height: -webkit-fill-available;
   display: block;
   overflow: hidden;
   margin: 0 auto;
