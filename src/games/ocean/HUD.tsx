@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Heart, HeartBreak, CaretLeft } from 'phosphor-react';
 import { Link } from 'react-router-dom';
 
@@ -44,6 +44,26 @@ const BackButton = styled(Link)`
   border: 2px solid #000;
 `;
 
+const flash = keyframes`
+  0% {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+`;
+
+const WrappedHeartBreak = styled(HeartBreak)`
+  position: relative;
+  animation: ${flash} 1s linear;
+  animation-fill-mode: forwards;
+`;
+
 const HUD = ({ livesRemaining = 3 }: Props) => (
   <Container>
     <BackButton to="/read">
@@ -51,7 +71,7 @@ const HUD = ({ livesRemaining = 3 }: Props) => (
     </BackButton>
     <LifeContainer>
       {[...Array(3 - livesRemaining)].map((_, i) => (
-        <HeartBreak key={i} weight="fill" size={48} fill="#bf4060" />
+        <WrappedHeartBreak key={i} weight="fill" size={48} fill="#bf4060" />
       ))}
       {[...Array(livesRemaining)].map((_, i) => (
         <Heart key={i} weight="fill" size={48} fill="#ff0040" />

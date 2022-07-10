@@ -14,6 +14,7 @@ import Puffer from './sprites/Puffer';
 import Jelly from './sprites/Jelly';
 import Flier from './sprites/Flier';
 import Angler from './sprites/Angler';
+import GameOver from './GameOver';
 
 const SpriteLayer = styled.div`
   width: 100%;
@@ -128,6 +129,14 @@ const Game = () => {
   const RandomSprites = [Squid, Starfish, Puffer, Jelly, Flier, ...Array(10).fill(Angler)];
 
   useEffect(() => {
+    const cancel = setTimeout(() => {
+      setGameOver(true);
+    }, 1000 * 90);
+
+    return () => clearTimeout(cancel);
+  }, []);
+
+  useEffect(() => {
     if (livesRemaining === 0) {
       setGameOver(true);
       setSurvived(false);
@@ -209,7 +218,7 @@ const Game = () => {
     <Wrapper>
       <HUD livesRemaining={livesRemaining} />
       {gameOver ? (
-        'Game Over'
+        <GameOver survived={survived} livesRemaining={livesRemaining} score={score} />
       ) : (
         <>
           {instructionsOpen ? (
