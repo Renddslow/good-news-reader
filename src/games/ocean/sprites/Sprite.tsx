@@ -21,6 +21,7 @@ const swim = keyframes`
 `;
 
 const SpriteContainer = styled.div`
+  will-change: left;
   position: absolute;
   width: max-content;
   display: block;
