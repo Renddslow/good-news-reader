@@ -35,13 +35,19 @@ export const FadeInWrapper = styled.div`
 `;
 
 const Item = ({ loading, data }) => {
+  const { page } = data || {};
+
   return (
     <Wrapper>
-      {!loading && (
+      {!loading && page && (
         <FadeInWrapper>
-          {data.type === 'markdown' && <Markdown data={data} />}
-          {data.type === 'scripture' && <Scripture data={data} />}
-          {data.type === 'video' && <Video data={data} />}
+          <h1>{page.title}</h1>
+          {page.chapters.map((chapter) => (
+            <>
+              <h2 style={{ marginTop: 24 }}>{chapter.reference}</h2>
+              <Scripture data={chapter} key={chapter.id} />
+            </>
+          ))}
           <AppFooter data={data} />
         </FadeInWrapper>
       )}
@@ -49,4 +55,4 @@ const Item = ({ loading, data }) => {
   );
 };
 
-export default withData(Item);
+export default withData(Item, false);
