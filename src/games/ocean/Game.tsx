@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { v4 as uuid } from 'uuid';
+import mixpanel from 'mixpanel-browser';
 
 import OceanBackground from './OceanBackground';
 import HUD from './HUD';
 import Sprite from './sprites/Sprite';
-import { useProgress, Word } from '../../providers/Authentication';
+import { useAuthenticatedUser, useProgress, Word } from '../../providers/Authentication';
 import Instructions from './Instructions';
 
 import Squid from './sprites/Squid';
@@ -106,6 +107,7 @@ const pickRandom = (bucket: any[]) => {
 
 const Game = () => {
   const { words } = useProgress();
+  const { user } = useAuthenticatedUser();
   const [livesRemaining, setLivesRemaining] = useState(3);
   const [instructionsOpen, setInstructionsOpen] = useState(true);
   const [laneOneStack, setLaneOneStack] = useState([]);
@@ -129,7 +131,18 @@ const Game = () => {
   const RandomSprites = [Squid, Starfish, Puffer, Jelly, Flier, ...Array(10).fill(Angler)];
 
   useEffect(() => {
+    mixpanel.track('game-started', {
+      game: 'ocean',
+      distinct_id: user.id,
+    });
     const cancel = setTimeout(() => {
+      mixpanel.track('game-completed', {
+        game: 'ocean',
+        score,
+        survived,
+        livesRemaining,
+        distinct_id: user.id,
+      });
       setGameOver(true);
     }, 1000 * 90);
 
