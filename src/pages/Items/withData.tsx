@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const getPlans = () =>
+const getPlans = (pageUrl) =>
   Promise.all([
     fetch('/assets/assets.json').then((d) => d.json()),
-    fetch('/assets/hyperlinks.json').then((d) => d.json()),
+    fetch(pageUrl).then((d) => d.json()),
   ]);
 
 const withData =
@@ -16,16 +16,10 @@ const withData =
 
     useEffect(() => {
       setLoading(true);
-      getPlans()
-        .then(([plan, hyperlinks]) => setData({ plan, hyperlinks }))
-        .then(() => planOnly && setLoading(false));
-
-      if (!planOnly) {
-        fetch(`/assets/${params.page}.json`)
-          .then((d) => d.json())
-          .then((d) => setData((s) => ({ ...s, page: d })))
-          .then(() => setLoading(false));
-      }
+      getPlans(`/assets/${params.page}.json`).then(([plan, page]) => {
+        setData({ plan, page });
+        setLoading(false);
+      });
     }, [params]);
 
     return <Component {...props} loading={loading} data={data} />;

@@ -183,6 +183,8 @@ const Game = () => {
       } else {
         if (!correctWordInALane) {
           word = pickRandom(correctWords) || 'chay';
+        } else {
+          word = pickRandom(bucket);
         }
       }
 

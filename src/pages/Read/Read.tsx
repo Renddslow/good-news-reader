@@ -66,7 +66,7 @@ const Read = () => {
     <Wrapper>
       <Header>
         <h1>Good News Reader</h1>
-        <ProfileButton />
+        {/*<ProfileButton />*/}
       </Header>
       <div>
         <IntroCard>

@@ -92,6 +92,10 @@ const AuthenticationProvider = ({ children }) => {
     const completion = await post('/api/completions', {
       page,
     });
+    mixpanel.track('page completed', {
+      page,
+      distinct_id: user.id,
+    });
     setCompletions((s) => [...s, completion]);
   };
 
@@ -99,6 +103,11 @@ const AuthenticationProvider = ({ children }) => {
     const wordResponse = await post('/api/words', {
       word,
       page,
+    });
+    mixpanel.track('word collected', {
+      word,
+      page,
+      distinct_id: user.id,
     });
     setWords((s) => [...s, wordResponse]);
   };

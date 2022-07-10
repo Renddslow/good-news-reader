@@ -111,7 +111,7 @@ const AppFooter = ({ data }) => {
       {!window.location.pathname.includes('intro') ? (
         <Row>
           {!isPreread ? <CloseButton to="/read">Done for now</CloseButton> : <div />}
-          {parseInt(params.page) % 5 !== 0 ? (
+          {parseInt(params.page) % 5 !== 0 || isPreread ? (
             <div>
               <LinkButton to={to} onClick={handlePageCompletion}>
                 Keep going
