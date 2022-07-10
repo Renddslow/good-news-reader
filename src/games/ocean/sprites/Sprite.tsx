@@ -1,19 +1,57 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from 'react';
+import styled, { keyframes } from 'styled-components';
 
 import Squid from './Squid';
+import Starfish from './Starfish';
+import Puffer from './Puffer';
+import Jelly from './Jelly';
+import Flier from './Flier';
+import Angler from './Angler';
 
 type Props = {
+  id: string;
+  correct?: boolean;
   word: string;
+  onClick: (word: string) => void;
+  onExit: (word: string, id: string) => void;
 };
+
+const swim = keyframes`
+  0% {
+    left: -200px;
+  }
+
+  100% {
+    left: calc(100% + 200px);
+  }
+`;
 
 const SpriteContainer = styled.div`
   position: absolute;
   width: max-content;
   display: block;
+  animation: ${swim} 6s linear infinite;
+  cursor: pointer;
 `;
 
-const WordBox = styled.div`
+const wordColor = keyframes`  
+  63% {
+    border-color: #000;
+    background-color: #fff;
+  }
+  
+  64% {
+    border-color: #ff0040;
+    background-color: #ff0040;
+  }
+  
+  100% {
+    border-color: #ff0040;
+    background-color: #ff0040;
+  }
+`;
+
+const WordBox = styled.div<{ correct: boolean }>`
   padding: 12px 24px;
   border: 2px solid #000;
   color: #000;
@@ -25,6 +63,7 @@ const WordBox = styled.div`
   letter-spacing: 1.02px;
   display: block;
   margin: 0 auto 12px;
+  animation: ${(props) => props.correct && wordColor} 6s ease-in-out infinite;
 `;
 
 const getRandomSprite = (sprite: React.ReactElement[], weights: number[]) => {
@@ -40,10 +79,19 @@ const getRandomSprite = (sprite: React.ReactElement[], weights: number[]) => {
 };
 
 const Sprite = (props: Props) => {
+  useEffect(() => {
+    setTimeout(() => {
+      props.onExit(props.word, props.id);
+    }, 1000 * 4.7);
+  }, []);
+
   return (
-    <SpriteContainer onClick={() => console.log('Touched!')}>
-      <WordBox>{props.word}</WordBox>
-      {getRandomSprite([<Squid />], [1])}
+    <SpriteContainer onClick={() => props.onClick(props.word)}>
+      <WordBox correct={props.correct}>{props.word}</WordBox>
+      {getRandomSprite(
+        [<Squid />, <Starfish />, <Puffer />, <Jelly />, <Flier />, <Angler />],
+        [1, 1.2, 1.5, 1, 2, 10],
+      )}
     </SpriteContainer>
   );
 };
