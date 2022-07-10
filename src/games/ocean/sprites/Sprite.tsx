@@ -6,7 +6,7 @@ type Props = {
   children?: React.ReactElement;
   correct?: boolean;
   word: string;
-  onClick: (word: string) => void;
+  onClick: (word: string, id: string) => void;
   onExit: (word: string, id: string) => void;
 };
 
@@ -62,13 +62,14 @@ const WordBox = styled.div<{ correct: boolean }>`
 
 const Sprite = (props: Props) => {
   useEffect(() => {
-    setTimeout(() => {
+    const cancel = setTimeout(() => {
       props.onExit(props.word, props.id);
     }, 1000 * 4.7);
+    return () => clearTimeout(cancel);
   }, []);
 
   return (
-    <SpriteContainer onClick={() => props.onClick(props.word)}>
+    <SpriteContainer onClick={() => props.onClick(props.word, props.id)}>
       <WordBox correct={props.correct}>{props.word}</WordBox>
       {props.children}
     </SpriteContainer>

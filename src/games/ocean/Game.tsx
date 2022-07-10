@@ -29,6 +29,8 @@ const LanesContainer = styled.div`
   width: 100%;
   display: grid;
   grid-template-rows: repeat(3, minmax(0, 1fr));
+  z-index: 1000;
+  position: relative;
 `;
 
 const Score = styled.div`
@@ -103,12 +105,15 @@ const pickRandom = (bucket: any[]) => {
 
 const Game = () => {
   const { words } = useProgress();
+  const [livesRemaining, setLivesRemaining] = useState(3);
   const [instructionsOpen, setInstructionsOpen] = useState(true);
   const [laneOneStack, setLaneOneStack] = useState([]);
   const [laneTwoStack, setLaneTwoStack] = useState([]);
   const [laneThreeStack, setLaneThreeStack] = useState([]);
   const [tick, setTick] = useState(0);
   const [score, setScore] = useState(0);
+  const [gameOver, setGameOver] = useState(false);
+  const [survived, setSurvived] = useState(true);
 
   const setters = [setLaneOneStack, setLaneTwoStack, setLaneThreeStack];
 
@@ -123,6 +128,13 @@ const Game = () => {
   const RandomSprites = [Squid, Starfish, Puffer, Jelly, Flier, ...Array(10).fill(Angler)];
 
   useEffect(() => {
+    if (livesRemaining === 0) {
+      setGameOver(true);
+      setSurvived(false);
+    }
+  }, [livesRemaining]);
+
+  useEffect(() => {
     if (!instructionsOpen) {
       setTick(performance.now());
     }
@@ -132,10 +144,30 @@ const Game = () => {
     if (!tick) return;
 
     const cancel = setTimeout(() => {
-      setLaneOneStack((s) => [
+      const randomSetterIndex = Math.floor(Math.random() * setters.length);
+      const set = setters[randomSetterIndex];
+
+      const bucket =
+        addWordOrNull(words, 'zoe') === null ? chayBucket : [...chayBucket, ...zoeBucket];
+      const activeWords = [...laneOneStack, ...laneTwoStack, ...laneThreeStack].map((w) => w.word);
+      const correctWordInALane = activeWords.some((w) => correctWords.includes(w));
+
+      const coinFlip = Math.random() < 0.5;
+
+      let word;
+
+      if (coinFlip) {
+        word = pickRandom(bucket);
+      } else {
+        if (!correctWordInALane) {
+          word = pickRandom(correctWords) || 'chay';
+        }
+      }
+
+      set((s) => [
         ...s,
         {
-          word: 'chay',
+          word,
           id: uuid(),
           Component: RandomSprites[Math.floor(Math.random() * RandomSprites.length)],
         },
@@ -145,67 +177,99 @@ const Game = () => {
     return () => clearTimeout(cancel);
   }, [tick, setTick]);
 
-  const removeWord = (word: string, id: string) => {};
+  const removeWord = (word: string, id: string) => {
+    if (laneOneStack.find((s) => s.id === id)) {
+      setLaneOneStack((s) => s.filter((s) => s.id !== id));
+    }
+    if (laneTwoStack.find((s) => s.id === id)) {
+      setLaneTwoStack((s) => s.filter((s) => s.id !== id));
+    }
+    if (laneThreeStack.find((s) => s.id === id)) {
+      setLaneThreeStack((s) => s.filter((s) => s.id !== id));
+    }
+  };
+
+  const handleExit = (word: string, id: string) => {
+    if (correctWords.includes(word) || word === 'chay') {
+      setLivesRemaining((lives) => lives - 1);
+    }
+    removeWord(word, id);
+  };
+
+  const handleClick = (word: string, id: string) => {
+    removeWord(word, id);
+    if (correctWords.includes(word) || word === 'chay') {
+      setScore((s) => s + 1);
+    } else {
+      setLivesRemaining((lives) => lives - 1);
+    }
+  };
 
   return (
     <Wrapper>
-      <HUD livesRemaining={2} />
-      {instructionsOpen ? (
-        <Instructions onClose={() => setInstructionsOpen(false)} />
+      <HUD livesRemaining={livesRemaining} />
+      {gameOver ? (
+        'Game Over'
       ) : (
-        <OceanBackground>
-          <>
-            <SpriteLayer>
-              <Score>
-                <h2>Score: {score}</h2>
-              </Score>
-              <LanesContainer>
-                <div>
-                  {laneOneStack.map(({ id, word, Component }) => (
-                    <Sprite
-                      key={id}
-                      id={id}
-                      word={word}
-                      correct={correctWords.includes(word)}
-                      onClick={() => {}}
-                      onExit={removeWord}
-                    >
-                      <Component />
-                    </Sprite>
-                  ))}
-                </div>
-                <div>
-                  {laneTwoStack.map(({ id, word, Component }) => (
-                    <Sprite
-                      key={id}
-                      id={id}
-                      word={word}
-                      correct={correctWords.includes(word)}
-                      onClick={() => {}}
-                      onExit={removeWord}
-                    >
-                      <Component />
-                    </Sprite>
-                  ))}
-                </div>
-                <div>
-                  {laneThreeStack.map(({ id, word, Component }) => (
-                    <Sprite
-                      key={id}
-                      id={id}
-                      word={word}
-                      correct={correctWords.includes(word)}
-                      onClick={() => {}}
-                      onExit={removeWord}
-                    >
-                      <Component />
-                    </Sprite>
-                  ))}
-                </div>
-              </LanesContainer>
-            </SpriteLayer>
-          </>
-        </OceanBackground>
+        <>
+          {instructionsOpen ? (
+            <Instructions onClose={() => setInstructionsOpen(false)} />
+          ) : (
+            <OceanBackground>
+              <>
+                <SpriteLayer>
+                  <Score>
+                    <h2>Score: {score}</h2>
+                  </Score>
+                  <LanesContainer>
+                    <div>
+                      {laneOneStack.map(({ id, word, Component }) => (
+                        <Sprite
+                          key={id}
+                          id={id}
+                          word={word}
+                          correct={correctWords.includes(word)}
+                          onClick={handleClick}
+                          onExit={handleExit}
+                        >
+                          <Component />
+                        </Sprite>
+                      ))}
+                    </div>
+                    <div>
+                      {laneTwoStack.map(({ id, word, Component }) => (
+                        <Sprite
+                          key={id}
+                          id={id}
+                          word={word}
+                          correct={correctWords.includes(word)}
+                          onClick={handleClick}
+                          onExit={handleExit}
+                        >
+                          <Component />
+                        </Sprite>
+                      ))}
+                    </div>
+                    <div>
+                      {laneThreeStack.map(({ id, word, Component }) => (
+                        <Sprite
+                          key={id}
+                          id={id}
+                          word={word}
+                          correct={correctWords.includes(word)}
+                          onClick={handleClick}
+                          onExit={handleExit}
+                        >
+                          <Component />
+                        </Sprite>
+                      ))}
+                    </div>
+                  </LanesContainer>
+                </SpriteLayer>
+              </>
+            </OceanBackground>
+          )}
+        </>
       )}
     </Wrapper>
   );
