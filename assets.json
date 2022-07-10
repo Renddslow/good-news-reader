@@ -14,6 +14,7 @@
       "title": "Love",
       "subtitle": "Week 2 • July 17th – 23rd",
       "unlocks": [2022, 6, 17],
+      "words": ["ahav", "ahavah", "ahavat", "ahavti", "agapao"],
       "pages": []
     },
     {
@@ -21,6 +22,7 @@
       "title": "Name",
       "subtitle": "Week 3 • July 24th – 30th",
       "unlocks": [2022, 6, 24],
+      "words": ["shem", "onoma"],
       "pages": []
     },
     {
@@ -28,6 +30,7 @@
       "title": "Blood",
       "subtitle": "Week 4 • July 31st – 6th",
       "unlocks": [2022, 6, 31],
+      "words": ["dam", "haima"],
       "pages": []
     },
     {
@@ -35,6 +38,7 @@
       "title": "Believe",
       "subtitle": "Week 5 • July 7th – 13th",
       "unlocks": [2022, 7, 7],
+      "words": ["aman", "pisteuo", "pistis"],
       "pages": []
     },
     {
@@ -42,6 +46,7 @@
       "title": "Witness",
       "subtitle": "Week 6 • July 14th – 20th",
       "unlocks": [2022, 7, 14],
+      "words": ["mizbeakh", "eduth", "eben", "eid", "martus", "martureo", "marturia"],
       "pages": []
     }
   ],

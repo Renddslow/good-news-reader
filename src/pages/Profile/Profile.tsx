@@ -1,7 +1,6 @@
 import React from 'react';
 import { Info } from 'phosphor-react';
 import styled from 'styled-components';
-import { default as ColorHash } from 'color-hash';
 
 import { useAuthenticatedUser, useProgress } from '../../providers/Authentication';
 import { FadeInWrapper } from '../Items';
@@ -71,7 +70,7 @@ const getChapter = (ch: string) => {
 };
 
 const Profile = ({ loading, data }) => {
-  const { completions, links } = useProgress();
+  const { completions, words } = useProgress();
   const { user } = useAuthenticatedUser();
 
   const filteredCompletions = !loading
@@ -103,23 +102,23 @@ const Profile = ({ loading, data }) => {
                 can experience the Bible as unified, meditation literature.
               </Information>
             </GridHeader>
-            {!links.length ? (
+            {!words.length ? (
               <Empty label="You haven't collected any links yet." />
             ) : (
               <Grid>
-                {links
+                {words
                   .reduce((acc, link) => {
-                    if (acc.find((l) => l.link === link.link)) return acc;
+                    if (acc.find((l) => l.word === link.word)) return acc;
                     acc.push(link);
                     return acc;
                   }, [])
-                  .map((link) => (
+                  .map((word) => (
                     <ProgressCard
-                      key={link.link}
-                      movement={link.movement}
-                      page={link.page}
-                      title={data.hyperlinks[link.link].title}
-                      done={link.collected_at}
+                      key={word.word}
+                      movement={word.movement}
+                      page={word.page}
+                      title={data.hyperlinks[word.word].title}
+                      done={word.collected_at}
                       type="link"
                     />
                   ))}

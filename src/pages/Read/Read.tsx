@@ -58,6 +58,11 @@ const Read = () => {
       .then(() => setLoading(false));
   }, []);
 
+  const allUniqueWords = new Set();
+  assets?.weeks?.forEach((week) => {
+    week?.words?.forEach((word) => allUniqueWords.add(word));
+  });
+
   return (
     <Wrapper>
       <Header>
@@ -75,7 +80,7 @@ const Read = () => {
               <Link to="/read/intro">Learn More</Link>
               <Link to="/practice">
                 <Star weight="fill" size="16" />
-                Practice Words (0/21)
+                Practice Words (0/{allUniqueWords.size})
               </Link>
             </Row>
           </div>

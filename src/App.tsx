@@ -9,6 +9,8 @@ import ReadHeader from './pages/ReadHeader';
 import Intro from './pages/Intro';
 import Profile from './pages/Profile';
 
+import OceanGame from './games/ocean';
+
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
   const location = useLocation();
@@ -77,6 +79,14 @@ const App = () => {
             }
           />
         </Route>
+        <Route
+          path="/games/ocean"
+          element={
+            <RequireAuth>
+              <OceanGame />
+            </RequireAuth>
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/read" />} />
       </Routes>

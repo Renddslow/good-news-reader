@@ -48,7 +48,7 @@ const Progress = () => {
         onClick={() => setShowTooltip(true)}
       >
         <Star weight="fill" size="16" />
-        <span>{links.length}/23</span>
+        <span>{links.length}/24</span>
       </ProgressWrapper>
       {showTooltip && <ProgressTooltip>You have collected {links.length} words.</ProgressTooltip>}
     </ProgressContainer>
