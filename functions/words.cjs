@@ -22,7 +22,7 @@ const safelyVerify = (token) => {
 
 const handler = async (event) => {
   const { cookie: cookies } = event.headers;
-  const { link, movement, page } = JSON.parse(event.body);
+  const { word, page } = JSON.parse(event.body);
 
   const response = {
     headers: {
@@ -52,10 +52,11 @@ const handler = async (event) => {
   const payload = {
     user: userRef,
     collected_at: new Date().toISOString(),
-    link,
-    movement,
+    word,
     page,
   };
+
+  console.log(payload);
 
   await client.query(q.Create(q.Collection('words'), { data: payload }));
 

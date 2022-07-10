@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import hash from '../../../utils/hash';
 import Hyperlink from '../../../components/Hyperlink';
+import { useProgress } from '../../../providers/Authentication';
 
 type Props = {
   content: InlineType[];
@@ -16,6 +17,8 @@ const Verse = styled.span`
 `;
 
 const Inline = ({ content }: Props) => {
+  const { words } = useProgress();
+
   return (
     <>
       {(content || []).map((char, idx) => {
@@ -30,11 +33,19 @@ const Inline = ({ content }: Props) => {
         if (char.type === 'hyperlink') {
           return (
             <Hyperlink
-              key={hash(JSON.stringify(char))}
-              to={`hyperlinks/${char.link}`}
+              key={`${hash(JSON.stringify(char))}-${idx}`}
+              onClick={(e) => {
+                const event = new CustomEvent('word-click', {
+                  detail: {
+                    ...char,
+                    target: e.target,
+                  },
+                });
+                window.dispatchEvent(event);
+              }}
               id={char.link}
             >
-              {char.content}
+              {words.find((w) => w.word === char.link) ? <em>{char.link}</em> : char.content}
             </Hyperlink>
           );
         }

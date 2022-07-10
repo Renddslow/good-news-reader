@@ -29,7 +29,7 @@ export type AuthenticationContextType = {
   user: User;
   getProfile: () => Promise<void>;
   completePage: (page: number) => Promise<void>;
-  collectLink: (link: string, movement: number, page: number) => Promise<void>;
+  collectWord: (word: string, page: number) => Promise<void>;
 };
 
 const AuthenticationContext = createContext<AuthenticationContextType>({
@@ -95,9 +95,9 @@ const AuthenticationProvider = ({ children }) => {
     setCompletions((s) => [...s, completion]);
   };
 
-  const collectLink = async (word: string, page: number) => {
+  const collectWord = async (word: string, page: number) => {
     const wordResponse = await post('/api/words', {
-      words,
+      word,
       page,
     });
     setWords((s) => [...s, wordResponse]);
@@ -113,7 +113,7 @@ const AuthenticationProvider = ({ children }) => {
         isLoading,
         getProfile,
         completePage,
-        collectLink,
+        collectWord,
       }}
     >
       {children}
@@ -129,6 +129,6 @@ export const useAuthenticatedUser = () => {
 };
 
 export const useProgress = () => {
-  const { words, completions, completePage, collectLink } = useContext(AuthenticationContext);
-  return { words, completions, completePage, collectLink };
+  const { words, completions, completePage, collectWord } = useContext(AuthenticationContext);
+  return { words, completions, completePage, collectWord };
 };

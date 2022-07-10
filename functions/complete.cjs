@@ -22,7 +22,7 @@ const safelyVerify = (token) => {
 
 const handler = async (event) => {
   const { cookie: cookies } = event.headers;
-  const { movement, page } = JSON.parse(event.body);
+  const { page } = JSON.parse(event.body);
 
   const response = {
     headers: {
@@ -52,7 +52,6 @@ const handler = async (event) => {
   const payload = {
     user: userRef,
     read_at: new Date().toISOString(),
-    movement,
     page,
   };
 

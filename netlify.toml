@@ -21,7 +21,7 @@ to="/.netlify/functions/user"
 status=200
 
 [[redirects]]
-from="/api/links"
+from="/api/words"
 to="/.netlify/functions/words"
 status=200
 

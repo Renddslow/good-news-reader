@@ -1,7 +1,11 @@
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Hyperlink = styled(Link)`
+const Hyperlink = styled.button`
+  appearance: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
   text-decoration: none;
   position: relative;
   box-sizing: border-box;
