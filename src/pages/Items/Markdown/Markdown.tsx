@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const ContentWrapper = styled.div`
+export const ContentWrapper = styled.div<{ sans: boolean }>`
   font-size: 18px;
   line-height: 1.5;
   margin-top: 32px;
+  ${(props) => props.sans && `font-family: var(--sans-serif);`}
 
   p {
     margin-top: 14px;
@@ -49,11 +50,11 @@ const Title = styled.h1`
   margin-top: 32px;
 `;
 
-const Markdown = ({ data, titleSize = 'h1' }) => (
+const Markdown = ({ data, preread = false, titleSize = 'h1' }) => (
   <>
     {/* @ts-ignore */}
     {data.title && <Title as={titleSize}>{data.title}</Title>}
-    <ContentWrapper dangerouslySetInnerHTML={{ __html: data.content }} />
+    <ContentWrapper sans={preread} dangerouslySetInnerHTML={{ __html: data.content }} />
   </>
 );
 
