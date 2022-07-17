@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
+import mixpanel from 'mixpanel-browser';
 
 import Scripture from './Scripture';
 import withData from './withData';
@@ -45,12 +46,18 @@ const Item = ({ loading, data }) => {
 
   useEffect(() => {
     const handleWords = (e) => {
-      setShowModal(true);
-      setActiveWord(e.detail.link);
+      if (!words.find((w) => w.word === e.detail.link)) {
+        setShowModal(true);
+        setActiveWord(e.detail.link);
+      } else {
+        mixpanel.track('transliteration flipped', {
+          word: e.detail.link,
+        });
+      }
     };
     window.addEventListener('word-click', handleWords);
     return () => window.removeEventListener('word-click', handleWords);
-  }, []);
+  }, [words]);
 
   const word = dictionary[activeWord];
 

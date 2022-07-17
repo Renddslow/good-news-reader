@@ -44,9 +44,10 @@ const Inline = ({ content }: Props) => {
                 window.dispatchEvent(event);
               }}
               id={char.link}
-            >
-              {words.find((w) => w.word === char.link) ? <em>{char.link}</em> : char.content}
-            </Hyperlink>
+              collected={!!words.find((w) => w.word === char.link)}
+              transliterated={char.link}
+              word={char.content}
+            />
           );
         }
 

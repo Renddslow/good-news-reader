@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Hyperlink = styled.button`
@@ -29,4 +30,31 @@ const Hyperlink = styled.button`
   }
 `;
 
-export default Hyperlink;
+type Props = {
+  word: string;
+  collected: boolean;
+  transliterated: string;
+  id: string;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+};
+
+export default ({ collected, transliterated, word, ...props }: Props) => {
+  const [showTransliteration, setShowTransliteration] = useState(true);
+
+  const handleClick = (e) => {
+    if (collected) {
+      setShowTransliteration((s) => !s);
+    }
+    props.onClick(e);
+  };
+
+  if (transliterated === 'chayyim') {
+    transliterated = transliterated.replace('yyim', 'yiym');
+  }
+
+  return (
+    <Hyperlink {...props} onClick={handleClick}>
+      {collected && showTransliteration ? transliterated : word}
+    </Hyperlink>
+  );
+};
