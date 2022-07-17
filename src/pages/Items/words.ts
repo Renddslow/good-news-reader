@@ -24,6 +24,21 @@ const words = {
     pos: 'verb',
     definition: 'to quicken/give life',
   },
+  ahavah: {
+    lang: 'Hebrew',
+    pos: 'noun',
+    definition: 'love',
+  },
+  ahav: {
+    lang: 'Hebrew',
+    pos: 'verb',
+    definition: 'to love',
+  },
+  agapao: {
+    lang: 'Greek',
+    pos: 'verb',
+    definition: 'to love',
+  },
 };
 
 export default words;

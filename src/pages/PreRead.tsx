@@ -73,6 +73,18 @@ const content = [
   
   
   Meditate on this passage slowly and consider looking back at some of our previous readings as you ponder the mystery of the incarnation and what it means for your own _zoe_ (life)."`,
+  `We begin our reading this week with a peculiar story. If you've ever read the book of Genesis before (and if you haven't, you ought to), you'll recall the character named Abraham. Abraham was a man called out of Babylon to be the start of a new nation that God would use to bless the whole world. God made a particularly special promise to Abraham, despite he and his wife's advanced age, they would have a son who would launch their new nation.
+
+The story of Abraham is mixed tale of some obedience and allegiance towards YHWH mixed with a consistent theme of Abraham hellbent on seizing the promise for himself. At first he tries to pass the inheritance to a servant, than he abuses and oppresses a slave girl to try to gain an heir. His wife, with whom Abraham is meant to start this new nation, is twice bardered off to a powerful ruler _by Abraham_. All to save his own skin.
+
+Nevertheless, YHWH's promises never fail. Abraham and his wife are blessed with a boy they name Isaac. 
+
+In this story however, YHWH seems to ask for the boy back. Interestingly, Abraham is described as loving (_ahav_) the boy, which is the first instance of the verb form of "love" in the Hebrew Bible.`,
+  `The epic narrative of Torah (and indeed the whole Hebrew Bible) is the loving, faithfulness of YHWH. It seems that God does not tire of loving his people, even when their responce is apostasy, synchetism, and rebellion. But God isn't a doormat or like a punching bag. In fact, God seeks what can seem like an exacting response from his people. He asks that his people love (_ahav_) YHWH, keep his teachings and obey them, and love (_ahav_) their fellow humans.
+
+Often we can get caught up in the minutia of the Torah instructions. We can feel like those commands and instructions have nothing to do with us (and to be fair, we don't have to kill a bull once a year or have Pastor Bart inspect our house when there's mold). But the heartbeat of the instructions is love. Jesus affirms this when he says that the Law and the Prophets hang on this notion.
+
+Meditate on what God expects our response to be to his loving, faithfulness.`,
 ];
 
 const PreRead = ({ data }) => {

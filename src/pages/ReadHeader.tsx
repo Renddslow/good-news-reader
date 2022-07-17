@@ -20,7 +20,7 @@ const ReadHeader = () => {
       <Header>
         <Home />
         <Links />
-        <Progress />
+        {/*<Progress />*/}
       </Header>
       <Outlet />
     </>

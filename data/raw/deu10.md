@@ -1,0 +1,5 @@
+---!p
+{12} And now, Israel, what does YHWH your God ask of you but to fear YHWH your God, to walk in obedience to him, [[ahavah|to love]] him, to serve YHWH your God with all your heart and with all your soul, {13} and to observe YHWH’s commands and decrees that I am giving you today for your own good?
+
+---!p
+{14} To YHWH your God belong the heavens, even the highest heavens, the earth and everything in it. {15} Yet YHWH set his affection on your ancestors and [[ahavah|loved]] them, and he chose you, their descendants, above all the nations—as it is today. {16} Circumcise your hearts, therefore, and do not be stiff-necked any longer. {17} For YHWH your God is God of gods and Lord of lords, the great God, mighty and awesome, who shows no partiality and accepts no bribes. {18} He defends the cause of the fatherless and the widow, and [[ahav|loves]] the foreigner residing among you, giving them food and clothing. {19} And [[ahav|you are to love]] those who are foreigners, for you yourselves were foreigners in Egypt. {20} Fear YHWH your God and serve him. Hold fast to him and take your oaths in his name.

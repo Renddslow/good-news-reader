@@ -6,7 +6,7 @@
       "subtitle": "Week 1 • July 10th – 16th",
       "unlocks": [2022, 6, 10],
       "totalWords": 3,
-      "words": ["chay", "chayyim", "zoe", "zao", "zoopoieo"],
+      "words": ["chay", "chayiym", "zoe", "zao", "zoopoieo"],
       "pages": [1, 2, 3, 4, 5]
     },
     {
@@ -14,8 +14,8 @@
       "title": "Love",
       "subtitle": "Week 2 • July 17th – 23rd",
       "unlocks": [2022, 6, 17],
-      "words": ["ahav", "ahavah", "ahavat", "ahavti", "agapao"],
-      "pages": []
+      "words": ["ahav", "ahavah", "agapao"],
+      "pages": [6, 7]
     },
     {
       "illustration": "/shem.png",
@@ -65,7 +65,7 @@
         }
       ],
       "titleReference": "Genesis 1-2",
-      "words": ["chayyim", "chay"]
+      "words": ["chayiym", "chay"]
     },
     {
       "title": "Rebellion and Confrontation",
@@ -80,7 +80,7 @@
           "reference": "Genesis 8:13-22"
         }
       ],
-      "words": ["chayyim", "chay"],
+      "words": ["chayiym", "chay"],
       "titleReference": "Genesis 3, 8:13-22"
     },
     {
@@ -101,7 +101,7 @@
         }
       ],
       "titleReference": "Psalm 8, Proverbs 8, John 14:1-6",
-      "words": ["chayyim", "chay", "zoe"]
+      "words": ["chayiym", "chay", "zoe"]
     },
     {
       "title": "Eternal Life",
@@ -134,6 +134,38 @@
       ],
       "titleReference": "John 1:1-18",
       "words": ["zoe"]
+    },
+    {
+      "title": "Your Only Son",
+      "page": 6,
+      "chapters": [
+        {
+          "id": "gen22",
+          "reference": "Genesis 22:1-19"
+        }
+      ],
+      "titleReference": "Genesis 22:1-19",
+      "words": ["ahav"]
+    },
+    {
+      "title": "A Faithful Response",
+      "page": 7,
+      "chapters": [
+        {
+            "id": "lev19",
+            "reference": "Leviticus 19:9-17"
+        },
+        {
+          "id": "deu6",
+            "reference": "Deuteronomy 6:1-9"
+        },
+        {
+          "id": "deu10",
+            "reference": "Deuteronomy 10:12-20"
+        }
+      ],
+      "titleReference": "Leviticus 19:9-17, Deuteronomy 6:1-9, Deuteronomy 10:12-20",
+      "words": ["ahav", "ahavah"]
     }
   ]
 }
