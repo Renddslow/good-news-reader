@@ -47,7 +47,8 @@ const content = [
   
   But suddenly, and we don't know why, a new _chay_ (living creature) enters the picture. And this _chay_ is crafty. More crafty than all the other _chay_. The _chay_ – a serpent – deceives Human and Life into rebelling against God, into defining good and evil for themselves. In this new world, the good _chay_ (life) that God designed for the pair is shatterred.
   
-  The tragic result as we follow the _chay_/_chayiym_ through Genesis is the exile of Human and Life from the garden, but the destruction of all _chay_ (living creatures).
+  
+  The tragic result as we follow the _chay_/_chayiym_ through Genesis is not only the exile of Human and Life from the garden, but the destruction of all _chay_ (living creatures).
   
   
   In the midst of judgement and destruction however, we see the mercy of God, saving a remnant and providing a hope for a future where new, abundant _chay_ (life) might be found.`,

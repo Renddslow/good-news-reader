@@ -25,7 +25,7 @@ And all desirable things cannot compare with her.
 ---!q
 {12} “I, wisdom, dwell with prudence,
 And I find knowledge and discretion.
-{13} The fear of the Lord is to hate evil;
+{13} The fear of YHWH is to hate evil;
 Pride, arrogance, the evil way,
 And the perverted mouth, I hate.
 {14} Advice is mine and sound wisdom;
@@ -46,7 +46,7 @@ In the midst of the paths of justice,
 That I may fill their treasuries.
 
 ---!q
-{22} “The Lord created me at the beginning of His way,
+{22} “YHWH created me at the beginning of His way,
 Before His works of old.
 {23} From eternity I was established,
 From the beginning, from the earliest times of the earth.
@@ -78,6 +78,6 @@ And do not neglect it.
 Watching daily at my gates,
 Waiting at my doorposts.
 {35} For one who finds me finds [[chayyim|life]],
-And obtains favor from the Lord.
+And obtains favor from YHWH.
 {36} But one who sins against me injures himself;
 All those who hate me love death.”
