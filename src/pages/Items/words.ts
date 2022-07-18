@@ -39,6 +39,11 @@ const words = {
     pos: 'verb',
     definition: 'to love',
   },
+  agape: {
+    lang: 'Greek',
+    pos: 'noun',
+    definition: 'love',
+  },
 };
 
 export default words;
