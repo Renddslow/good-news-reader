@@ -14,8 +14,8 @@
       "title": "Love",
       "subtitle": "Week 2 • July 17th – 23rd",
       "unlocks": [2022, 6, 17],
-      "words": ["ahav", "ahavah", "agapao"],
-      "pages": [6, 7]
+      "words": ["ahav", "ahavah", "agapao", "agape"],
+      "pages": [6, 7, 8, 9, 10]
     },
     {
       "illustration": "/shem.png",
@@ -152,20 +152,68 @@
       "page": 7,
       "chapters": [
         {
-            "id": "lev19",
-            "reference": "Leviticus 19:9-17"
+          "id": "lev19",
+          "reference": "Leviticus 19:9-17"
         },
         {
           "id": "deu6",
-            "reference": "Deuteronomy 6:1-9"
+          "reference": "Deuteronomy 6:1-9"
         },
         {
           "id": "deu10",
-            "reference": "Deuteronomy 10:12-20"
+          "reference": "Deuteronomy 10:12-20"
         }
       ],
       "titleReference": "Leviticus 19:9-17, Deuteronomy 6:1-9, Deuteronomy 10:12-20",
       "words": ["ahav", "ahavah"]
+    },
+    {
+      "title": "The Love of God's People",
+      "page": 8,
+      "chapters": [
+        {
+          "id": "1cor2",
+          "reference": "1 Corinthians 2:1-16"
+        },
+        {
+          "id": "eph4",
+          "reference": "Ephesians 4:1-19"
+        },
+        {
+          "id": "1john4",
+          "reference": "1 John 4:1-21"
+        }
+      ],
+      "titleReference": "1 Corinthians 2:1-16, Ephesians 2:1-19, 1 John 4:1-21",
+      "words": ["agapao", "agape"]
+    },
+    {
+      "title": "Only Son",
+      "page": 9,
+      "chapters": [
+        {
+          "id": "gen22",
+          "reference": "Genesis 22:1-19"
+        },
+        {
+          "id": "john3",
+          "reference": "John 3:13-21"
+        }
+      ],
+      "titleReference": "Genesis 22:1-19, John 3:13-21",
+      "words": ["ahav", "agapao"]
+    },
+    {
+      "title": "In the Beginning, revisited",
+      "page": 10,
+      "chapters": [
+        {
+          "id": "john1_life",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "titleReference": "John 1:1-18",
+      "words": ["zoe"]
     }
   ]
 }

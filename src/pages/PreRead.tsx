@@ -35,7 +35,8 @@ const enhancedSnarkdown = (markdown) =>
         ? snarkdown(l)
         : `<p>${snarkdown(l)}</p>`,
     )
-    .join('\n');
+    .join('\n')
+    .replace(/(?:<(a href="(.+?)")>)/g, '<$1 target="_blank">');
 
 const content = [
   `When our story begins, God is beginning to create the world. Everything that he creates is good and purpose made for the flourishing of his creation. God then creates humans to dwell in his good world and gives them a unique placement among all the other creatures. They are designed to be his royal representatives – his image bearers, ruling over the fish of the sea, and the birds of the air, and the beasts of the field. In Genesis 2:7, God fills the humans with the breath of life and makes them living beings. God sets the humans in a beautiful garden called Eden (or delight in Hebrew). There they are given the special task of tending God's good world as farmers and gardeners.
@@ -85,6 +86,19 @@ In this story however, YHWH seems to ask for the boy back. Interestingly, Abraha
 Often we can get caught up in the minutia of the Torah instructions. We can feel like those commands and instructions have nothing to do with us (and to be fair, we don't have to kill a bull once a year or have Pastor Bart inspect our house when there's mold). But the heartbeat of the instructions is love. Jesus affirms this when he says that the Law and the Prophets hang on this notion.
 
 Meditate on what God expects our response to be to his loving, faithfulness.`,
+  `God's love to his people his echoed back by his people, a harmony to his melody. As we saw in the previous reading, this is first expressed through obedienece to God's commandments. We don't follow the Lord's teaching out of compulsion or obligation. Sometimes it may feel that way as the Spirit trains our spirits and leads us through dry seasons. But rather than an obligation, our obedience is an expression of our own love to God. 
+
+As we move into the New Testament and to the writings of the Apostles, we find that more than just obedience, but conscious practice of loving God, loving our siblings in Christ, and loving our neighbor. In these next three chapters we'll read about our commitment to love one another. And we'll see how this love flows from our being in the Spirit and having the mind of Christ.`,
+  `Once again we find ourselves at this strange story in Genesis 22. At the so-called binding of Isaac. (You might wish to think of it as a sacrifice, but of course, Isaac is not the one sacrificed in this story). Remember, the Bible is [meditation literature](https://bibleproject.com/explore/video/bible-jewish-meditation-literature-h2r/), which means we will find ourselves moving back and forth, marinating on certain texts as their meanings are enhanced by other texts.
+
+In this case, the story of the binding of Isaac will be illuminated in light of the famous John 3:16 chapter. John 3:16 marks the first appearance in John of the Greek work _agapao_, which is a verb meaning "to love." (You should have encountered it yesterday during your reading of the Epistles).
+
+The key connection here is between Genesis 22:2 and John 3:16. You'll read them in context in a moment. As you read them, pay attention to the words "love" and "only son." Meditate on this connection. What additional meaning does this bring to the binding of Isaac. What additional meaning does this bring to John 3:16.`,
+  `John 1 is our home-base for this reader. We'll read and re-read it each week as we build our vocabulary and experience the Good News. 
+
+As we noted in the pre-read in the previous reading however, the word "love" doesn't appear until John 3. This means that for this week, you won't utilize your new vocabulary words in John 1. However, remember that the narrative of John 1 is of the incarnation of Jesus. Of God sending his one and only son. While the _word_ love is not present, God's love is.
+
+Meditate on the love God demonstrates in John 1, and as you do, consider how you might harmonize with God's love, echoing God's love back to him, and radiating it out to the world.`,
 ];
 
 const PreRead = ({ data }) => {
