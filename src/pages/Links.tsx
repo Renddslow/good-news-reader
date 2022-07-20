@@ -12,7 +12,7 @@ const Progress = () => {
   const { words: rawWords } = useProgress();
 
   const links = rawWords.reduce((acc, link) => {
-    if (acc.find((l) => l.word === link.word)) return acc;
+    if (acc.find((l) => l.word.toLowerCase() === link.word.toLowerCase())) return acc;
     acc.push(link);
     return acc;
   }, []);
