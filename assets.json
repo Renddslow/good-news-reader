@@ -277,9 +277,13 @@
     },
     {
       "title": "The Name Above All Names",
-      "titleReference": "John 2, John 12:1-36, Philippians 2:1-11",
+      "titleReference": "Matthew 1, John 2, John 12:1-36, Philippians 2:1-11",
       "page": 14,
       "chapters": [
+        {
+          "id": "mat1",
+          "reference": "Matthew 1"
+        },
         {
           "id": "john2",
           "reference": "John 2"
