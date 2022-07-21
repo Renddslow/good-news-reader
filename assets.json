@@ -214,6 +214,98 @@
       ],
       "titleReference": "John 1:1-18",
       "words": ["zoe"]
+    },
+    {
+      "title": "Make a Name",
+      "page": 11,
+      "titleReference": "Genesis 4:26, Genesis 11:1-9, Exodus 3:13-17",
+      "chapters": [
+        {
+          "id": "gen4",
+          "reference": "Genesis 4"
+        },
+        {
+          "id": "gen11",
+          "reference": "Genesis 11:1-9"
+        },
+        {
+          "id": "exo3",
+          "reference": "Exodus 3:13-17"
+        }
+      ],
+      "words": ["shem"]
+    },
+    {
+      "title": "Glory of the Name",
+      "page": 12,
+      "titleReference": "Exodus 20:1-7, Exodus 33:18-34:7, Leviticus 19:11-18",
+      "chapters": [
+        {
+          "id": "exo20",
+          "reference": "Exodus 20:1-7"
+        },
+        {
+          "id": "exo33",
+          "reference": "Exodus 33:18-34:7"
+        },
+        {
+          "id": "lev19_name",
+          "reference": "Leviticus 19:11-18"
+        }
+      ],
+      "words": ["shem"]
+    },
+    {
+      "title": "A Place for His Name to Dwell",
+      "titleReference": "Deuteronomy 12:1-7, 1 Chronicles 16, 2 Chronicles 2",
+      "page": 13,
+      "chapters": [
+        {
+          "id": "deu12",
+          "reference": "Deuteronomy 12:1-7"
+        },
+        {
+          "id": "1chr16",
+          "reference": "1 Chronicles 16"
+        },
+        {
+          "id": "2chr2",
+          "reference": "2 Chronicles 2"
+        }
+      ],
+      "words": ["shem"]
+    },
+    {
+      "title": "The Name Above All Names",
+      "titleReference": "John 2, John 12:1-36, Philippians 2:1-11",
+      "page": 14,
+      "chapters": [
+        {
+          "id": "john2",
+          "reference": "John 2"
+        },
+        {
+          "id": "john12",
+          "reference": "John 12:1-36"
+        },
+        {
+          "id": "php2",
+          "reference": "Philippians 2:1-11"
+        }
+      ],
+      "words": ["onoma"]
+    },
+    {
+      "title": "Salvation in the Name",
+      "titleReference": "John 1:1-18",
+      "page": 15,
+      "chapters": [
+        {
+          "id": "john1_name",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "words": ["onoma"]
     }
   ]
 }
