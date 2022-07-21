@@ -39,6 +39,7 @@ const Word = styled.section<{ correct: boolean; incorrect: boolean }>`
     padding: 0 24px;
     margin-top: 12px;
     color: #242f3b;
+    text-align: center;
   }
 `;
 

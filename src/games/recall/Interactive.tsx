@@ -46,6 +46,10 @@ const Input = styled.input`
   &:focus {
     outline-color: #523af2;
   }
+
+  &:disabled {
+    background: #ccc;
+  }
 `;
 
 const Interactive = ({
@@ -56,30 +60,46 @@ const Interactive = ({
   onChoose,
   usedHint,
   used5050,
+  isAnswered = false,
 }) => {
   const [answer, setAnswer] = useState('');
   const showCorrectFirst = useRef(Math.random() > 0.5);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const fm = new FuzzyMatching([word.definition]);
-    onChoose(fm.get(answer) > 0.5);
+    const fm = new FuzzyMatching(word.definition.split('/'));
+    onChoose(fm.get(answer).distance > 0.5);
   };
 
   return (
     <div>
       {showing5050 ? (
         <div>
-          <Button onClick={onChoose(showCorrectFirst.current)} color="#1fa08e" fullWidth>
+          <Button
+            onClick={() => onChoose(showCorrectFirst.current)}
+            color="#1fa08e"
+            fullWidth
+            disabled={isAnswered}
+          >
             {showCorrectFirst.current ? word.definition : alt}
           </Button>
-          <Button onClick={onChoose(!showCorrectFirst.current)} color="#1fa08e" fullWidth>
+          <Button
+            onClick={() => onChoose(!showCorrectFirst.current)}
+            color="#1fa08e"
+            fullWidth
+            disabled={isAnswered}
+          >
             {showCorrectFirst.current ? alt : word.definition}
           </Button>
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
-          <Input onChange={(e) => setAnswer(e.target.value)} value={answer} />
+          <Input
+            autoFocus
+            disabled={isAnswered}
+            onChange={(e) => setAnswer(e.target.value)}
+            value={answer}
+          />
         </form>
       )}
       <Row>
@@ -89,7 +109,7 @@ const Interactive = ({
         <Button onClick={onHelp('50')} color="#1fa08e" disabled={used5050}>
           50/50
         </Button>
-        <Button onClick={onHelp('skip')} color="#e06f2d">
+        <Button onClick={onHelp('skip')} color="#e06f2d" disabled={isAnswered}>
           Skip
         </Button>
       </Row>
