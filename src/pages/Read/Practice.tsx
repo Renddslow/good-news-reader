@@ -44,7 +44,7 @@ const Collection = styled.p`
   color: #666;
 `;
 
-const Practice = ({ word, total, collected }) => (
+const Practice = ({ word, total, collected, first = false }) => (
   <PracticeWrapper>
     <IconWrapper>
       <Star weight="fill" size={32} />
@@ -56,7 +56,7 @@ const Practice = ({ word, total, collected }) => (
       </Collection>
     </div>
     {/*<Link to={`/review/${word.toLowerCase()}`}>*/}
-    <Link to={`/games/ocean`}>
+    <Link to={first ? `/games/ocean` : '/games/recall'}>
       <Stack weight="bold" /> Review
     </Link>
   </PracticeWrapper>

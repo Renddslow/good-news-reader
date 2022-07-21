@@ -121,6 +121,7 @@ const Read = () => {
                       })}
                       {!!thisWeeksWords.length && (
                         <Practice
+                          first={idx === 0}
                           word={week.title}
                           total={week?.words?.length}
                           collected={thisWeeksWords.length}
