@@ -8,6 +8,7 @@ import Introduction from './Introduction';
 import Screen from './Screen';
 import Interactive from './Interactive';
 import { useAuthenticatedUser, useProgress } from '../../providers/Authentication';
+import GameOver from './GameOver';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -171,7 +172,7 @@ const Recall = () => {
           />
         </div>
       )}
-      {gameIsOver && <div />}
+      {gameIsOver && <GameOver score={score} skips={skipsUsed} />}
     </Wrapper>
   );
 };
