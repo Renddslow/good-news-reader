@@ -65,6 +65,18 @@ const words = {
     definition: 'name',
     hint: '',
   },
+  dam: {
+    lang: 'Hebrew',
+    pos: 'noun',
+    definition: 'blood',
+    hint: 'This word is often associated with sacrifice.',
+  },
+  haima: {
+    lang: 'Greek',
+    pos: 'noun',
+    definition: 'blood',
+    hint: 'This word is often associated with sacrifice.',
+  },
 };
 
 export default words;

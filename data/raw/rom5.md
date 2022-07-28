@@ -1,0 +1,5 @@
+---!p
+{6} For while we were still helpless, at the right time Christ died for the ungodly. {7} For one will hardly die for a righteous person; though perhaps for the good person someone would even dare to die. {8} But God demonstrates His own [[agape|love]] toward us, in that while we were still sinners, Christ died for us. {9} Much more then, having now been justified by His [[dam|blood]], we shall be saved from the wrath of God through Him. {10} For if while we were enemies we were reconciled to God through the death of His Son, much more, having been reconciled, we shall be saved by His [[zoe|life]]. {11} And not only this, but we also celebrate in God through our Lord Jesus Christ, through whom we have now received the reconciliation.
+
+---!p
+{12} Therefore, just as through one man sin entered into the world, and death through sin, and so death spread to all mankind, because all sinned—

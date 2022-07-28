@@ -1,0 +1,2 @@
+---!p
+{24} But it came about at the overnight encampment on the way, that the Lord met Moses, and sought to put him to death. {25} So Zipporah took a flint and cut off her son’s foreskin and threw it at Moses’ feet; and she said, “You are indeed a groom of [[dam|blood]] to me!” {26} So He left him alone. At that time she said, “You are a groom of [[dam|blood]]”—because of the circumcision.

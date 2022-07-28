@@ -310,6 +310,94 @@
         }
       ],
       "words": ["onoma"]
+    },
+    {
+      "title": "The Blood Cries Out",
+      "titleReference": "Genesis 4, Genesis 9:1-11, Genesis 37:3-35",
+      "page": 16,
+      "chapters": [
+        {
+          "id": "gen4_blood",
+          "reference": "Genesis 4"
+        },
+        {
+          "id": "gen9",
+          "reference": "Genesis 9:1-11"
+        },
+        {
+          "id": "gen37",
+          "reference": "Genesis 37:3-35"
+        }
+      ],
+      "words": ["dam"]
+    },
+    {
+      "title": "The Blood Which Covers",
+      "titleReference": "Exodus 4:24-26, Exodus 12, Exodus 24:3-8",
+      "page": 17,
+      "chapters": [
+        {
+          "id": "exo4",
+          "reference": "Exodus 4:24-26"
+        },
+        {
+          "id": "exo12",
+          "reference": "Exodus 12"
+        },
+        {
+          "id": "exo24",
+          "reference": "Exodus 24:3-8"
+        }
+      ],
+      "words": ["dam"]
+    },
+    {
+      "title": "The Blood that Cleanses",
+      "titleReference": "Leviticus 4, Leviticus 16:11-34",
+      "page": 18,
+      "chapters": [
+        {
+          "id": "lev4",
+          "reference": "Leviticus 4"
+        },
+        {
+          "id": "lev16",
+          "reference": "Leviticus 16:11-34"
+        }
+      ],
+      "words": ["dam"]
+    },
+    {
+      "title": "The Blood that Saves",
+      "titleReference": "John 6:35-69, John 19:16-37, Romans 5:6-12",
+      "page": 19,
+      "chapters": [
+        {
+          "id": "john6",
+          "reference": "John 6:35-69"
+        },
+        {
+          "id": "john19",
+          "reference": "John 19:16-37"
+        },
+        {
+          "id": "rom5",
+          "reference": "Romans 5:6-12"
+        }
+      ],
+      "words": ["haima"]
+    },
+    {
+      "title": "The Blood that Unifies",
+      "titleReference": "John 1:1-18",
+      "page": 15,
+      "chapters": [
+        {
+          "id": "john1_blood",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "words": ["haima"]
     }
   ]
 }
