@@ -172,7 +172,14 @@ const Recall = () => {
           />
         </div>
       )}
-      {gameIsOver && <GameOver score={score} skips={skipsUsed} />}
+      {gameIsOver && (
+        <GameOver
+          score={score}
+          skips={skipsUsed}
+          correctAnswers={correctAnswers}
+          skippedAnswers={skippedAnswers}
+        />
+      )}
     </Wrapper>
   );
 };

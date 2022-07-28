@@ -44,22 +44,30 @@ const Collection = styled.p`
   color: #666;
 `;
 
-const Practice = ({ word, total, collected, first = false }) => (
-  <PracticeWrapper>
-    <IconWrapper>
-      <Star weight="fill" size={32} />
-    </IconWrapper>
-    <div>
-      <Title>"{word}" words</Title>
-      <Collection>
-        {collected}/{total} collected
-      </Collection>
-    </div>
-    {/*<Link to={`/review/${word.toLowerCase()}`}>*/}
-    <Link to={first ? `/games/ocean` : '/games/recall'}>
-      <Stack weight="bold" /> Review
-    </Link>
-  </PracticeWrapper>
-);
+const Practice = ({ word, total, collected, first = false }) => {
+  const games = ['/games/recall'];
+
+  const getRandomGame = () => {
+    const index = Math.floor(Math.random() * games.length);
+    return games[index];
+  };
+
+  return (
+    <PracticeWrapper>
+      <IconWrapper>
+        <Star weight="fill" size={32} />
+      </IconWrapper>
+      <div>
+        <Title>"{word}" words</Title>
+        <Collection>
+          {collected}/{total} collected
+        </Collection>
+      </div>
+      <Link to={first ? `/games/ocean` : getRandomGame()}>
+        <Stack weight="bold" /> Review
+      </Link>
+    </PracticeWrapper>
+  );
+};
 
 export default Practice;
