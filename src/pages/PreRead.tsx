@@ -134,6 +134,35 @@ In this reading we'll encounter Jesus, and see how he glorifies the Name (_onoma
 The second time draws us into the vision of YHWH's name that we've been exploring in our readings this week. God's name is holy, worthy of honor, and is something that Jesus uniquely bears as the new Israel. Now we are told that those who believe in his Name will be given the right to be called children of God.
 
 As you meditate on this text for the third time, remember that Jesus is bearing the Name of YHWH, and that everytime you encounter the word name ("shem"/"onoma") in the context of God, you are encountering the divine Name. That name which is above all other names.`,
+  `It might be surprising to think that ancient humans thought of blood in much the same way that we do. They may not have known about blood types. They may not have performed transfusions. They probably didn't know that blood was a delivery system for oxygen in your body. However, ancient humans did know that blood makes you alive, and when your blood was spilled, often you died.
+
+The first time we encounter blood in the Bible is after Cain kills his brother Abel. The narrative Scripture paints is startling, but not graphic. Cain strikes his brother down in the field in what feels like a PG-rated description. When YHWH confronts Cain, we as readers encounter the real violence that Cain has unleashed. "The voice of your brother's blood (_dam_) cries out to me from the ground."
+
+This single murderous event launches a cascade of human violence. Even after God reboots humanity with Noah, he realizes that humanity's violence will just get more dark and more inventive. So he paints a picture of the consequences of human violence. 
+
+This week's readings will be bloody (though often not violent). But don't dismiss them on account of the discomfort they might bring you. Draw yourself in to the moment, and meditate on the visceral reality of human evil.`,
+  `We've seen now that human evil and violence tends to result in the spilling of the blood (_dam_) of the innocent. We won't spend the whole week tracing the spilling of innocent blood though. Rather, we're going to follow the word _dam_ through the Scriptures to see that hope actually springs from the same word.
+
+We begin with a number of peculiar stories in which blood is used to make a sort of covering. In the first, Moses' wife performs a circumcision on Moses' son as a proxy for Moses himself. In the second, the blood of an innocent animal provides a covering so that the angel of death will pass over the homes of the faithful. And finally, we encounter our first ritual using blood, declaring that a new covenant is being forged in blood.
+
+All of this feels quite strange. Perhaps it isn't violent, but it's still grisly. Settle into the discomfort for now. Reflect as your meditate on these texts how the same substance that has been spilled in acts of violence and evil is now a means of salvation.`,
+  `We mentioned before that blood (_dam_) was not viewed very different to ancient humans compared to ourselves. That is mostly true. There is one way, however, that we view blood (_dam_) crucially different. For us blood is a necessary component of life. A bodily fluid that is needed in order to function properly. To the ancients, it was that, but it was also so much more. Blood was a physical symbol of an even deeper, spiritual reality. Blood was life (see Leviticus 17:11).
+
+As the blood came out of a sacrificial animal, the community was reminded of the darkness of sin and death. The life of the animal then acts like a cleansing agent – like laundry detergant – to cover and clean the sin and death from the surrounding area. Its important to understand that this is a symbol, but that doesn't mean that it isn't real. Symbols are powerful, and many times in the Scriptures physical symbols are outwards signs of something real and spiritual that was happening.
+
+As you read, think on the ways in which blood is uniquely used to cover and atone for sin and death. Meditate on this in light of the death of innocents that we observed in previous readings. And consider that God means what he says, that when these rituals were practiced that something real in time and space was affected.`,
+  `As we reach the New Testament our word for blood (Hebrew _dam_) now becomes _haima_. In John _haima_ only appears a few times, but each time it does appear, it is intentional and eye opening.
+
+We'll look at two occurrence of it, both will feel a little off putting. Yet as we observed in the last reading, blood is a powerful symbol of life. And remember, symbols are not make believe. Often times in Scripture – and in life – they are outward and physical signs of something very real and spiritual.
+
+Jesus poured out his life for us in order that the sin and death of our world and our own project of evil would be covered. It is telling then that John makes a specific – and literal – callout to Jesus' blood being spilt on the cross.
+
+Meditate on Jesus' instruction that his people eat his flesh and drink his blood. And then sit in quiet contemplation as you encounter his passion narrative from John's Gospel. Consider the love that Jesus had for you that he poured out his _haima_ (blood) for you.`,
+  `As we return to John 1 we come to it with all of the knowledge and experience we've just gained on the role of blood (_haima_) in the Bible. It is life itself. And when used sacrificially, it becomes a cleansing agent on the sin and death that humans spill into the world. Jesus offered his _haima_ (blood) as the ultimate sacrifice, the ultimate cleansing.
+
+Now as we come to John 1, we see one final notion of blood. We see the way in which blood brings about new life. In a very real and clinical sense, babies come into the world in blood and water. In a symbolic sense, the life of the baby is in its blood. But in John 1, we see that the people of God – those who put their belief and allegiance in King Jesus – experience a new birth. This birth is not one of human will or of _haima_ but of the will of God.
+
+Meditate on what it is to be born anew from the will of God.`,
 ];
 
 const PreRead = ({ data }) => {
