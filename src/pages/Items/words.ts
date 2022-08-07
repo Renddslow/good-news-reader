@@ -90,6 +90,20 @@ const words = {
     hint: 'This word appears only three times in the book of John',
     family: 'blood',
   },
+  aman: {
+    lang: 'Hebrew',
+    pos: 'verb',
+    definition: 'to believe/to trust/to be faithful',
+    hint: 'We often close our prayers with a derivative of this word that means "let it be so"',
+    family: 'believe',
+  },
+  pisteou: {
+    lang: 'Greek',
+    pos: 'verb',
+    definition: 'to believe/to trust/to be faithful/to give allegiance',
+    hint: 'This is often given more than thought',
+    family: 'believe',
+  },
 };
 
 export default words;

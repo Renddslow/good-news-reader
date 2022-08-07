@@ -15,6 +15,7 @@ import ProfileButton from './ProfileButton';
 import Text from '../../components/Text';
 import Practice from './Practice';
 import { FadeInWrapper } from '../Items';
+import Tip from './Tip';
 
 const isComplete = (completions, page: number) => completions.find((p) => p.page === page);
 
@@ -44,6 +45,7 @@ type Assets = {
 const Read = () => {
   const { user } = useAuthenticatedUser();
   const { completions, words } = useProgress();
+  const [showTip, setShowTip] = useState(false);
   const [assets, setAssets] = useState<Assets>({} as Assets);
   const [loading, setLoading] = useState(false);
 
@@ -55,6 +57,16 @@ const Read = () => {
       .then((d) => d.json())
       .then((d) => setAssets(d))
       .then(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    const cancel = setTimeout(() => {
+      const tipStorage = localStorage.getItem('fc:read:tip');
+      if (!tipStorage || parseInt(localStorage.getItem('fc:read:tip'), 10) < words.length) {
+        setShowTip(true);
+        localStorage.setItem('fc:read:tip', words.length.toString());
+      }
+    }, 500);
   }, []);
 
   const allUniqueWords = new Set();
@@ -135,6 +147,7 @@ const Read = () => {
           </FadeInWrapper>
         )}
       </div>
+      {words.length > 2 && showTip && <Tip onClose={() => setShowTip(false)} />}
     </Wrapper>
   );
 };
