@@ -1,5 +1,5 @@
 ---!q
-{1} But now, this is what the Lord says, He who is your Creator, Jacob,
+{1} But now, this is what YHWH says, He who is your Creator, Jacob,
 And He who formed you, Israel:
 “Do not fear, for I have redeemed you;
 I have called you by [[shem|name]]; you are Mine!
@@ -7,7 +7,7 @@ I have called you by [[shem|name]]; you are Mine!
 And through the rivers, they will not overflow you.
 When you walk through the fire, you will not be scorched,
 Nor will the flame burn you.
-{3} For I am the Lord your God,
+{3} For I am YHWH your God,
 The Holy One of Israel, your Savior;
 I have given Egypt as your ransom,
 Cush and Seba in exchange for you.
@@ -34,34 +34,34 @@ Who among them can declare this
 And proclaim to us the former things?
 Let them present their witnesses so that they may be justified,
 Or let them hear and say, “It is true.”
-{10} “You are My witnesses,” declares the Lord,
+{10} “You are My witnesses,” declares YHWH,
 “And My servant whom I have chosen,
 So that you may know and [[aman|believe]] Me
 And understand that I am He.
 Before Me there was no God formed,
 And there will be none after Me.
-{11} I, only I, am the Lord,
+{11} I, only I, am YHWH,
 And there is no savior besides Me.
 {12} It is I who have declared and saved and proclaimed,
 And there was no strange god among you;
-So you are My witnesses,” declares the Lord,
+So you are My witnesses,” declares YHWH,
 “And I am God.
 {13} Even from eternity I am He,
 And there is no one who can rescue from My hand;
 I act, and who can reverse it?”
 
 ---!p
-{14} This is what the Lord your Redeemer, the Holy One of Israel says:
+{14} This is what YHWH your Redeemer, the Holy One of Israel says:
 
 ---!q
 “For your sake I have sent to Babylon,
 And will bring them all down as fugitives,
 Even the Chaldeans, into the ships over which they rejoice.
-{15} I am the Lord, your Holy One,
+{15} I am YHWH, your Holy One,
 The Creator of Israel, your King.”
 
 ---!p
-{16} This is what the Lord says,
+{16} This is what YHWH says,
 
 ---!q
 He who makes a way through the sea
