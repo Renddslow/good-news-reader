@@ -1,0 +1,8 @@
+---!p
+{2} There was no water for the congregation, and they assembled against Moses and Aaron. {3} Then the people argued with Moses and spoke, saying, “If only we had perished when our brothers perished before the Lord! {4} Why then have you brought the Lord’s assembly into this wilderness, for us and our livestock to die here? {5} Why did you make us come up from Egypt, to bring us into this wretched place? It is not a place of grain or figs or vines or pomegranates, nor is there water to drink!” {6} Then Moses and Aaron came in from the presence of the assembly to the entrance of the tent of meeting and fell on their faces. And the glory of the Lord appeared to them; {7} then the Lord spoke to Moses, saying,
+
+---!p
+{8} “Take the staff; and you and your brother Aaron assemble the congregation and speak to the rock before their eyes, that it shall yield its water. So you shall bring water for them out of the rock, and have the congregation and their livestock drink.”
+
+---!p
+{9} So Moses took the staff from before the Lord, just as He had commanded him; {10} and Moses and Aaron summoned the assembly in front of the rock. And he said to them, “Listen now, you rebels; shall we bring water for you out of this rock?” {11} Then Moses raised his hand and struck the rock twice with his staff; and water came out abundantly, and the congregation and their livestock drank. {12} But the Lord said to Moses and Aaron, “Since you did not [[aman|trust]] in Me, to treat Me as holy in the sight of the sons of Israel, for that reason you shall not bring this assembly into the land which I have given them.” {13} Those were called the waters of Meribah, because the sons of Israel argued with the Lord, and He proved Himself holy among them.

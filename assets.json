@@ -39,7 +39,7 @@
       "subtitle": "Week 5 • July 7th – 13th",
       "unlocks": [2022, 7, 7],
       "words": ["aman", "pisteuo", "pistis"],
-      "pages": []
+      "pages": [21, 22, 23, 24, 25]
     },
     {
       "illustration": "/eid.png",
@@ -398,6 +398,90 @@
         }
       ],
       "words": ["haima"]
+    },
+    {
+      "title": "They Believed YHWH",
+      "titleReference": "Genesis 15:1-7, Exodus 4:1-13, Exodus 14",
+      "page": 21,
+      "chapters": [
+        {
+          "id": "gen15",
+          "reference": "Genesis 15:1-7"
+        },
+        {
+          "id": "exo4_believe",
+          "reference": "Exodus 4:1-13"
+        },
+        {
+          "id": "exo14",
+          "reference": "Exodus 14"
+        }
+      ],
+      "words": ["aman"]
+    },
+    {
+      "title": "They Did Not Believe YHWH",
+      "titleReference": "Numbers 20:2-13, Deuteronomy 1:22-40",
+      "page": 22,
+      "chapters": [
+        {
+          "id": "num20",
+          "reference": "Numbers 20:2-13"
+        },
+        {
+          "id": "deu1",
+          "reference": "Deuteronomy 1:22-40"
+        }
+      ],
+      "words": ["aman"]
+    },
+    {
+      "title": "That They May Believe",
+      "titleReference": "Isaiah 43",
+      "page": 23,
+      "chapters": [
+        {
+          "id": "isa43",
+          "reference": "Isaiah 43"
+        }
+      ],
+      "words": ["aman"]
+    },
+    {
+      "title": "Believe in Me",
+      "titleReference": "Jonah 3, John 3:13-21, John 14:1-6, John 20:24-31",
+      "page": 24,
+      "chapters": [
+        {
+          "id": "jon3",
+          "reference": "Jonah 3"
+        },
+        {
+          "id": "john3_believe",
+          "reference": "John 3:13-21"
+        },
+        {
+          "id": "john14_believe",
+          "reference": "John 14:1-6"
+        },
+        {
+          "id": "john20",
+          "reference": "John 20:24-31"
+        }
+      ],
+      "words": ["aman", "pisteou"]
+    },
+    {
+      "title": "Believe in His Name",
+      "titleReference": "John 1:1-18",
+      "page": 25,
+      "chapters": [
+        {
+          "id": "john1_believe",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "words": ["pisteou"]
     }
   ]
 }
