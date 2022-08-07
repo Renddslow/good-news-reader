@@ -12,6 +12,7 @@ import Profile from './pages/Profile';
 import OceanGame from './games/ocean';
 import PreRead from './pages/PreRead';
 import Recall from './games/recall';
+import Not from './games/not';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
   const { isAuthenticated, isLoading } = useAuthenticatedUser();
@@ -108,6 +109,14 @@ const App = () => {
           element={
             <RequireAuth>
               <Recall />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/games/not"
+          element={
+            <RequireAuth>
+              <Not />
             </RequireAuth>
           }
         />

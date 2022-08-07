@@ -108,9 +108,9 @@ const Introduction = ({ onClick }) => {
     <IntroWrapper>
       <h1>Introduction</h1>
       <p>
-        Test how much you remember your Hebrew vocabulary with this game. Enter the words that match
-        the definition provided on the screen. Use the help buttons (hint, 50/50, skip) if you need
-        a clue.
+        You will be given a set of words. Some words will very similar in their definition, but one
+        will not be like the others. Tap the word that doesn’t belong! Get 5 correct answers to
+        finish the practice!
       </p>
       <PracticeButton onClick={onClick}>Practice</PracticeButton>
       <HelpRow>

@@ -45,7 +45,7 @@ const Collection = styled.p`
 `;
 
 const Practice = ({ word, total, collected, first = false }) => {
-  const games = ['/games/recall'];
+  const games = ['/games/recall', '/games/not'];
 
   const getRandomGame = () => {
     const index = Math.floor(Math.random() * games.length);
