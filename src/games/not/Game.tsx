@@ -5,6 +5,7 @@ import Introduction from './Introduction';
 import Stars from './Stars';
 import words from '../../pages/Items/words';
 import OopsModal from './OopsModal';
+import GameOver from './GameOver';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -181,6 +182,7 @@ const Game = () => {
         {showOops && oopsedWords.length && (
           <OopsModal definition={words[oopsedWords[oopsedWords.length - 1]].definition} />
         )}
+        {score === 5 && <GameOver />}
       </Wrapper>
     </>
   );
