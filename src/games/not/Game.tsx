@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
+import mixpanel from 'mixpanel-browser';
 
 import Introduction from './Introduction';
 import Stars from './Stars';
 import words from '../../pages/Items/words';
 import OopsModal from './OopsModal';
 import GameOver from './GameOver';
+import { useAuthenticatedUser } from '../../providers/Authentication';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -95,6 +97,8 @@ const shuffle = (a) => {
 };
 
 const Game = () => {
+  const { user } = useAuthenticatedUser();
+
   const [showIntroduction, setShowIntroduction] = useState(true);
   const [score, setScore] = useState(0);
   const [currentWords, setCurrentWords] = useState([]);
@@ -117,6 +121,25 @@ const Game = () => {
       setOopsedWords([...oopsedWords, word]);
     }
   };
+
+  useEffect(() => {
+    if (showIntroduction) {
+      mixpanel.track('game-started', {
+        game: 'not-like-the-others',
+        distinct_id: user.id,
+      });
+    }
+  }, [showIntroduction]);
+
+  useEffect(() => {
+    if (score === 5) {
+      mixpanel.track('game-completed', {
+        game: 'not-like-the-others',
+        oopsedWords,
+        distinct_id: user.id,
+      });
+    }
+  }, [score]);
 
   useEffect(() => {
     selectWords();
