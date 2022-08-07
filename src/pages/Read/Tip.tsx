@@ -84,9 +84,6 @@ const Modal = styled.dialog`
 const Tip = ({ onClose }) => {
   const { words } = useProgress();
 
-  const games = ['/games/recall', '/games/ocean', '/games/not'];
-  const game = games[Math.floor(Math.random() * games.length)];
-
   return (
     <Modal open>
       <h1>Tip</h1>
@@ -97,7 +94,7 @@ const Tip = ({ onClose }) => {
       </p>
       <Row>
         <CloseButton onClick={onClose}>I'm good for now</CloseButton>
-        <PracticeLink to={game}>Practice words</PracticeLink>
+        <PracticeLink to="/practice">Practice words</PracticeLink>
       </Row>
     </Modal>
   );

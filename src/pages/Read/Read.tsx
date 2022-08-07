@@ -89,11 +89,12 @@ const Read = () => {
             </Text>
             <Row>
               <Link to="/read/intro">Learn More</Link>
-              {/* TODO: week 2 unlock */}
-              {/*<Link to="/practice">*/}
-              {/*  <Star weight="fill" size="16" />*/}
-              {/*  Practice Words (0/{allUniqueWords.size})*/}
-              {/*</Link>*/}
+              {words.length > 2 && (
+                <Link to="/practice">
+                  <Star weight="fill" size="16" />
+                  Practice Words ({words.length}/{allUniqueWords.size})
+                </Link>
+              )}
             </Row>
           </div>
         </IntroCard>
