@@ -4,7 +4,6 @@ import styled from 'styled-components';
 const IntroWrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding: 24px;
   box-sizing: border-box;
 
   h1 {
