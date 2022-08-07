@@ -163,6 +163,36 @@ Meditate on Jesus' instruction that his people eat his flesh and drink his blood
 Now as we come to John 1, we see one final notion of blood. We see the way in which blood brings about new life. In a very real and clinical sense, babies come into the world in blood and water. In a symbolic sense, the life of the baby is in its blood. But in John 1, we see that the people of God – those who put their belief and allegiance in King Jesus – experience a new birth. This birth is not one of human will or of _haima_ but of the will of God.
 
 Meditate on what it is to be born anew from the will of God.`,
+  `Genesis 15 is an important checkpoint in the Abraham story (Gen 12-25). The covenant which was initiated in Genesis 12 is well underway. God had promised Abraham an heir who would launch a great nation, a land for his family to dwell in, and that through his family would come a blessing for the whole world. Abraham's possessions had grown large. He had built a community of servants and friends. Surely it was no great nation, but it had just contended with kings.
+
+Now Abraham is becoming increasingly old and is wondering if YHWH will truly give him an heir, or if he will need to choose a successor from among his servants. But God gives Abraham a sign and Abraham believes (_aman_) God.
+
+This is the notion we will track in this reading. God demonstrates his glory and faithfulness (_emuna_) through signs and wonders, and in response, his people _aman_ (believe) him. You may have noticed if you tried saying the words _emuna_ and _aman_ that they sound sort of similar. That's because _aman_ is the *root* of the word _emuna_. This just means that the verb for "to believe" or "to be faithful" sets the basis for the noun "faithfulness" or "belief." 
+
+Looking at _aman_ and _emuna_ together, we are able to see that "belief" is more than thinking that something is true. Rather, "belief" encompasses faithfulness, allegiance, and trust, all alongside thinking that something is true. As you read this week and you encounter "believe" or "trust" in the text, consider the range of actions which the text may well be describing.`,
+  `In our last reading we explored examples of times when YHWH performed a sign or great deed and his people _aman_ (believed). But as often as the people believe, it seems they do not believe. This must perplex us as the people of God living some 3,000 years on from them. Surely, we think, if we had been there we would've _aman_ (believed). We had seen the walls of water and defeat of Pharaoh's armies. We had seen water and mana and quail brought forth in the desert. We had seen YHWH defend us at every turn. How could we not believe?
+
+It is helpful at times like these to pause our thoughts. Take inventory of your life. Where have you struggled to _aman_ (to trust, to believe, to be faithful)? What signs has God shown you throughout your life, whether through the Scriptures, through friends and family, through a minister, or through the quiet promptings of the Holy Spirit? We remember that we are often counted among the Israelites in the desert, not apart from them. We too struggle with our unbelief. 
+
+As you meditate on these readings, consider praying this little prayer from Mark 9:24 each time you encounter the word _aman_, "I do believe; help my unbelief!"`,
+  `Isaiah 43 is one of the more interesting`,
+  `If you haven't had the opportunity to read Isaiah, you simply must [take the time](https://isaiah.flatland.church). This reading is a sinlge chapter from the book of Isaiah. It comes directly on the heels of Isaiah's first servant song, a beautiful poem about the coming Messiah. Both chapters are connected through some parallel imagery, which reminds us that the thread of the Messiah and of YHWH's salvation is still in the atmosphere.
+
+In this chapter, YHWH calls to mind his many deeds of old, stylizing and elaborating on his victory over Egypt and his provision in the desert. In the middle of the poem, he calls the people of Israel to be his witnesses so that they might believe (_aman_). Belief and witness are deeply intertwined. As we explored in our previous reading, _aman_ has a range of meanings, often times all present in a single use of the word. It seems here that witness becomes a natural outworking of _aman_ (belief).
+
+What does your _aman_ stir in you as a response?`,
+  `The cycle of saving and believing has always seemed to run in sequence. Humans are in need of saving, whether they are under oppression by an empire (as in Egypt or Babylon) or whether there own evil has grown into an oppression that they are burdened by themselves (as in the case of Ninevah we will explore in this reading). Sometimes, the saving is from hunger or thirst or malady.
+
+God begins by initiating a salvation. Sometimes he topples empires and crushes armies, other times he brings water from rocks or food for multitudes from a meager individual's meal. Whatever the act, God is the one who initiates it. Notice that the recipients have never seemed merited God's effort. Sometimes they cried for help, sometimes they didn't. God engaged regardless.
+
+So what is the response to this work of God? The call is one of _aman_, or as we transition into the New Testament and Greek, _pisteou_. Just like _aman_, _pisteou_ carries with it a range of meanings that include belief (mental ascent), trust, faithfulness, and allegiance. Our job is not to pick on definition that suits us, but to consider that the whole range of meaning is what we are called to. 
+
+In this reading, we'll explore that call to _aman_ and _pisteou_, remembering that the work of saving has already been initiated.`,
+  `In our penultimate visit to John 1, we come equipped with _pisteou_ with it's range of meaning (belief, trust, faithfulness, and allegiance). You will notice quickly that _pisteou_ is paired with _onoma_ in this chapter. Not only do we _pisteou_ in Jesus or in his kingship or saving work, but in the _onoma_ (the Name).
+
+This should draw you back to the readings we did for _shem_ and _onoma_ (name). What does it mean to believe in the _Onoma_? What does it mean to trust in the _Onoma_? What does it mean to be faithful to the _Onoma_? What does it mean to have allegiance to the _Onoma_?
+
+Meditate on how you are called to _pisteou_ in light of John 1.`,
 ];
 
 const PreRead = ({ data }) => {
