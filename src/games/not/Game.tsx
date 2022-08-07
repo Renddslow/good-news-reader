@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Introduction from './Introduction';
 import Stars from './Stars';
 import words from '../../pages/Items/words';
+import OopsModal from './OopsModal';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -109,7 +110,7 @@ const Game = () => {
         selectWords();
         setPointEarned(false);
         setOopsedWords([]);
-      }, 1500);
+      }, 2500);
     } else {
       setShowOops(true);
       setOopsedWords([...oopsedWords, word]);
@@ -119,6 +120,16 @@ const Game = () => {
   useEffect(() => {
     selectWords();
   }, []);
+
+  useEffect(() => {
+    let cancel;
+    if (showOops === true) {
+      cancel = setTimeout(() => {
+        setShowOops(false);
+      }, 4700);
+    }
+    return () => clearTimeout(cancel);
+  }, [showOops]);
 
   const selectWords = () => {
     const families = new Set(Object.keys(words).map((key) => words[key].family));
@@ -143,30 +154,35 @@ const Game = () => {
   };
 
   return (
-    <Wrapper>
-      {showIntroduction && <Introduction onClick={() => setShowIntroduction(false)} />}
-      {!showIntroduction && score < 5 && (
-        <>
-          <Instruction>Tap the word that doesn't belong below</Instruction>
-          <Stars score={score} />
-          <Column>
-            {currentWords.map((word) => (
-              <Container key={word}>
-                <Button
-                  onClick={handleClick(word)}
-                  oops={oopsedWords.includes(word)}
-                  disabled={oopsedWords.includes(word) || pointEarned}
-                  strike={pointEarned && wrongWord === word}
-                >
-                  {capitalize(word)}
-                </Button>
-                {pointEarned && wrongWord === word && <p>Definition: {words[word].definition}</p>}
-              </Container>
-            ))}
-          </Column>
-        </>
-      )}
-    </Wrapper>
+    <>
+      <Wrapper>
+        {showIntroduction && <Introduction onClick={() => setShowIntroduction(false)} />}
+        {!showIntroduction && score < 5 && (
+          <>
+            <Instruction>Tap the word that doesn't belong below</Instruction>
+            <Stars score={score} />
+            <Column>
+              {currentWords.map((word) => (
+                <Container key={word}>
+                  <Button
+                    onClick={handleClick(word)}
+                    oops={oopsedWords.includes(word)}
+                    disabled={showOops || pointEarned}
+                    strike={pointEarned && wrongWord === word}
+                  >
+                    {capitalize(word)}
+                  </Button>
+                  {pointEarned && wrongWord === word && <p>Definition: {words[word].definition}</p>}
+                </Container>
+              ))}
+            </Column>
+          </>
+        )}
+        {showOops && oopsedWords.length && (
+          <OopsModal definition={words[oopsedWords[oopsedWords.length - 1]].definition} />
+        )}
+      </Wrapper>
+    </>
   );
 };
 
