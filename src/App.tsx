@@ -13,6 +13,7 @@ import OceanGame from './games/ocean';
 import PreRead from './pages/PreRead';
 import Recall from './games/recall';
 import Not from './games/not';
+import Forest from './games/forest';
 import Practice from './pages/Practice';
 
 const RequireAuth = ({ children }: { children: JSX.Element }) => {
@@ -118,6 +119,14 @@ const App = () => {
           element={
             <RequireAuth>
               <Not />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="/games/forest"
+          element={
+            <RequireAuth>
+              <Forest />
             </RequireAuth>
           }
         />

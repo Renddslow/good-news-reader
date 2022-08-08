@@ -70,6 +70,11 @@ const Recall = () => {
         game: 'recall',
         distinct_id: user.id,
       });
+    }
+  }, [showIntroduction]);
+
+  useEffect(() => {
+    if (!showIntroduction) {
       const timer = setInterval(() => {
         setTime(time - 1);
       }, 1000);
