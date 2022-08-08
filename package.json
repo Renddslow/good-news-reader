@@ -16,7 +16,8 @@
     "build:hyperlinks": "node tools/compileHyperlinks.js",
     "build": "run-p build:data build:js",
     "lint-staged": "lint-staged",
-    "postbuild": "cp assets.json public/assets && cp hyperlinks.json public/assets"
+    "postbuild": "cp assets.json public/assets && cp hyperlinks.json public/assets",
+    "email": "node -r dotenv/config emails/send.js"
   },
   "type": "module",
   "husky": {
@@ -92,6 +93,7 @@
     "react-router-dom": "^6.3.0",
     "snarkdown": "^2.0.0",
     "styled-components": "^5.3.5",
+    "templite": "^1.2.0",
     "uuid": "^8.3.2"
   }
 }
