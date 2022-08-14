@@ -27,3 +27,5 @@ export type Background = {
   gateReady: boolean;
   roofReady: boolean;
 };
+
+export type GameKeyframe = 'up' | 'down' | 'left' | 'right' | 'idle';

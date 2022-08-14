@@ -38,7 +38,7 @@
       "title": "Believe",
       "subtitle": "Week 5 • July 7th – 13th",
       "unlocks": [2022, 7, 7],
-      "words": ["aman", "pisteuo", "pistis"],
+      "words": ["aman", "pisteuo"],
       "pages": [21, 22, 23, 24, 25]
     },
     {
@@ -46,7 +46,7 @@
       "title": "Witness",
       "subtitle": "Week 6 • July 14th – 20th",
       "unlocks": [2022, 7, 14],
-      "words": ["mizbeakh", "eduth", "eben", "eid", "martus", "martureo", "marturia"],
+      "words": ["eduth", "eid", "ud", "martus", "martureo", "marturia"],
       "pages": []
     }
   ],

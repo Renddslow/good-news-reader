@@ -1,0 +1,5 @@
+---!p
+{7} And there was war in heaven, Michael and his angels waging war with the dragon. The dragon and his angels waged war, {8} and they did not prevail, and there was no longer a place found for them in heaven. {9} And the great dragon was thrown down, the serpent of old who is called the devil and Satan, who deceives the whole world; he was thrown down to the earth, and his angels were thrown down with him. {10} Then I heard a loud voice in heaven, saying,
+
+---!p
+“Now the salvation, and the power, and the kingdom of our God and the authority of His Christ have come, for the accuser of our brothers and sisters has been thrown down, the one who accuses them before our God day and night. {11} And they overcame him because of the [[haima|blood]] of the Lamb and because of the word of their [[marturia|testimony]], and they did not [[agapao|love]] their life even when faced with death. {12} For this reason, rejoice, you heavens and you who dwell in them. Woe to the earth and the sea, because the devil has come down to you with great wrath, knowing that he has only a short time.”

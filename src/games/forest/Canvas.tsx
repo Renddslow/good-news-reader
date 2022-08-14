@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import drawHero from './utils/drawHero';
-import { Hero } from './types';
+import { GameKeyframe, Hero } from './types';
 import makeInitialMap from './utils/makeInitialMap';
+import update from './update';
 
 const Canvas = () => {
   const ref = useRef<HTMLCanvasElement>(null);
-  const [canvas, setCanvas] = useState<CanvasRenderingContext2D | null>(null);
 
   useEffect(() => {
     let then = performance.now();
@@ -24,8 +24,8 @@ const Canvas = () => {
 
     const hero: Hero = {
       speed: 256,
-      x: 157,
-      y: 216,
+      x: 448 + 4,
+      y: 1216 - 96,
       direction: 'down',
       ready: false,
       sprite: {
@@ -44,15 +44,6 @@ const Canvas = () => {
     tileSheet.onload = () => {
       bg.ready = true;
     };
-
-    const keyCodes: Set<string> = new Set();
-    window.addEventListener('keydown', (e) => {
-      keyCodes.add(e.code);
-    });
-
-    window.addEventListener('keyup', (e) => {
-      keyCodes.delete(e.code);
-    });
 
     const render = () => {
       ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
@@ -80,9 +71,38 @@ const Canvas = () => {
       }
     };
 
+    let nextKeyframe: GameKeyframe = 'up';
+    let atSign = false;
+    let walkingTheWrongWay = false;
+
+    // trigger question
+    // go direction the question asked
+    // react if wrong
+
+    const notifyForQuestion = () => {
+      const event = new CustomEvent('ask-question');
+      window.dispatchEvent(event);
+    };
+
+    window.addEventListener('give-direction', (e: CustomEvent) => {
+      console.log(e);
+      nextKeyframe = e.detail.keyframe;
+      walkingTheWrongWay = e.detail.wrong;
+    });
+
     const main = (ts: DOMHighResTimeStamp) => {
       const delta = ts - then;
-      // update
+      update(hero, nextKeyframe, ctx.canvas, delta / 1000);
+      if (hero.y < 240 && !atSign) {
+        nextKeyframe = 'idle';
+        atSign = true;
+        notifyForQuestion();
+      }
+
+      if ((nextKeyframe === 'left' || nextKeyframe === 'right') && walkingTheWrongWay) {
+        console.log('🦑');
+      }
+
       render();
       then = ts;
       window.requestAnimationFrame(main);
