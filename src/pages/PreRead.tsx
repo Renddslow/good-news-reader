@@ -184,14 +184,42 @@ What does your _aman_ stir in you as a response?`,
 
 God begins by initiating a salvation. Sometimes he topples empires and crushes armies, other times he brings water from rocks or food for multitudes from a meager individual's meal. Whatever the act, God is the one who initiates it. Notice that the recipients have never seemed merited God's effort. Sometimes they cried for help, sometimes they didn't. God engaged regardless.
 
-So what is the response to this work of God? The call is one of _aman_, or as we transition into the New Testament and Greek, _pisteou_. Just like _aman_, _pisteou_ carries with it a range of meanings that include belief (mental ascent), trust, faithfulness, and allegiance. Our job is not to pick on definition that suits us, but to consider that the whole range of meaning is what we are called to. 
+So what is the response to this work of God? The call is one of _aman_, or as we transition into the New Testament and Greek, _pisteuo_. Just like _aman_, _pisteuo_ carries with it a range of meanings that include belief (mental ascent), trust, faithfulness, and allegiance. Our job is not to pick on definition that suits us, but to consider that the whole range of meaning is what we are called to. 
 
-In this reading, we'll explore that call to _aman_ and _pisteou_, remembering that the work of saving has already been initiated.`,
-  `In our penultimate visit to John 1, we come equipped with _pisteou_ with it's range of meaning (belief, trust, faithfulness, and allegiance). You will notice quickly that _pisteou_ is paired with _onoma_ in this chapter. Not only do we _pisteou_ in Jesus or in his kingship or saving work, but in the _onoma_ (the Name).
+In this reading, we'll explore that call to _aman_ and _pisteuo_, remembering that the work of saving has already been initiated.`,
+  `In our penultimate visit to John 1, we come equipped with _pisteuo_ with it's range of meaning (belief, trust, faithfulness, and allegiance). You will notice quickly that _pisteuo_ is paired with _onoma_ in this chapter. Not only do we _pisteuo_ in Jesus or in his kingship or saving work, but in the _onoma_ (the Name).
 
 This should draw you back to the readings we did for _shem_ and _onoma_ (name). What does it mean to believe in the _Onoma_? What does it mean to trust in the _Onoma_? What does it mean to be faithful to the _Onoma_? What does it mean to have allegiance to the _Onoma_?
 
-Meditate on how you are called to _pisteou_ in light of John 1.`,
+Meditate on how you are called to _pisteuo_ in light of John 1.`,
+  `Together we arrive at the beginning of week 6. What a journey we've had. We discovered a whole new world through Biblical languages which lead to deeper vision of the Gospel. It's time now to take what you have learned and share it. Bear witness (_eid_) to things which God has done in Jesus. That's our final word, witness. 
+
+Just like the last five weeks, we'll start at its first appearance in the Scriptures. Witness begins it's story through physical objects which are set up to be the witness (_eid_) for two or more people. The witness has to have a long memory so that both parties remain faithful. 
+
+Both readings come at the end of some sort of conflict, both between clans. The altars bear witness to the tenuous peace that each of the parties have forged. Will they keep the peace? As long as the altar bears witness, it seems that the parties will remember their oaths. As we begin to explore our role in this story as participants, as _eid_'s (witnesses), mediate on the role the two altars in our readings had on the people they witnessed between.`,
+  `In our previous reading, we saw altars stand in place over generations to bear witness (_eid_). This had a mediating function. The people in conflict could look to the altar as a sort of symbolic mediator, reminding them that peace existed between them and the other.
+
+In today's reading, the symbol will be elaborated into something even more transcendent: the divine realm. In this reading we will first encounter the story of the Israelites who are given mana and quail in the desert. This profound expression of God's grace and abundance teaches Israel that they will always have **enough**. To remember this, a bit of the mana is taken and set in the Ark of the Covenant. 
+
+Crucially, the Ark of the Covenant served as a sort of two-way conduit to affirm the covenant. Just like the altars, the Ark of the Covenant housed Israel's copy of the covenant and YHWH's copy of the covenant. The mana was placed among that as an _eid_ for the goodness of God and to remind the people that he was faithful to his end of the covenant. 
+
+In the second chapter, Moses sings a song to Israel, calling them to covenant faithfulness. But near the end, he calls on the heavens and the earth to bear witness (_eid_). This calling which the heavens and earth bear is not just to stand as a reminder between two parties, but to actually watch and ensure that Israel is remembering its part in the covenant.
+
+Consider your role as _eid_ to the Gospel of Christ in light of these texts. Meditate on yourself as watcher of the covenant but also participant in the covenant who is being observed by the whole cosmos.`,
+  `Can humans serve as _eid_'s for YHWH? Perhaps. Certainly we have seen them bear witness against the nations, challenging Israel to remember her promises. But what of YHWH's goodness. We remember Moses' song of the sea, declaring YHWH's mastery over the forces of chaos, able to bend them and wield them at will. Yet in the very next chapter, God's people complain in a wild waste that they will die of hunger. Can anyone stand witness (_eid_) like the altars of old? Can anyone watch as long as the cosmos and give testimony (_eduth_)?
+
+Isaiah paints a vision of a descendant of David, and in today's reading, this descendant is called to bear witness of YHWH. Who is this witness? Will he stand the test of time, not undulating between witness and ignorance? 
+
+Meditate on this witness. What do you observe about him? How might you participate in the story of the Gospel like he does?`,
+  `
+In John 21 we see the conclusion to a tragic story of betrayal and failure to give witness (_martus_). Peter was once given the opportunity to testify (_matureo_) about Jesus, but not only did he fail three times, he denied even knowing Jesus. At the start of this reading, Jesus restores Peter to the role of witness, entreating him to "feed his lambs."
+
+We are lead then into the drama of the book of Acts with the ascension of Jesus to be seated at the right hand of God the Father. Jesus tells his disciples that they will receive **power** when the Holy Spirit comes upon them and they will be his witnesses (_martus_).
+
+The story of these now-empowered witnesses (_martus_) is the story of the rest of the New Testament and the story of the Christian Church up to this day. Consider the words of Revelation 12 and let them be the focus of your meditation. The people of God overcame by the _haima_ (blood) of the Lamb and by the word of their _marturia_ (testimony).`,
+  `We come to it at last, our "final" reading of John 1. As we make our final pass, we'll notice a Spirit-empowered _martus_ named John. He precedes Jesus, preaching the good news that Jesus is coming. John would ultimately give his life, all the while having solice that Jesus had come and that he was soon to put all things to rights.
+
+Meditate on the story of John, the first _martus_ of Jesus. How are you to take up the call to witness (_martuero_) in light of John's witness and in light of the testimony that we've read about this whole series?`,
 ];
 
 const PreRead = ({ data }) => {
