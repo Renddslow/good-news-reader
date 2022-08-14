@@ -104,6 +104,48 @@ const words = {
     hint: 'This is often given more than thought',
     family: 'believe',
   },
+  eid: {
+    lang: 'Hebrew',
+    pos: 'noun',
+    definition: 'witness',
+    hint: 'You might need eyes to be this',
+    family: 'witness',
+  },
+  eduth: {
+    lang: 'Hebrew',
+    pos: 'noun',
+    definition: 'testimony',
+    hint: 'Perhaps given in court',
+    family: 'witness',
+  },
+  ud: {
+    lang: 'Hebrew',
+    pos: 'verb',
+    definition: 'to witness/to testify',
+    hint: 'You might do this at the scene of a crash',
+    family: 'witness',
+  },
+  martus: {
+    lang: 'Greek',
+    pos: 'noun',
+    definition: 'witness',
+    hint: 'You might need eyes to be this',
+    family: 'witness',
+  },
+  martureo: {
+    lang: 'Greek',
+    pos: 'verb',
+    definition: 'to bear witness/to testify',
+    hint: 'This would be a great honor',
+    family: 'witness',
+  },
+  marturia: {
+    lang: 'Greek',
+    pos: 'noun',
+    definition: 'witness/testimony',
+    hint: 'Often given in court',
+    family: 'witness',
+  },
 };
 
 export default words;
