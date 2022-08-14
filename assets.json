@@ -47,7 +47,7 @@
       "subtitle": "Week 6 • July 14th – 20th",
       "unlocks": [2022, 7, 14],
       "words": ["eduth", "eid", "ud", "martus", "martureo", "marturia"],
-      "pages": []
+      "pages": [26, 27, 28, 29, 30]
     }
   ],
   "pages": [
@@ -482,6 +482,86 @@
         }
       ],
       "words": ["pisteou"]
+    },
+    {
+      "title": "Altars Which Bear Witness",
+      "titleReference": "Genesis 31:43-54, Joshua 22:21-29",
+      "page": 26,
+      "chapters": [
+        {
+          "id": "gen31",
+          "reference": "Genesis 31:43-54"
+        },
+        {
+          "id": "jos22",
+          "reference": "Joshua 22:21-29"
+        }
+      ],
+      "words": ["eid"]
+    },
+    {
+      "title": "Divine Witnesses",
+      "titleReference": "Exodus 16, Deuteronomy 31:19-29",
+      "page": 27,
+      "chapters": [
+        {
+          "id": "exo16",
+          "reference": "Exodus 16"
+        },
+        {
+          "id": "deu31",
+          "reference": "Deuteronomy 31:19-29"
+        }
+      ],
+      "words": ["eid", "eduth", "ud"]
+    },
+    {
+      "title": "The Witness of YHWH",
+      "titleReference": "Isaiah 43, Isaiah 55",
+      "page": 28,
+      "chapters": [
+        {
+          "id": "isa43",
+          "reference": "Isaiah 43"
+        },
+        {
+          "id": "isa55",
+          "reference": "Isaiah 55"
+        }
+      ],
+      "words": ["eid"]
+    },
+    {
+      "title": "The Word of Their Testimony",
+      "titleReference": "John 21:15-25, Acts 1:4-11, Revelation 12:7-12",
+      "page": 29,
+      "chapters": [
+        {
+          "id": "john21",
+          "reference": "John 21:15-25"
+        },
+        {
+          "id": "acts1",
+          "reference": "Acts 1:4-11"
+        },
+        {
+          "id": "rev12",
+          "reference": "Revelation 12:7-12"
+        }
+      ],
+      "words": ["martus", "martureo", "marturia"]
+    },
+    {
+      "title": "Testify",
+      "titleReference": "John 1:1-18",
+      "page": 30,
+      "chapters": [
+        {
+          "id": "john1_witness",
+          "reference": "John 1:1-18"
+        }
+      ],
+      "words": ["matureo", "marturia"]
     }
   ]
 }
