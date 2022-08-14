@@ -97,7 +97,7 @@ const words = {
     hint: 'We often close our prayers with a derivative of this word that means "let it be so"',
     family: 'believe',
   },
-  pisteou: {
+  pisteuo: {
     lang: 'Greek',
     pos: 'verb',
     definition: 'to believe/to trust/to be faithful/to give allegiance',
